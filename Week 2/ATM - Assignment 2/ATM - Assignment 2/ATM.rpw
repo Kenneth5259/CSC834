@@ -1,0 +1,109 @@
+I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 78;
+				- m_nTop = 78;
+				- m_nRight = 775;
+				- m_nBottom = 566;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "ATM";
+				- _id = GUID 3ab3708a-aafb-43bf-a2bb-10cd92893a76;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 795 515 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 52;
+				- m_nTop = 52;
+				- m_nRight = 768;
+				- m_nBottom = 540;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IUCDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "ATM System";
+				- _id = GUID 66fb7bdb-4741-4d2a-99e9-061daa6e2b97;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 660 573 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 1;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 26;
+				- m_nTop = 26;
+				- m_nRight = 672;
+				- m_nBottom = 407;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Model1";
+				- _id = GUID 9c95b2b7-1476-4bea-9d8d-d44e983513f2;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 609 321 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 2;
+		}
+	}
+	- _fullName = "C:\\Users\\changk\\Documents\\My Courses\\CSC 834\\Online Course\\ATM - Assignment 1\\ATM";
+	- m_SearchScopeList = { IRPYRawContainer 
+		- size = 0;
+	}
+
+	- m_favoritesTree = {
+		count=1;
+		{ - favoritesItem
+			generation = 0;
+			name = Favorites;
+			idOrFolder = folder;
+		}
+	}
+
+}
+
