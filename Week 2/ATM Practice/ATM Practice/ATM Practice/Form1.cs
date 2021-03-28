@@ -14,30 +14,28 @@ namespace ATM_Practice
     {
         public MainMenuForm()
         {
+
+            // initialization of teh component
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void MainMenuFormTable_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void CheckBalanceButton_Click(object sender, EventArgs e)
+        {
+            CheckBalanceFormTable.Visible = true;
+            MainMenuFormTable.Visible = false;
+        }
+
+        private void TransferMoneyButton_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
@@ -53,6 +51,37 @@ namespace ATM_Practice
         }
 
         private void DepositMoneyButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AccountsListLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        {
+            CheckBalanceFormTable.Visible = false;
+            MainMenuFormTable.Visible = true;
+        }
+
+        private void AccountListItem6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AccountListItem5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AccountListItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AccountListItem4_Click(object sender, EventArgs e)
         {
 
         }
