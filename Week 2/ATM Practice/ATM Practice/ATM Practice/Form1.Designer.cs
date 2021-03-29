@@ -52,6 +52,16 @@ namespace ATM_Practice
             this.AccBalanceSplitContainer = new System.Windows.Forms.SplitContainer();
             this.BalanceStaticLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.WithdrawAccountsTableForm = new System.Windows.Forms.TableLayoutPanel();
+            this.WithdrawAccountsListTableForm = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.WithdrawMainMenuButton = new System.Windows.Forms.Button();
             this.MainMenuFormTable.SuspendLayout();
             this.CheckBalanceFormTable.SuspendLayout();
             this.AccountsListFormTable.SuspendLayout();
@@ -60,6 +70,8 @@ namespace ATM_Practice
             this.AccBalanceSplitContainer.Panel1.SuspendLayout();
             this.AccBalanceSplitContainer.Panel2.SuspendLayout();
             this.AccBalanceSplitContainer.SuspendLayout();
+            this.WithdrawAccountsTableForm.SuspendLayout();
+            this.WithdrawAccountsListTableForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainMenuFormTable
@@ -230,7 +242,7 @@ namespace ATM_Practice
             this.AccountListItem6.TabIndex = 5;
             this.AccountListItem6.Text = "Account 000111227";
             this.AccountListItem6.UseVisualStyleBackColor = true;
-            this.AccountListItem6.Click += new System.EventHandler(this.AccountListItem6_Click);
+            this.AccountListItem6.Click += new System.EventHandler(this.BalanceCheckAccountListItem6_Click);
             // 
             // AccountListItem5
             // 
@@ -243,7 +255,7 @@ namespace ATM_Practice
             this.AccountListItem5.TabIndex = 4;
             this.AccountListItem5.Text = "Account 000111226";
             this.AccountListItem5.UseVisualStyleBackColor = true;
-            this.AccountListItem5.Click += new System.EventHandler(this.AccountListItem5_Click);
+            this.AccountListItem5.Click += new System.EventHandler(this.BalanceCheckAccountListItem5_Click);
             // 
             // AccountListItem4
             // 
@@ -257,7 +269,7 @@ namespace ATM_Practice
             this.AccountListItem4.TabIndex = 3;
             this.AccountListItem4.Text = "Account 000111225";
             this.AccountListItem4.UseVisualStyleBackColor = true;
-            this.AccountListItem4.Click += new System.EventHandler(this.AccountListItem4_Click);
+            this.AccountListItem4.Click += new System.EventHandler(this.BalanceCheckAccountListItem4_Click);
             // 
             // AccountListItem3
             // 
@@ -270,7 +282,7 @@ namespace ATM_Practice
             this.AccountListItem3.TabIndex = 2;
             this.AccountListItem3.Text = "Account 000111224";
             this.AccountListItem3.UseVisualStyleBackColor = true;
-            this.AccountListItem3.Click += new System.EventHandler(this.AccountListItem3_Click);
+            this.AccountListItem3.Click += new System.EventHandler(this.BalanceCheckAccountListItem3_Click);
             // 
             // AccountListItem2
             // 
@@ -283,7 +295,7 @@ namespace ATM_Practice
             this.AccountListItem2.TabIndex = 1;
             this.AccountListItem2.Text = "Account 000111223";
             this.AccountListItem2.UseVisualStyleBackColor = true;
-            this.AccountListItem2.Click += new System.EventHandler(this.AccountListItem2_Click);
+            this.AccountListItem2.Click += new System.EventHandler(this.BalanceCheckAccountListItem2_Click);
             // 
             // AccountListItem1
             // 
@@ -296,7 +308,7 @@ namespace ATM_Practice
             this.AccountListItem1.TabIndex = 0;
             this.AccountListItem1.Text = "Account 000111222";
             this.AccountListItem1.UseVisualStyleBackColor = true;
-            this.AccountListItem1.Click += new System.EventHandler(this.AccountListItem1_Click);
+            this.AccountListItem1.Click += new System.EventHandler(this.BalanceCheckAccountListItem1_Click);
             // 
             // AccountsListLabel
             // 
@@ -410,7 +422,156 @@ namespace ATM_Practice
             this.label2.Size = new System.Drawing.Size(146, 45);
             this.label2.TabIndex = 0;
             this.label2.Text = "$1234.56";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // WithdrawAccountsTableForm
+            // 
+            this.WithdrawAccountsTableForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.WithdrawAccountsTableForm.ColumnCount = 1;
+            this.WithdrawAccountsTableForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.WithdrawAccountsTableForm.Controls.Add(this.WithdrawAccountsListTableForm, 0, 1);
+            this.WithdrawAccountsTableForm.Controls.Add(this.label1, 0, 0);
+            this.WithdrawAccountsTableForm.Controls.Add(this.WithdrawMainMenuButton, 0, 2);
+            this.WithdrawAccountsTableForm.Location = new System.Drawing.Point(27, 78);
+            this.WithdrawAccountsTableForm.Name = "WithdrawAccountsTableForm";
+            this.WithdrawAccountsTableForm.RowCount = 3;
+            this.WithdrawAccountsTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.WithdrawAccountsTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.WithdrawAccountsTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.WithdrawAccountsTableForm.Size = new System.Drawing.Size(818, 520);
+            this.WithdrawAccountsTableForm.TabIndex = 5;
+            this.WithdrawAccountsTableForm.Visible = false;
+            // 
+            // WithdrawAccountsListTableForm
+            // 
+            this.WithdrawAccountsListTableForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.WithdrawAccountsListTableForm.ColumnCount = 1;
+            this.WithdrawAccountsListTableForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.WithdrawAccountsListTableForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.WithdrawAccountsListTableForm.Controls.Add(this.button1, 0, 5);
+            this.WithdrawAccountsListTableForm.Controls.Add(this.button2, 0, 4);
+            this.WithdrawAccountsListTableForm.Controls.Add(this.button3, 0, 3);
+            this.WithdrawAccountsListTableForm.Controls.Add(this.button4, 0, 2);
+            this.WithdrawAccountsListTableForm.Controls.Add(this.button5, 0, 1);
+            this.WithdrawAccountsListTableForm.Controls.Add(this.button6, 0, 0);
+            this.WithdrawAccountsListTableForm.Location = new System.Drawing.Point(3, 55);
+            this.WithdrawAccountsListTableForm.Name = "WithdrawAccountsListTableForm";
+            this.WithdrawAccountsListTableForm.RowCount = 6;
+            this.WithdrawAccountsListTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.WithdrawAccountsListTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.WithdrawAccountsListTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.WithdrawAccountsListTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.WithdrawAccountsListTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.WithdrawAccountsListTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.WithdrawAccountsListTableForm.Size = new System.Drawing.Size(812, 332);
+            this.WithdrawAccountsListTableForm.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(3, 278);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(806, 51);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Account 000111227";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.WithdrawAccountListItem6_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(3, 223);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(806, 49);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Account 000111226";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.WithdrawAccountListItem5_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(3, 168);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(806, 49);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Account 000111225";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.WithdrawAccountListItem4_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Location = new System.Drawing.Point(3, 113);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(806, 49);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Account 000111224";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.WithdrawAccountListItem3_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.Location = new System.Drawing.Point(3, 58);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(806, 49);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Account 000111223";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.WithdrawAccountListItem2_Click);
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.Location = new System.Drawing.Point(3, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(806, 49);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Account 000111222";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.WithdrawAccountListItem1_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(307, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Accounts Held with ZZZ Bank: ";
+            // 
+            // WithdrawMainMenuButton
+            // 
+            this.WithdrawMainMenuButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.WithdrawMainMenuButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.WithdrawMainMenuButton.Location = new System.Drawing.Point(5, 396);
+            this.WithdrawMainMenuButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.WithdrawMainMenuButton.Name = "WithdrawMainMenuButton";
+            this.WithdrawMainMenuButton.Size = new System.Drawing.Size(808, 118);
+            this.WithdrawMainMenuButton.TabIndex = 5;
+            this.WithdrawMainMenuButton.Text = "Main Menu";
+            this.WithdrawMainMenuButton.UseVisualStyleBackColor = true;
+            this.WithdrawMainMenuButton.Click += new System.EventHandler(this.WithdrawFormMainMenuButton_Click);
             // 
             // MainMenuForm
             // 
@@ -419,9 +580,10 @@ namespace ATM_Practice
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.WithdrawAccountsTableForm);
+            this.Controls.Add(this.MainMenuFormTable);
             this.Controls.Add(this.AccountBalanceFormTable);
             this.Controls.Add(this.CheckBalanceFormTable);
-            this.Controls.Add(this.MainMenuFormTable);
             this.Controls.Add(this.WelcomeLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "MainMenuForm";
@@ -439,6 +601,9 @@ namespace ATM_Practice
             this.AccBalanceSplitContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AccBalanceSplitContainer)).EndInit();
             this.AccBalanceSplitContainer.ResumeLayout(false);
+            this.WithdrawAccountsTableForm.ResumeLayout(false);
+            this.WithdrawAccountsTableForm.PerformLayout();
+            this.WithdrawAccountsListTableForm.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,6 +634,16 @@ namespace ATM_Practice
         private System.Windows.Forms.SplitContainer AccBalanceSplitContainer;
         private System.Windows.Forms.Label BalanceStaticLabel;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TableLayoutPanel WithdrawAccountsTableForm;
+        private System.Windows.Forms.TableLayoutPanel WithdrawAccountsListTableForm;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button WithdrawMainMenuButton;
     }
 }
 

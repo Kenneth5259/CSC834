@@ -14,9 +14,9 @@ namespace ATM_Practice
     {
         public MainMenuForm()
         {
-
             // initialization of teh component
             InitializeComponent();
+
         }
 
         private void MainMenuFormTable_Paint(object sender, PaintEventArgs e)
@@ -47,7 +47,8 @@ namespace ATM_Practice
 
         private void WithdrawMoneyButton_Click(object sender, EventArgs e)
         {
-
+            WithdrawAccountsTableForm.Visible = true;
+            MainMenuFormTable.Visible = false;
         }
 
         private void DepositMoneyButton_Click(object sender, EventArgs e)
@@ -59,6 +60,7 @@ namespace ATM_Practice
         {
 
         }
+        /******************* Functional Requirement 4 *************************/
 
         private void CheckBalanceFormMainMenuButton_Click(object sender, EventArgs e)
         {
@@ -66,27 +68,27 @@ namespace ATM_Practice
             MainMenuFormTable.Visible = true;
         }
 
-        private void AccountListItem6_Click(object sender, EventArgs e)
+        private void BalanceCheckAccountListItem6_Click(object sender, EventArgs e)
         {
             CheckBalanceFormTable.Visible = false;
             AccountBalanceFormTable.Visible = true;
 
         }
 
-        private void AccountListItem5_Click(object sender, EventArgs e)
+        private void BalanceCheckAccountListItem5_Click(object sender, EventArgs e)
         {
             CheckBalanceFormTable.Visible = false;
             AccountBalanceFormTable.Visible = true;
         }
 
-        private void AccountListItem3_Click(object sender, EventArgs e)
+        private void BalanceCheckAccountListItem3_Click(object sender, EventArgs e)
         {
             CheckBalanceFormTable.Visible = false;
             AccountBalanceFormTable.Visible = true;
 
         }
 
-        private void AccountListItem4_Click(object sender, EventArgs e)
+        private void BalanceCheckAccountListItem4_Click(object sender, EventArgs e)
         {
             CheckBalanceFormTable.Visible = false;
             AccountBalanceFormTable.Visible = true;
@@ -105,26 +107,60 @@ namespace ATM_Practice
             AccountBalanceFormTable.Visible = false;
         }
 
-        private void AccountListItem1_Click(object sender, EventArgs e)
+        private void BalanceCheckAccountListItem1_Click(object sender, EventArgs e)
         {
             CheckBalanceFormTable.Visible = false;
             AccountBalanceFormTable.Visible = true;
         }
 
-        private void AccountListItem2_Click(object sender, EventArgs e)
+        private void BalanceCheckAccountListItem2_Click(object sender, EventArgs e)
         {
             CheckBalanceFormTable.Visible = false;
             AccountBalanceFormTable.Visible = true;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void AccBalanceSplitContainer_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void WithdrawAccountListItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WithdrawAccountListItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WithdrawAccountListItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WithdrawAccountListItem4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WithdrawAccountListItem5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WithdrawAccountListItem6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WithdrawFormMainMenuButton_Click(object sender, EventArgs e)
+        {
+            WithdrawAccountsTableForm.Visible = false;
+            MainMenuFormTable.Visible = true;
+        }
+
+        /************* Functional Requirement 1 ****************************/
     }
 }
