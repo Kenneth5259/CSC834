@@ -60,7 +60,7 @@ namespace ATM_Practice
 
         }
 
-        private void MainMenuButton_Click(object sender, EventArgs e)
+        private void CheckBalanceFormMainMenuButton_Click(object sender, EventArgs e)
         {
             CheckBalanceFormTable.Visible = false;
             MainMenuFormTable.Visible = true;
@@ -68,20 +68,61 @@ namespace ATM_Practice
 
         private void AccountListItem6_Click(object sender, EventArgs e)
         {
+            CheckBalanceFormTable.Visible = false;
+            AccountBalanceFormTable.Visible = true;
 
         }
 
         private void AccountListItem5_Click(object sender, EventArgs e)
         {
-
+            CheckBalanceFormTable.Visible = false;
+            AccountBalanceFormTable.Visible = true;
         }
 
         private void AccountListItem3_Click(object sender, EventArgs e)
         {
+            CheckBalanceFormTable.Visible = false;
+            AccountBalanceFormTable.Visible = true;
 
         }
 
         private void AccountListItem4_Click(object sender, EventArgs e)
+        {
+            CheckBalanceFormTable.Visible = false;
+            AccountBalanceFormTable.Visible = true;
+
+        }
+
+        private void AccBalanceFormMainMenuButton_Click(object sender, EventArgs e)
+        {
+            AccountBalanceFormTable.Visible = false;
+            MainMenuFormTable.Visible = true;
+        }
+
+        private void AccBalanceReturnButton_Click(object sender, EventArgs e)
+        {
+            CheckBalanceFormTable.Visible = true;
+            AccountBalanceFormTable.Visible = false;
+        }
+
+        private void AccountListItem1_Click(object sender, EventArgs e)
+        {
+            CheckBalanceFormTable.Visible = false;
+            AccountBalanceFormTable.Visible = true;
+        }
+
+        private void AccountListItem2_Click(object sender, EventArgs e)
+        {
+            CheckBalanceFormTable.Visible = false;
+            AccountBalanceFormTable.Visible = true;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AccBalanceSplitContainer_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
