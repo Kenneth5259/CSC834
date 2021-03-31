@@ -4,7 +4,64 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 		- size = 0;
 	}
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 0;
+		- size = 2;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 52;
+				- m_nTop = 52;
+				- m_nRight = 1415;
+				- m_nBottom = 900;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "ATM";
+				- _id = GUID ad60f113-88e3-422a-9467-40cba5330c39;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1223 730 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 26;
+				- m_nTop = 26;
+				- m_nRight = 1389;
+				- m_nBottom = 874;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IUCDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "ATMUseCaseDiagram";
+				- _id = GUID f0eda153-edb0-49e0-ae69-c20d13311efc;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1798 1214 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 1;
+		}
 	}
 	- _fullName = "C:\\Users\\kenne\\Documents\\CSC 834\\Week 2\\IndividualProject\\IndividualProject";
 	- m_SearchScopeList = { IRPYRawContainer 

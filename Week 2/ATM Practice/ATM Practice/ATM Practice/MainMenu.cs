@@ -12,11 +12,12 @@ namespace ATM_Practice
 {
     public partial class MainMenuForm : Form
     {
+        private AccountList accList;
         public MainMenuForm()
         {
             // initialization of teh component
             InitializeComponent();
-
+            this.accList = new AccountList();
         }
 
         private void MainMenuFormTable_Paint(object sender, PaintEventArgs e)
@@ -26,8 +27,10 @@ namespace ATM_Practice
 
         private void CheckBalanceButton_Click(object sender, EventArgs e)
         {
-            CheckBalanceFormTable.Visible = true;
-            MainMenuFormTable.Visible = false;
+            //CheckBalanceFormTable.Visible = true;
+            //MainMenuFormTable.Visible = false;
+            Hide();
+            this.accList.Show();
         }
 
         private void TransferMoneyButton_Click(object sender, EventArgs e)
@@ -159,6 +162,56 @@ namespace ATM_Practice
         {
             WithdrawAccountsTableForm.Visible = false;
             MainMenuFormTable.Visible = true;
+        }
+
+        private void CheckBalanceFormTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel23_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         /************* Functional Requirement 1 ****************************/

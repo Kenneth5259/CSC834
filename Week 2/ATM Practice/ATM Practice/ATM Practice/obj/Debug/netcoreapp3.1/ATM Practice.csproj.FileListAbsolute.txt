@@ -5,6 +5,8 @@ C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\b
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\bin\Debug\netcoreapp3.1\ATM Practice.dll
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\bin\Debug\netcoreapp3.1\ATM Practice.pdb
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM Practice.csprojAssemblyReference.cache
+C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM_Practice.AccountList.resources
+C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM_Practice.MainMenuForm.resources
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM Practice.csproj.GenerateResource.cache
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM Practice.AssemblyInfoInputs.cache
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM Practice.AssemblyInfo.cs
@@ -12,4 +14,3 @@ C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\o
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM Practice.dll
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM Practice.pdb
 C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM Practice.genruntimeconfig.cache
-C:\Users\kenne\Documents\CSC 834\Week 2\ATM Practice\ATM Practice\ATM Practice\obj\Debug\netcoreapp3.1\ATM_Practice.MainMenuForm.resources
