@@ -6,5 +6,4 @@ The individual project should be a culmination of work from several of the first
 It will be updated as the course progresses even after the week that introduces the used topic has concluded.
 
 # Team Project
-For the team project, I am partnered with one other master student. I will provide credit to each of their contributions,
-and will provide their name/social media with their consent.
+For the team project, I am partnered with three other master students. I will provide their information and note each of their contributions with their permissions
