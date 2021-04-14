@@ -1,0 +1,10 @@
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\bin\Debug\TeamProject.exe.config
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\bin\Debug\TeamProject.exe
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\bin\Debug\TeamProject.pdb
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.csprojAssemblyReference.cache
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.Properties.Resources.resources
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.csproj.GenerateResource.cache
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.csproj.CoreCompileInputs.cache
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.exe
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.pdb
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.CalendarBaseForm.resources
