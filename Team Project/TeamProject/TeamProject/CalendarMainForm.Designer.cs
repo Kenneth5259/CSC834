@@ -35,7 +35,7 @@ namespace TeamProject
             System.Windows.Forms.Label WednesdayStaticLabel;
             System.Windows.Forms.Label ThursdayStaticLabel;
             System.Windows.Forms.Label FridayStaticLabel;
-            this.label5 = new System.Windows.Forms.Label();
+            this.SaturdayStaticLabel = new System.Windows.Forms.Label();
             this.CalendarLayoutPanelContainer = new System.Windows.Forms.TableLayoutPanel();
             this.MonthYearHeaderTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.CalendarMonthLabel = new System.Windows.Forms.Label();
@@ -83,6 +83,11 @@ namespace TeamProject
             this.Week1MondayLabel = new System.Windows.Forms.Label();
             this.Week1SundayLabel = new System.Windows.Forms.Label();
             this.Week1ThursdayLabel = new System.Windows.Forms.Label();
+            this.ShowCalendarOptionsButton = new System.Windows.Forms.Button();
+            this.UserCalendarOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AddNewCalendarEventButton = new System.Windows.Forms.Button();
+            this.EditCalendarEventButton = new System.Windows.Forms.Button();
+            this.DeleteCalendarEventButton = new System.Windows.Forms.Button();
             SundayStaticLabel = new System.Windows.Forms.Label();
             MondayStaticLabel = new System.Windows.Forms.Label();
             TuesdayStaticLabel = new System.Windows.Forms.Label();
@@ -92,6 +97,7 @@ namespace TeamProject
             this.CalendarLayoutPanelContainer.SuspendLayout();
             this.MonthYearHeaderTableLayoutPanel.SuspendLayout();
             this.CalendGridTableLayoutPanel.SuspendLayout();
+            this.UserCalendarOptionsTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // SundayStaticLabel
@@ -99,7 +105,7 @@ namespace TeamProject
             SundayStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             SundayStaticLabel.AutoSize = true;
             SundayStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            SundayStaticLabel.Location = new System.Drawing.Point(29, 44);
+            SundayStaticLabel.Location = new System.Drawing.Point(45, 50);
             SundayStaticLabel.Name = "SundayStaticLabel";
             SundayStaticLabel.Size = new System.Drawing.Size(85, 25);
             SundayStaticLabel.TabIndex = 0;
@@ -110,19 +116,18 @@ namespace TeamProject
             MondayStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             MondayStaticLabel.AutoSize = true;
             MondayStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            MondayStaticLabel.Location = new System.Drawing.Point(170, 44);
+            MondayStaticLabel.Location = new System.Drawing.Point(218, 50);
             MondayStaticLabel.Name = "MondayStaticLabel";
             MondayStaticLabel.Size = new System.Drawing.Size(89, 25);
             MondayStaticLabel.TabIndex = 1;
             MondayStaticLabel.Text = "Monday";
-            MondayStaticLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // TuesdayStaticLabel
             // 
             TuesdayStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             TuesdayStaticLabel.AutoSize = true;
             TuesdayStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            TuesdayStaticLabel.Location = new System.Drawing.Point(310, 44);
+            TuesdayStaticLabel.Location = new System.Drawing.Point(390, 50);
             TuesdayStaticLabel.Name = "TuesdayStaticLabel";
             TuesdayStaticLabel.Size = new System.Drawing.Size(95, 25);
             TuesdayStaticLabel.TabIndex = 2;
@@ -133,7 +138,7 @@ namespace TeamProject
             WednesdayStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             WednesdayStaticLabel.AutoSize = true;
             WednesdayStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            WednesdayStaticLabel.Location = new System.Drawing.Point(438, 44);
+            WednesdayStaticLabel.Location = new System.Drawing.Point(550, 50);
             WednesdayStaticLabel.Name = "WednesdayStaticLabel";
             WednesdayStaticLabel.Size = new System.Drawing.Size(126, 25);
             WednesdayStaticLabel.TabIndex = 3;
@@ -144,7 +149,7 @@ namespace TeamProject
             ThursdayStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             ThursdayStaticLabel.AutoSize = true;
             ThursdayStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ThursdayStaticLabel.Location = new System.Drawing.Point(593, 44);
+            ThursdayStaticLabel.Location = new System.Drawing.Point(737, 50);
             ThursdayStaticLabel.Name = "ThursdayStaticLabel";
             ThursdayStaticLabel.Size = new System.Drawing.Size(102, 25);
             ThursdayStaticLabel.TabIndex = 4;
@@ -155,23 +160,22 @@ namespace TeamProject
             FridayStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             FridayStaticLabel.AutoSize = true;
             FridayStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            FridayStaticLabel.Location = new System.Drawing.Point(751, 44);
+            FridayStaticLabel.Location = new System.Drawing.Point(927, 50);
             FridayStaticLabel.Name = "FridayStaticLabel";
             FridayStaticLabel.Size = new System.Drawing.Size(72, 25);
             FridayStaticLabel.TabIndex = 5;
             FridayStaticLabel.Text = "Friday";
             // 
-            // label5
+            // SaturdayStaticLabel
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(883, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Saturday";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.SaturdayStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SaturdayStaticLabel.AutoSize = true;
+            this.SaturdayStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaturdayStaticLabel.Location = new System.Drawing.Point(1091, 50);
+            this.SaturdayStaticLabel.Name = "SaturdayStaticLabel";
+            this.SaturdayStaticLabel.Size = new System.Drawing.Size(98, 25);
+            this.SaturdayStaticLabel.TabIndex = 6;
+            this.SaturdayStaticLabel.Text = "Saturday";
             // 
             // CalendarLayoutPanelContainer
             // 
@@ -188,7 +192,7 @@ namespace TeamProject
             this.CalendarLayoutPanelContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.CalendarLayoutPanelContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.CalendarLayoutPanelContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.CalendarLayoutPanelContainer.Size = new System.Drawing.Size(1013, 884);
+            this.CalendarLayoutPanelContainer.Size = new System.Drawing.Size(1236, 974);
             this.CalendarLayoutPanelContainer.TabIndex = 0;
             // 
             // MonthYearHeaderTableLayoutPanel
@@ -206,8 +210,8 @@ namespace TeamProject
             this.MonthYearHeaderTableLayoutPanel.Name = "MonthYearHeaderTableLayoutPanel";
             this.MonthYearHeaderTableLayoutPanel.RowCount = 1;
             this.MonthYearHeaderTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.MonthYearHeaderTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.MonthYearHeaderTableLayoutPanel.Size = new System.Drawing.Size(1007, 82);
+            this.MonthYearHeaderTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.MonthYearHeaderTableLayoutPanel.Size = new System.Drawing.Size(1230, 91);
             this.MonthYearHeaderTableLayoutPanel.TabIndex = 0;
             // 
             // CalendarMonthLabel
@@ -215,7 +219,7 @@ namespace TeamProject
             this.CalendarMonthLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CalendarMonthLabel.AutoSize = true;
             this.CalendarMonthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.CalendarMonthLabel.Location = new System.Drawing.Point(343, 13);
+            this.CalendarMonthLabel.Location = new System.Drawing.Point(432, 18);
             this.CalendarMonthLabel.Name = "CalendarMonthLabel";
             this.CalendarMonthLabel.Size = new System.Drawing.Size(119, 55);
             this.CalendarMonthLabel.TabIndex = 0;
@@ -226,7 +230,7 @@ namespace TeamProject
             this.YearCalendarLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.YearCalendarLabel.AutoSize = true;
             this.YearCalendarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YearCalendarLabel.Location = new System.Drawing.Point(839, 13);
+            this.YearCalendarLabel.Location = new System.Drawing.Point(1040, 18);
             this.YearCalendarLabel.Name = "YearCalendarLabel";
             this.YearCalendarLabel.Size = new System.Drawing.Size(132, 55);
             this.YearCalendarLabel.TabIndex = 1;
@@ -287,7 +291,7 @@ namespace TeamProject
             this.CalendGridTableLayoutPanel.Controls.Add(this.Week1TuesdayLabel, 2, 1);
             this.CalendGridTableLayoutPanel.Controls.Add(this.Week1MondayLabel, 1, 1);
             this.CalendGridTableLayoutPanel.Controls.Add(this.Week1SundayLabel, 0, 1);
-            this.CalendGridTableLayoutPanel.Controls.Add(this.label5, 6, 0);
+            this.CalendGridTableLayoutPanel.Controls.Add(this.SaturdayStaticLabel, 6, 0);
             this.CalendGridTableLayoutPanel.Controls.Add(FridayStaticLabel, 5, 0);
             this.CalendGridTableLayoutPanel.Controls.Add(ThursdayStaticLabel, 4, 0);
             this.CalendGridTableLayoutPanel.Controls.Add(WednesdayStaticLabel, 3, 0);
@@ -295,7 +299,7 @@ namespace TeamProject
             this.CalendGridTableLayoutPanel.Controls.Add(MondayStaticLabel, 1, 0);
             this.CalendGridTableLayoutPanel.Controls.Add(SundayStaticLabel, 0, 0);
             this.CalendGridTableLayoutPanel.Controls.Add(this.Week1ThursdayLabel, 4, 1);
-            this.CalendGridTableLayoutPanel.Location = new System.Drawing.Point(3, 91);
+            this.CalendGridTableLayoutPanel.Location = new System.Drawing.Point(3, 100);
             this.CalendGridTableLayoutPanel.Name = "CalendGridTableLayoutPanel";
             this.CalendGridTableLayoutPanel.RowCount = 7;
             this.CalendGridTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -305,15 +309,14 @@ namespace TeamProject
             this.CalendGridTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.CalendGridTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.CalendGridTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.CalendGridTableLayoutPanel.Size = new System.Drawing.Size(1007, 790);
+            this.CalendGridTableLayoutPanel.Size = new System.Drawing.Size(1230, 871);
             this.CalendGridTableLayoutPanel.TabIndex = 1;
-            this.CalendGridTableLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CalendGridTableLayoutPanel_Paint);
             // 
             // Week6SaturdayLabel
             // 
             this.Week6SaturdayLabel.AutoSize = true;
             this.Week6SaturdayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week6SaturdayLabel.Location = new System.Drawing.Point(862, 673);
+            this.Week6SaturdayLabel.Location = new System.Drawing.Point(1054, 745);
             this.Week6SaturdayLabel.Name = "Week6SaturdayLabel";
             this.Week6SaturdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week6SaturdayLabel.TabIndex = 48;
@@ -323,7 +326,7 @@ namespace TeamProject
             // 
             this.Week6FridayLabel.AutoSize = true;
             this.Week6FridayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week6FridayLabel.Location = new System.Drawing.Point(719, 673);
+            this.Week6FridayLabel.Location = new System.Drawing.Point(879, 745);
             this.Week6FridayLabel.Name = "Week6FridayLabel";
             this.Week6FridayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week6FridayLabel.TabIndex = 47;
@@ -333,7 +336,7 @@ namespace TeamProject
             // 
             this.Week6ThursdayLabel.AutoSize = true;
             this.Week6ThursdayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week6ThursdayLabel.Location = new System.Drawing.Point(576, 673);
+            this.Week6ThursdayLabel.Location = new System.Drawing.Point(704, 745);
             this.Week6ThursdayLabel.Name = "Week6ThursdayLabel";
             this.Week6ThursdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week6ThursdayLabel.TabIndex = 46;
@@ -343,7 +346,7 @@ namespace TeamProject
             // 
             this.Week6WednesdayLabel.AutoSize = true;
             this.Week6WednesdayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week6WednesdayLabel.Location = new System.Drawing.Point(433, 673);
+            this.Week6WednesdayLabel.Location = new System.Drawing.Point(529, 745);
             this.Week6WednesdayLabel.Name = "Week6WednesdayLabel";
             this.Week6WednesdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week6WednesdayLabel.TabIndex = 45;
@@ -353,7 +356,7 @@ namespace TeamProject
             // 
             this.Week6TuesdayLabel.AutoSize = true;
             this.Week6TuesdayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week6TuesdayLabel.Location = new System.Drawing.Point(290, 673);
+            this.Week6TuesdayLabel.Location = new System.Drawing.Point(354, 745);
             this.Week6TuesdayLabel.Name = "Week6TuesdayLabel";
             this.Week6TuesdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week6TuesdayLabel.TabIndex = 44;
@@ -363,7 +366,7 @@ namespace TeamProject
             // 
             this.Week6MondayLabel.AutoSize = true;
             this.Week6MondayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week6MondayLabel.Location = new System.Drawing.Point(147, 673);
+            this.Week6MondayLabel.Location = new System.Drawing.Point(179, 745);
             this.Week6MondayLabel.Name = "Week6MondayLabel";
             this.Week6MondayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week6MondayLabel.TabIndex = 43;
@@ -373,7 +376,7 @@ namespace TeamProject
             // 
             this.Week6SundayLabel.AutoSize = true;
             this.Week6SundayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week6SundayLabel.Location = new System.Drawing.Point(4, 673);
+            this.Week6SundayLabel.Location = new System.Drawing.Point(4, 745);
             this.Week6SundayLabel.Name = "Week6SundayLabel";
             this.Week6SundayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week6SundayLabel.TabIndex = 42;
@@ -383,7 +386,7 @@ namespace TeamProject
             // 
             this.Week5SaturdayLabel.AutoSize = true;
             this.Week5SaturdayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week5SaturdayLabel.Location = new System.Drawing.Point(862, 561);
+            this.Week5SaturdayLabel.Location = new System.Drawing.Point(1054, 621);
             this.Week5SaturdayLabel.Name = "Week5SaturdayLabel";
             this.Week5SaturdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week5SaturdayLabel.TabIndex = 41;
@@ -392,17 +395,16 @@ namespace TeamProject
             // Week5FridayLabel
             // 
             this.Week5FridayLabel.AutoSize = true;
-            this.Week5FridayLabel.Location = new System.Drawing.Point(719, 561);
+            this.Week5FridayLabel.Location = new System.Drawing.Point(879, 621);
             this.Week5FridayLabel.Name = "Week5FridayLabel";
             this.Week5FridayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week5FridayLabel.TabIndex = 40;
             this.Week5FridayLabel.Text = "30";
-            this.Week5FridayLabel.Click += new System.EventHandler(this.label28_Click);
             // 
             // Week5ThursdayLabel
             // 
             this.Week5ThursdayLabel.AutoSize = true;
-            this.Week5ThursdayLabel.Location = new System.Drawing.Point(576, 561);
+            this.Week5ThursdayLabel.Location = new System.Drawing.Point(704, 621);
             this.Week5ThursdayLabel.Name = "Week5ThursdayLabel";
             this.Week5ThursdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week5ThursdayLabel.TabIndex = 39;
@@ -411,7 +413,7 @@ namespace TeamProject
             // Week5WednesdayLabel28
             // 
             this.Week5WednesdayLabel28.AutoSize = true;
-            this.Week5WednesdayLabel28.Location = new System.Drawing.Point(433, 561);
+            this.Week5WednesdayLabel28.Location = new System.Drawing.Point(529, 621);
             this.Week5WednesdayLabel28.Name = "Week5WednesdayLabel28";
             this.Week5WednesdayLabel28.Size = new System.Drawing.Size(19, 13);
             this.Week5WednesdayLabel28.TabIndex = 38;
@@ -420,7 +422,7 @@ namespace TeamProject
             // Week5TuesdayLabel
             // 
             this.Week5TuesdayLabel.AutoSize = true;
-            this.Week5TuesdayLabel.Location = new System.Drawing.Point(290, 561);
+            this.Week5TuesdayLabel.Location = new System.Drawing.Point(354, 621);
             this.Week5TuesdayLabel.Name = "Week5TuesdayLabel";
             this.Week5TuesdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week5TuesdayLabel.TabIndex = 37;
@@ -429,7 +431,7 @@ namespace TeamProject
             // Week5MondayLabel
             // 
             this.Week5MondayLabel.AutoSize = true;
-            this.Week5MondayLabel.Location = new System.Drawing.Point(147, 561);
+            this.Week5MondayLabel.Location = new System.Drawing.Point(179, 621);
             this.Week5MondayLabel.Name = "Week5MondayLabel";
             this.Week5MondayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week5MondayLabel.TabIndex = 36;
@@ -438,7 +440,7 @@ namespace TeamProject
             // Week5SundayLabel
             // 
             this.Week5SundayLabel.AutoSize = true;
-            this.Week5SundayLabel.Location = new System.Drawing.Point(4, 561);
+            this.Week5SundayLabel.Location = new System.Drawing.Point(4, 621);
             this.Week5SundayLabel.Name = "Week5SundayLabel";
             this.Week5SundayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week5SundayLabel.TabIndex = 35;
@@ -447,7 +449,7 @@ namespace TeamProject
             // Week4SatudayLabel
             // 
             this.Week4SatudayLabel.AutoSize = true;
-            this.Week4SatudayLabel.Location = new System.Drawing.Point(862, 449);
+            this.Week4SatudayLabel.Location = new System.Drawing.Point(1054, 497);
             this.Week4SatudayLabel.Name = "Week4SatudayLabel";
             this.Week4SatudayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week4SatudayLabel.TabIndex = 34;
@@ -456,7 +458,7 @@ namespace TeamProject
             // Week4FridayLabel
             // 
             this.Week4FridayLabel.AutoSize = true;
-            this.Week4FridayLabel.Location = new System.Drawing.Point(719, 449);
+            this.Week4FridayLabel.Location = new System.Drawing.Point(879, 497);
             this.Week4FridayLabel.Name = "Week4FridayLabel";
             this.Week4FridayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week4FridayLabel.TabIndex = 33;
@@ -465,7 +467,7 @@ namespace TeamProject
             // Week4ThursdayLabel
             // 
             this.Week4ThursdayLabel.AutoSize = true;
-            this.Week4ThursdayLabel.Location = new System.Drawing.Point(576, 449);
+            this.Week4ThursdayLabel.Location = new System.Drawing.Point(704, 497);
             this.Week4ThursdayLabel.Name = "Week4ThursdayLabel";
             this.Week4ThursdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week4ThursdayLabel.TabIndex = 32;
@@ -474,7 +476,7 @@ namespace TeamProject
             // Week4WednesdayLabel
             // 
             this.Week4WednesdayLabel.AutoSize = true;
-            this.Week4WednesdayLabel.Location = new System.Drawing.Point(433, 449);
+            this.Week4WednesdayLabel.Location = new System.Drawing.Point(529, 497);
             this.Week4WednesdayLabel.Name = "Week4WednesdayLabel";
             this.Week4WednesdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week4WednesdayLabel.TabIndex = 31;
@@ -483,7 +485,7 @@ namespace TeamProject
             // Week4TuesdayLabel
             // 
             this.Week4TuesdayLabel.AutoSize = true;
-            this.Week4TuesdayLabel.Location = new System.Drawing.Point(290, 449);
+            this.Week4TuesdayLabel.Location = new System.Drawing.Point(354, 497);
             this.Week4TuesdayLabel.Name = "Week4TuesdayLabel";
             this.Week4TuesdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week4TuesdayLabel.TabIndex = 30;
@@ -492,7 +494,7 @@ namespace TeamProject
             // Week4MondayLabel
             // 
             this.Week4MondayLabel.AutoSize = true;
-            this.Week4MondayLabel.Location = new System.Drawing.Point(147, 449);
+            this.Week4MondayLabel.Location = new System.Drawing.Point(179, 497);
             this.Week4MondayLabel.Name = "Week4MondayLabel";
             this.Week4MondayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week4MondayLabel.TabIndex = 29;
@@ -501,7 +503,7 @@ namespace TeamProject
             // Week4SundayLabel
             // 
             this.Week4SundayLabel.AutoSize = true;
-            this.Week4SundayLabel.Location = new System.Drawing.Point(4, 449);
+            this.Week4SundayLabel.Location = new System.Drawing.Point(4, 497);
             this.Week4SundayLabel.Name = "Week4SundayLabel";
             this.Week4SundayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week4SundayLabel.TabIndex = 28;
@@ -510,7 +512,7 @@ namespace TeamProject
             // Week3SaturdayLabel
             // 
             this.Week3SaturdayLabel.AutoSize = true;
-            this.Week3SaturdayLabel.Location = new System.Drawing.Point(862, 337);
+            this.Week3SaturdayLabel.Location = new System.Drawing.Point(1054, 373);
             this.Week3SaturdayLabel.Name = "Week3SaturdayLabel";
             this.Week3SaturdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week3SaturdayLabel.TabIndex = 27;
@@ -519,7 +521,7 @@ namespace TeamProject
             // Week3FridayLabel
             // 
             this.Week3FridayLabel.AutoSize = true;
-            this.Week3FridayLabel.Location = new System.Drawing.Point(719, 337);
+            this.Week3FridayLabel.Location = new System.Drawing.Point(879, 373);
             this.Week3FridayLabel.Name = "Week3FridayLabel";
             this.Week3FridayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week3FridayLabel.TabIndex = 26;
@@ -528,7 +530,7 @@ namespace TeamProject
             // Week3ThursdayLabel
             // 
             this.Week3ThursdayLabel.AutoSize = true;
-            this.Week3ThursdayLabel.Location = new System.Drawing.Point(576, 337);
+            this.Week3ThursdayLabel.Location = new System.Drawing.Point(704, 373);
             this.Week3ThursdayLabel.Name = "Week3ThursdayLabel";
             this.Week3ThursdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week3ThursdayLabel.TabIndex = 25;
@@ -537,7 +539,7 @@ namespace TeamProject
             // Week3WednesdayLabel
             // 
             this.Week3WednesdayLabel.AutoSize = true;
-            this.Week3WednesdayLabel.Location = new System.Drawing.Point(433, 337);
+            this.Week3WednesdayLabel.Location = new System.Drawing.Point(529, 373);
             this.Week3WednesdayLabel.Name = "Week3WednesdayLabel";
             this.Week3WednesdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week3WednesdayLabel.TabIndex = 24;
@@ -546,7 +548,7 @@ namespace TeamProject
             // Week3TuesdayLabel
             // 
             this.Week3TuesdayLabel.AutoSize = true;
-            this.Week3TuesdayLabel.Location = new System.Drawing.Point(290, 337);
+            this.Week3TuesdayLabel.Location = new System.Drawing.Point(354, 373);
             this.Week3TuesdayLabel.Name = "Week3TuesdayLabel";
             this.Week3TuesdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week3TuesdayLabel.TabIndex = 23;
@@ -555,7 +557,7 @@ namespace TeamProject
             // Week3MondayLabel
             // 
             this.Week3MondayLabel.AutoSize = true;
-            this.Week3MondayLabel.Location = new System.Drawing.Point(147, 337);
+            this.Week3MondayLabel.Location = new System.Drawing.Point(179, 373);
             this.Week3MondayLabel.Name = "Week3MondayLabel";
             this.Week3MondayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week3MondayLabel.TabIndex = 22;
@@ -564,7 +566,7 @@ namespace TeamProject
             // Week3SundayLabel
             // 
             this.Week3SundayLabel.AutoSize = true;
-            this.Week3SundayLabel.Location = new System.Drawing.Point(4, 337);
+            this.Week3SundayLabel.Location = new System.Drawing.Point(4, 373);
             this.Week3SundayLabel.Name = "Week3SundayLabel";
             this.Week3SundayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week3SundayLabel.TabIndex = 21;
@@ -573,7 +575,7 @@ namespace TeamProject
             // Week2SaturdayLabel
             // 
             this.Week2SaturdayLabel.AutoSize = true;
-            this.Week2SaturdayLabel.Location = new System.Drawing.Point(862, 225);
+            this.Week2SaturdayLabel.Location = new System.Drawing.Point(1054, 249);
             this.Week2SaturdayLabel.Name = "Week2SaturdayLabel";
             this.Week2SaturdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week2SaturdayLabel.TabIndex = 20;
@@ -582,7 +584,7 @@ namespace TeamProject
             // Week2FridayLabel
             // 
             this.Week2FridayLabel.AutoSize = true;
-            this.Week2FridayLabel.Location = new System.Drawing.Point(719, 225);
+            this.Week2FridayLabel.Location = new System.Drawing.Point(879, 249);
             this.Week2FridayLabel.Name = "Week2FridayLabel";
             this.Week2FridayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week2FridayLabel.TabIndex = 19;
@@ -591,7 +593,7 @@ namespace TeamProject
             // Week2ThursdayLabel
             // 
             this.Week2ThursdayLabel.AutoSize = true;
-            this.Week2ThursdayLabel.Location = new System.Drawing.Point(576, 225);
+            this.Week2ThursdayLabel.Location = new System.Drawing.Point(704, 249);
             this.Week2ThursdayLabel.Name = "Week2ThursdayLabel";
             this.Week2ThursdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week2ThursdayLabel.TabIndex = 18;
@@ -600,7 +602,7 @@ namespace TeamProject
             // Week2WednesdayLabel
             // 
             this.Week2WednesdayLabel.AutoSize = true;
-            this.Week2WednesdayLabel.Location = new System.Drawing.Point(433, 225);
+            this.Week2WednesdayLabel.Location = new System.Drawing.Point(529, 249);
             this.Week2WednesdayLabel.Name = "Week2WednesdayLabel";
             this.Week2WednesdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week2WednesdayLabel.TabIndex = 17;
@@ -609,7 +611,7 @@ namespace TeamProject
             // Week2TuesdayLabel
             // 
             this.Week2TuesdayLabel.AutoSize = true;
-            this.Week2TuesdayLabel.Location = new System.Drawing.Point(290, 225);
+            this.Week2TuesdayLabel.Location = new System.Drawing.Point(354, 249);
             this.Week2TuesdayLabel.Name = "Week2TuesdayLabel";
             this.Week2TuesdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week2TuesdayLabel.TabIndex = 16;
@@ -618,7 +620,7 @@ namespace TeamProject
             // Week2MondayLabel
             // 
             this.Week2MondayLabel.AutoSize = true;
-            this.Week2MondayLabel.Location = new System.Drawing.Point(147, 225);
+            this.Week2MondayLabel.Location = new System.Drawing.Point(179, 249);
             this.Week2MondayLabel.Name = "Week2MondayLabel";
             this.Week2MondayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week2MondayLabel.TabIndex = 15;
@@ -627,7 +629,7 @@ namespace TeamProject
             // Week2SundayLabel
             // 
             this.Week2SundayLabel.AutoSize = true;
-            this.Week2SundayLabel.Location = new System.Drawing.Point(4, 225);
+            this.Week2SundayLabel.Location = new System.Drawing.Point(4, 249);
             this.Week2SundayLabel.Name = "Week2SundayLabel";
             this.Week2SundayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week2SundayLabel.TabIndex = 14;
@@ -636,7 +638,7 @@ namespace TeamProject
             // Week1SaturdayLabel
             // 
             this.Week1SaturdayLabel.AutoSize = true;
-            this.Week1SaturdayLabel.Location = new System.Drawing.Point(862, 113);
+            this.Week1SaturdayLabel.Location = new System.Drawing.Point(1054, 125);
             this.Week1SaturdayLabel.Name = "Week1SaturdayLabel";
             this.Week1SaturdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week1SaturdayLabel.TabIndex = 13;
@@ -645,7 +647,7 @@ namespace TeamProject
             // Week1FridayLabel
             // 
             this.Week1FridayLabel.AutoSize = true;
-            this.Week1FridayLabel.Location = new System.Drawing.Point(719, 113);
+            this.Week1FridayLabel.Location = new System.Drawing.Point(879, 125);
             this.Week1FridayLabel.Name = "Week1FridayLabel";
             this.Week1FridayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week1FridayLabel.TabIndex = 12;
@@ -655,7 +657,7 @@ namespace TeamProject
             // 
             this.Week1WednesdayLabel.AutoSize = true;
             this.Week1WednesdayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week1WednesdayLabel.Location = new System.Drawing.Point(433, 113);
+            this.Week1WednesdayLabel.Location = new System.Drawing.Point(529, 125);
             this.Week1WednesdayLabel.Name = "Week1WednesdayLabel";
             this.Week1WednesdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week1WednesdayLabel.TabIndex = 11;
@@ -665,7 +667,7 @@ namespace TeamProject
             // 
             this.Week1TuesdayLabel.AutoSize = true;
             this.Week1TuesdayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week1TuesdayLabel.Location = new System.Drawing.Point(290, 113);
+            this.Week1TuesdayLabel.Location = new System.Drawing.Point(354, 125);
             this.Week1TuesdayLabel.Name = "Week1TuesdayLabel";
             this.Week1TuesdayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week1TuesdayLabel.TabIndex = 10;
@@ -675,7 +677,7 @@ namespace TeamProject
             // 
             this.Week1MondayLabel.AutoSize = true;
             this.Week1MondayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week1MondayLabel.Location = new System.Drawing.Point(147, 113);
+            this.Week1MondayLabel.Location = new System.Drawing.Point(179, 125);
             this.Week1MondayLabel.Name = "Week1MondayLabel";
             this.Week1MondayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week1MondayLabel.TabIndex = 9;
@@ -685,7 +687,7 @@ namespace TeamProject
             // 
             this.Week1SundayLabel.AutoSize = true;
             this.Week1SundayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Week1SundayLabel.Location = new System.Drawing.Point(4, 113);
+            this.Week1SundayLabel.Location = new System.Drawing.Point(4, 125);
             this.Week1SundayLabel.Name = "Week1SundayLabel";
             this.Week1SundayLabel.Size = new System.Drawing.Size(19, 13);
             this.Week1SundayLabel.TabIndex = 8;
@@ -694,17 +696,75 @@ namespace TeamProject
             // Week1ThursdayLabel
             // 
             this.Week1ThursdayLabel.AutoSize = true;
-            this.Week1ThursdayLabel.Location = new System.Drawing.Point(576, 113);
+            this.Week1ThursdayLabel.Location = new System.Drawing.Point(704, 125);
             this.Week1ThursdayLabel.Name = "Week1ThursdayLabel";
             this.Week1ThursdayLabel.Size = new System.Drawing.Size(13, 13);
             this.Week1ThursdayLabel.TabIndex = 7;
             this.Week1ThursdayLabel.Text = "1";
             // 
+            // ShowCalendarOptionsButton
+            // 
+            this.ShowCalendarOptionsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ShowCalendarOptionsButton.Location = new System.Drawing.Point(535, 998);
+            this.ShowCalendarOptionsButton.Name = "ShowCalendarOptionsButton";
+            this.ShowCalendarOptionsButton.Size = new System.Drawing.Size(164, 60);
+            this.ShowCalendarOptionsButton.TabIndex = 1;
+            this.ShowCalendarOptionsButton.Text = "Calendar Options";
+            this.ShowCalendarOptionsButton.UseVisualStyleBackColor = true;
+            this.ShowCalendarOptionsButton.Click += new System.EventHandler(this.ShowCalendarOptionsButton_Click);
+            // 
+            // UserCalendarOptionsTableLayoutPanel
+            // 
+            this.UserCalendarOptionsTableLayoutPanel.ColumnCount = 3;
+            this.UserCalendarOptionsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.UserCalendarOptionsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.UserCalendarOptionsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.UserCalendarOptionsTableLayoutPanel.Controls.Add(this.AddNewCalendarEventButton, 0, 0);
+            this.UserCalendarOptionsTableLayoutPanel.Controls.Add(this.EditCalendarEventButton, 1, 0);
+            this.UserCalendarOptionsTableLayoutPanel.Controls.Add(this.DeleteCalendarEventButton, 2, 0);
+            this.UserCalendarOptionsTableLayoutPanel.Location = new System.Drawing.Point(3, 978);
+            this.UserCalendarOptionsTableLayoutPanel.Name = "UserCalendarOptionsTableLayoutPanel";
+            this.UserCalendarOptionsTableLayoutPanel.RowCount = 1;
+            this.UserCalendarOptionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.UserCalendarOptionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.UserCalendarOptionsTableLayoutPanel.Size = new System.Drawing.Size(1230, 99);
+            this.UserCalendarOptionsTableLayoutPanel.TabIndex = 2;
+            this.UserCalendarOptionsTableLayoutPanel.Visible = false;
+            // 
+            // AddNewCalendarEventButton
+            // 
+            this.AddNewCalendarEventButton.Location = new System.Drawing.Point(3, 3);
+            this.AddNewCalendarEventButton.Name = "AddNewCalendarEventButton";
+            this.AddNewCalendarEventButton.Size = new System.Drawing.Size(403, 84);
+            this.AddNewCalendarEventButton.TabIndex = 0;
+            this.AddNewCalendarEventButton.Text = "Add a New Event";
+            this.AddNewCalendarEventButton.UseVisualStyleBackColor = true;
+            // 
+            // EditCalendarEventButton
+            // 
+            this.EditCalendarEventButton.Location = new System.Drawing.Point(412, 3);
+            this.EditCalendarEventButton.Name = "EditCalendarEventButton";
+            this.EditCalendarEventButton.Size = new System.Drawing.Size(404, 84);
+            this.EditCalendarEventButton.TabIndex = 1;
+            this.EditCalendarEventButton.Text = "Edit an Event";
+            this.EditCalendarEventButton.UseVisualStyleBackColor = true;
+            // 
+            // DeleteCalendarEventButton
+            // 
+            this.DeleteCalendarEventButton.Location = new System.Drawing.Point(822, 3);
+            this.DeleteCalendarEventButton.Name = "DeleteCalendarEventButton";
+            this.DeleteCalendarEventButton.Size = new System.Drawing.Size(405, 84);
+            this.DeleteCalendarEventButton.TabIndex = 2;
+            this.DeleteCalendarEventButton.Text = "Delete an Event";
+            this.DeleteCalendarEventButton.UseVisualStyleBackColor = true;
+            // 
             // CalendarBaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 885);
+            this.ClientSize = new System.Drawing.Size(1230, 1070);
+            this.Controls.Add(this.UserCalendarOptionsTableLayoutPanel);
+            this.Controls.Add(this.ShowCalendarOptionsButton);
             this.Controls.Add(this.CalendarLayoutPanelContainer);
             this.Name = "CalendarBaseForm";
             this.Text = "Form1";
@@ -713,6 +773,7 @@ namespace TeamProject
             this.MonthYearHeaderTableLayoutPanel.PerformLayout();
             this.CalendGridTableLayoutPanel.ResumeLayout(false);
             this.CalendGridTableLayoutPanel.PerformLayout();
+            this.UserCalendarOptionsTableLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -724,7 +785,7 @@ namespace TeamProject
         private System.Windows.Forms.TableLayoutPanel CalendGridTableLayoutPanel;
         private System.Windows.Forms.Label CalendarMonthLabel;
         private System.Windows.Forms.Label YearCalendarLabel;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label SaturdayStaticLabel;
         private System.Windows.Forms.Label Week1SaturdayLabel;
         private System.Windows.Forms.Label Week1FridayLabel;
         private System.Windows.Forms.Label Week1WednesdayLabel;
@@ -767,6 +828,11 @@ namespace TeamProject
         private System.Windows.Forms.Label Week2TuesdayLabel;
         private System.Windows.Forms.Label Week2MondayLabel;
         private System.Windows.Forms.Label Week2SundayLabel;
+        private System.Windows.Forms.Button ShowCalendarOptionsButton;
+        private System.Windows.Forms.TableLayoutPanel UserCalendarOptionsTableLayoutPanel;
+        private System.Windows.Forms.Button AddNewCalendarEventButton;
+        private System.Windows.Forms.Button EditCalendarEventButton;
+        private System.Windows.Forms.Button DeleteCalendarEventButton;
     }
 }
 

@@ -10,18 +10,14 @@ using System.Windows.Forms;
 
 namespace TeamProject
 {
-    public partial class CalendarBaseForm : Form
+    public partial class AddEventForm : Form
     {
-        public CalendarBaseForm()
+        //integer for tracking page flow in the form
+        private int pageNumber;
+        public AddEventForm()
         {
+            this.pageNumber = 1;
             InitializeComponent();
-
-        }
-
-        private void ShowCalendarOptionsButton_Click(object sender, EventArgs e)
-        {
-            ShowCalendarOptionsButton.Visible = false;
-            UserCalendarOptionsTableLayoutPanel.Visible = true;
         }
     }
 }
