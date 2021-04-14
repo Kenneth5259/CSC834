@@ -1,0 +1,130 @@
+I-Logix-RPY-Archive version 8.5.2 Modeler C++ 1159120
+{ IComponent 
+	- _id = GUID 2ae9e371-f38e-4485-9446-5d27500321e9;
+	- _myState = 139264;
+	- _name = "DefaultComponent";
+	- _objectCreation = "2231943123520212118370422";
+	- _umlDependencyID = "3281";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 49b98e63-f213-4962-bdc5-0f4e58d93e8c;
+		- _myState = 73728;
+		- _name = "Files";
+		- _objectCreation = "2231945123520212118368422";
+		- _umlDependencyID = "2133";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 0;
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 7c41c525-8cbf-4fce-aac7-dcd98f199b96;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 7c41c525-8cbf-4fce-aac7-dcd98f199b96;
+			- _myState = 8192;
+			- _name = "DefaultConfig";
+			- _objectCreation = "2231947123520212118366422";
+			- _umlDependencyID = "2941";
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID 147ee556-74dc-4ca6-b864-6bc7f80c997b;
+					- _objectCreation = "2231949123520212118364422";
+					- _umlDependencyID = "1634";
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\Users\\kenne\\Desktop\\calendar\\DefaultComponent\\DefaultConfig\\DefaultComponent.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID 015a9d11-c931-4c18-8e68-4fca70fc5b9b;
+					- _objectCreation = "2231951123520212118362422";
+					- _umlDependencyID = "1625";
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\Users\\kenne\\Desktop\\calendar\\DefaultComponent\\DefaultConfig\\MainDefaultComponent";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID 35f4f8bf-ff39-4df6-a9ce-2edeab611021;
+				- _myState = 8192;
+				- _name = "DefaultConfig";
+				- _objectCreation = "2231953123520212118360422";
+				- _umlDependencyID = "2932";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+		}
+	}
+	- HandlesInMe = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Default.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Default";
+			- _id = GUID c47ab2c9-24f3-4a79-985d-f2f6c96524ba;
+		}
+	}
+	- VariationPoints = { IRPYRawContainer 
+		- size = 0;
+	}
+	- SelectedVariants = { IRPYRawContainer 
+		- size = 0;
+	}
+	- weakCGTime = 4.11.2021::17:20:54;
+	- strongCGTime = 1.2.1990::0:0:0;
+}
+
