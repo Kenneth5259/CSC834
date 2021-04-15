@@ -87,7 +87,7 @@ namespace TeamProject
             this.UserCalendarOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.AddNewCalendarEventButton = new System.Windows.Forms.Button();
             this.EditCalendarEventButton = new System.Windows.Forms.Button();
-            this.DeleteCalendarEventButton = new System.Windows.Forms.Button();
+            this.FilterCalendarEventsButton = new System.Windows.Forms.Button();
             SundayStaticLabel = new System.Windows.Forms.Label();
             MondayStaticLabel = new System.Windows.Forms.Label();
             TuesdayStaticLabel = new System.Windows.Forms.Label();
@@ -721,7 +721,7 @@ namespace TeamProject
             this.UserCalendarOptionsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.UserCalendarOptionsTableLayoutPanel.Controls.Add(this.AddNewCalendarEventButton, 0, 0);
             this.UserCalendarOptionsTableLayoutPanel.Controls.Add(this.EditCalendarEventButton, 1, 0);
-            this.UserCalendarOptionsTableLayoutPanel.Controls.Add(this.DeleteCalendarEventButton, 2, 0);
+            this.UserCalendarOptionsTableLayoutPanel.Controls.Add(this.FilterCalendarEventsButton, 2, 0);
             this.UserCalendarOptionsTableLayoutPanel.Location = new System.Drawing.Point(3, 978);
             this.UserCalendarOptionsTableLayoutPanel.Name = "UserCalendarOptionsTableLayoutPanel";
             this.UserCalendarOptionsTableLayoutPanel.RowCount = 1;
@@ -739,6 +739,7 @@ namespace TeamProject
             this.AddNewCalendarEventButton.TabIndex = 0;
             this.AddNewCalendarEventButton.Text = "Add a New Event";
             this.AddNewCalendarEventButton.UseVisualStyleBackColor = true;
+            this.AddNewCalendarEventButton.Click += new System.EventHandler(this.AddNewCalendarEventButton_Click);
             // 
             // EditCalendarEventButton
             // 
@@ -749,14 +750,14 @@ namespace TeamProject
             this.EditCalendarEventButton.Text = "Edit an Event";
             this.EditCalendarEventButton.UseVisualStyleBackColor = true;
             // 
-            // DeleteCalendarEventButton
+            // FilterCalendarEventsButton
             // 
-            this.DeleteCalendarEventButton.Location = new System.Drawing.Point(822, 3);
-            this.DeleteCalendarEventButton.Name = "DeleteCalendarEventButton";
-            this.DeleteCalendarEventButton.Size = new System.Drawing.Size(405, 84);
-            this.DeleteCalendarEventButton.TabIndex = 2;
-            this.DeleteCalendarEventButton.Text = "Delete an Event";
-            this.DeleteCalendarEventButton.UseVisualStyleBackColor = true;
+            this.FilterCalendarEventsButton.Location = new System.Drawing.Point(822, 3);
+            this.FilterCalendarEventsButton.Name = "FilterCalendarEventsButton";
+            this.FilterCalendarEventsButton.Size = new System.Drawing.Size(405, 84);
+            this.FilterCalendarEventsButton.TabIndex = 2;
+            this.FilterCalendarEventsButton.Text = "Filter Calendar Events";
+            this.FilterCalendarEventsButton.UseVisualStyleBackColor = true;
             // 
             // CalendarBaseForm
             // 
@@ -832,7 +833,7 @@ namespace TeamProject
         private System.Windows.Forms.TableLayoutPanel UserCalendarOptionsTableLayoutPanel;
         private System.Windows.Forms.Button AddNewCalendarEventButton;
         private System.Windows.Forms.Button EditCalendarEventButton;
-        private System.Windows.Forms.Button DeleteCalendarEventButton;
+        private System.Windows.Forms.Button FilterCalendarEventsButton;
     }
 }
 
