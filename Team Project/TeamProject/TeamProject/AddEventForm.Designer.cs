@@ -355,8 +355,8 @@ namespace TeamProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 1070);
-            this.Controls.Add(this.AddEventFormContainerTableLayoutPanel);
             this.Controls.Add(this.AddEventConflictingMessageTableLayoutPanel);
+            this.Controls.Add(this.AddEventFormContainerTableLayoutPanel);
             this.Name = "AddEventForm";
             this.Text = "AddEventForm";
             this.AddEventFormContainerTableLayoutPanel.ResumeLayout(false);
