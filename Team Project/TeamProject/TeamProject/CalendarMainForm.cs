@@ -10,14 +10,12 @@ using System.Windows.Forms;
 
 namespace TeamProject
 {
-    
     public partial class CalendarBaseForm : Form
     {
-        // private form for addEventForm
-        private Form addEventForm;
+        //declare constants for modes to prevent confusion
+        private const bool VIEW_MODE = false;
+        private const bool EDIT_MODE = true;
 
-        // private form for event details
-        private Form eventDetails;
 
         // private current date for calendar population
         private DateTime currentDate;
@@ -87,23 +85,24 @@ namespace TeamProject
         }
         private void AddNewCalendarEventButton_Click(object sender, EventArgs e)
         {
-            // initializes a new AddEventForm on click
-            this.addEventForm = new AddEventForm();
-
-            // shows the new form after initialization
-            this.addEventForm.Show();
-
-            //test for accessing specific cell of a table layout panel
-            CalendarGridTableLayoutPanel.GetControlFromPosition(0, 0);
+            // create a new form instance and show it
+            new AddEventForm().Show();
         }
 
         private void EventDataGridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.eventDetails = new EventDetailForm();
-            this.eventDetails.Show();
+            // create a new form instance and show it
+            new EventDetailForm().Show();
         }
+
+        private void ManagerFilterCalendarEventButton_Click(object sender, EventArgs e)
+        {
+            // create a new form instance and show it
+            new EventListForm(this.eventList, VIEW_MODE).Show();
+        }
+
     }
-    class CalendarEvent
+    public class CalendarEvent
     {
         public string name { get; set; }
         public CalendarEvent(string name)

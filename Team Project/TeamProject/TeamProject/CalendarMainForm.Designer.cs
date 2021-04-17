@@ -687,7 +687,6 @@ namespace TeamProject
             this.Week1ThursdayDataGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Week1ThursdayDataGridView.Size = new System.Drawing.Size(172, 97);
             this.Week1ThursdayDataGridView.TabIndex = 9;
-
             // 
             // Week1ThursdayLabel
             // 
@@ -2279,6 +2278,7 @@ namespace TeamProject
             this.FilterCalendarEventsButton.TabIndex = 2;
             this.FilterCalendarEventsButton.Text = "Filter Calendar Events";
             this.FilterCalendarEventsButton.UseVisualStyleBackColor = true;
+            this.FilterCalendarEventsButton.Click += new System.EventHandler(this.ManagerFilterCalendarEventButton_Click);
             // 
             // ManagerCalendarOptionsTableLayoutPanel
             // 
@@ -2329,6 +2329,7 @@ namespace TeamProject
             this.ManagerFilterCalendarEventButton.TabIndex = 2;
             this.ManagerFilterCalendarEventButton.Text = "Filter a Calendar Event";
             this.ManagerFilterCalendarEventButton.UseVisualStyleBackColor = true;
+            this.ManagerFilterCalendarEventButton.Click += new System.EventHandler(this.ManagerFilterCalendarEventButton_Click);
             // 
             // ManagerAddTeamEventButton
             // 
@@ -2353,8 +2354,8 @@ namespace TeamProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 1070);
-            this.Controls.Add(this.ManagerCalendarOptionsTableLayoutPanel);
             this.Controls.Add(this.UserCalendarOptionsTableLayoutPanel);
+            this.Controls.Add(this.ManagerCalendarOptionsTableLayoutPanel);
             this.Controls.Add(this.ShowCalendarOptionsButton);
             this.Controls.Add(this.CalendarLayoutPanelContainer);
             this.Name = "CalendarBaseForm";
