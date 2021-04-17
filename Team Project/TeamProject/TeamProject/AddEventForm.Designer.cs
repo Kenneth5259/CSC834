@@ -29,6 +29,7 @@ namespace TeamProject
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEventForm));
             this.AddEventFormContainerTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.FormLabelAndInputContainerTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.AddEventFormStaticLabel = new System.Windows.Forms.Label();
@@ -46,10 +47,18 @@ namespace TeamProject
             this.AddEventStartTimeInput = new System.Windows.Forms.DateTimePicker();
             this.AddEventEndTimeInput = new System.Windows.Forms.DateTimePicker();
             this.AddEventNotesInput = new System.Windows.Forms.TextBox();
+            this.AddEventConflictingMessageTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AddEventConflictingEventErrorLabel = new System.Windows.Forms.Label();
+            this.AddEventConflictingEventDescriptionLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.EventConflicNoButton = new System.Windows.Forms.Button();
+            this.EventConflicYesButton = new System.Windows.Forms.Button();
             this.AddEventFormContainerTableLayoutPanel.SuspendLayout();
             this.FormLabelAndInputContainerTableLayoutPanel.SuspendLayout();
             this.AddEventInputsTableLayoutPanel.SuspendLayout();
             this.AddEventButtonsTableLayoutPanel.SuspendLayout();
+            this.AddEventConflictingMessageTableLayoutPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddEventFormContainerTableLayoutPanel
@@ -264,11 +273,89 @@ namespace TeamProject
             this.AddEventNotesInput.Size = new System.Drawing.Size(827, 62);
             this.AddEventNotesInput.TabIndex = 10;
             // 
+            // AddEventConflictingMessageTableLayoutPanel
+            // 
+            this.AddEventConflictingMessageTableLayoutPanel.ColumnCount = 1;
+            this.AddEventConflictingMessageTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AddEventConflictingMessageTableLayoutPanel.Controls.Add(this.AddEventConflictingEventErrorLabel, 0, 0);
+            this.AddEventConflictingMessageTableLayoutPanel.Controls.Add(this.AddEventConflictingEventDescriptionLabel, 0, 1);
+            this.AddEventConflictingMessageTableLayoutPanel.Controls.Add(this.tableLayoutPanel1, 0, 2);
+            this.AddEventConflictingMessageTableLayoutPanel.Location = new System.Drawing.Point(12, 13);
+            this.AddEventConflictingMessageTableLayoutPanel.Name = "AddEventConflictingMessageTableLayoutPanel";
+            this.AddEventConflictingMessageTableLayoutPanel.RowCount = 3;
+            this.AddEventConflictingMessageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.AddEventConflictingMessageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72F));
+            this.AddEventConflictingMessageTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.AddEventConflictingMessageTableLayoutPanel.Size = new System.Drawing.Size(1206, 1045);
+            this.AddEventConflictingMessageTableLayoutPanel.TabIndex = 1;
+            this.AddEventConflictingMessageTableLayoutPanel.Visible = false;
+            // 
+            // AddEventConflictingEventErrorLabel
+            // 
+            this.AddEventConflictingEventErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.AddEventConflictingEventErrorLabel.AutoSize = true;
+            this.AddEventConflictingEventErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddEventConflictingEventErrorLabel.Location = new System.Drawing.Point(345, 9);
+            this.AddEventConflictingEventErrorLabel.Margin = new System.Windows.Forms.Padding(3, 9, 3, 0);
+            this.AddEventConflictingEventErrorLabel.Name = "AddEventConflictingEventErrorLabel";
+            this.AddEventConflictingEventErrorLabel.Size = new System.Drawing.Size(516, 55);
+            this.AddEventConflictingEventErrorLabel.TabIndex = 0;
+            this.AddEventConflictingEventErrorLabel.Text = "Error: Conflicting Event";
+            // 
+            // AddEventConflictingEventDescriptionLabel
+            // 
+            this.AddEventConflictingEventDescriptionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddEventConflictingEventDescriptionLabel.AutoSize = true;
+            this.AddEventConflictingEventDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddEventConflictingEventDescriptionLabel.Location = new System.Drawing.Point(3, 321);
+            this.AddEventConflictingEventDescriptionLabel.Name = "AddEventConflictingEventDescriptionLabel";
+            this.AddEventConflictingEventDescriptionLabel.Size = new System.Drawing.Size(1199, 275);
+            this.AddEventConflictingEventDescriptionLabel.TabIndex = 1;
+            this.AddEventConflictingEventDescriptionLabel.Text = resources.GetString("AddEventConflictingEventDescriptionLabel.Text");
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.EventConflicYesButton, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.EventConflicNoButton, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 838);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 204);
+            this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // EventConflicNoButton
+            // 
+            this.EventConflicNoButton.Location = new System.Drawing.Point(9, 9);
+            this.EventConflicNoButton.Margin = new System.Windows.Forms.Padding(9);
+            this.EventConflicNoButton.Name = "EventConflicNoButton";
+            this.EventConflicNoButton.Size = new System.Drawing.Size(582, 186);
+            this.EventConflicNoButton.TabIndex = 0;
+            this.EventConflicNoButton.Text = "No";
+            this.EventConflicNoButton.UseVisualStyleBackColor = true;
+            this.EventConflicNoButton.Click += new System.EventHandler(this.EventConflicNoButton_Click);
+            // 
+            // EventConflicYesButton
+            // 
+            this.EventConflicYesButton.Location = new System.Drawing.Point(609, 9);
+            this.EventConflicYesButton.Margin = new System.Windows.Forms.Padding(9);
+            this.EventConflicYesButton.Name = "EventConflicYesButton";
+            this.EventConflicYesButton.Size = new System.Drawing.Size(582, 186);
+            this.EventConflicYesButton.TabIndex = 1;
+            this.EventConflicYesButton.Text = "Yes";
+            this.EventConflicYesButton.UseVisualStyleBackColor = true;
+            this.EventConflicYesButton.Click += new System.EventHandler(this.EventConflicYesButton_Click);
+            // 
             // AddEventForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 1070);
+            this.Controls.Add(this.AddEventConflictingMessageTableLayoutPanel);
             this.Controls.Add(this.AddEventFormContainerTableLayoutPanel);
             this.Name = "AddEventForm";
             this.Text = "AddEventForm";
@@ -278,6 +365,9 @@ namespace TeamProject
             this.AddEventInputsTableLayoutPanel.ResumeLayout(false);
             this.AddEventInputsTableLayoutPanel.PerformLayout();
             this.AddEventButtonsTableLayoutPanel.ResumeLayout(false);
+            this.AddEventConflictingMessageTableLayoutPanel.ResumeLayout(false);
+            this.AddEventConflictingMessageTableLayoutPanel.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -301,5 +391,11 @@ namespace TeamProject
         private System.Windows.Forms.DateTimePicker AddEventStartTimeInput;
         private System.Windows.Forms.TextBox AddEventTItleTextBoxInput;
         private System.Windows.Forms.TextBox AddEventNotesInput;
+        private System.Windows.Forms.TableLayoutPanel AddEventConflictingMessageTableLayoutPanel;
+        private System.Windows.Forms.Label AddEventConflictingEventErrorLabel;
+        private System.Windows.Forms.Label AddEventConflictingEventDescriptionLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button EventConflicYesButton;
+        private System.Windows.Forms.Button EventConflicNoButton;
     }
 }
