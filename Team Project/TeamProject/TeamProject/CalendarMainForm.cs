@@ -19,15 +19,27 @@ namespace TeamProject
         // private current date for calendar population
         private DateTime currentDate;
 
+        private User activeUser;
+
         // private list of calendar events for gridview
         private List<CalendarEvent> eventList;
         public CalendarBaseForm()
         {
-            InitializeComponent();
-            this.currentDate = DateTime.Now;
-            
 
+            // initializes the local user, this test case is for a manager to enable all 5 options
+            this.activeUser = new User();
+            this.activeUser.firstName = "Test First";
+            this.activeUser.lastName = "Test Last";
+            this.activeUser.userId = 1;
+            this.activeUser.managerId = -1; 
+            this.activeUser.userType = 2;
+            this.currentDate = DateTime.Now;
             this.eventList = new List<CalendarEvent>();
+
+            // initialize the componenets
+            InitializeComponent();
+
+            // set the values for dynamic components
             this.initCalendarMonth();
             this.initCalendarYear(); 
             this.initCalendarEvents();
@@ -60,7 +72,15 @@ namespace TeamProject
         private void ShowCalendarOptionsButton_Click(object sender, EventArgs e)
         {
             ShowCalendarOptionsButton.Visible = false;
-            UserCalendarOptionsTableLayoutPanel.Visible = true;
+
+            if(this.activeUser.userType == 2)
+            {
+                ManagerCalendarOptionsTableLayoutPanel.Visible = true;
+            } else
+            {
+                UserCalendarOptionsTableLayoutPanel.Visible = true;
+            }
+            
         }
         private void AddNewCalendarEventButton_Click(object sender, EventArgs e)
         {
@@ -73,16 +93,6 @@ namespace TeamProject
             //test for accessing specific cell of a table layout panel
             CalendarGridTableLayoutPanel.GetControlFromPosition(0, 0);
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
     }
     class CalendarEvent
     {
@@ -91,5 +101,18 @@ namespace TeamProject
         {
             this.name = name;
         }
+    }
+    class User
+    {
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public int userId { get; set; }
+        public int managerId { get; set; }
+        public int userType { get; set; } // 1 = User, 2 = Manager
+
+    }
+    class Manager : User
+    {
+        public string serviceType { get; set; }
     }
 }
