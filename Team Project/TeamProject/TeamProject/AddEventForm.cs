@@ -12,51 +12,48 @@ namespace TeamProject
 {
     public partial class AddEventForm : Form
     {
-        //integer for tracking page flow in the form
-        private int pageNumber;
-
-        //integer for teacking the last page in the form
-        private int lastPageNumber = 5;
+        private bool formIsValid;
+        private bool eventIsConflicting;
+        private bool eventConflictingAcknowledgement;
         public AddEventForm()
         {
-            // initialize the page number
-            this.pageNumber = 1;
-
             // initialize component
             InitializeComponent();
-
-            // check initial button visibility
-            this.updateButtonVisibility();
+            this.formIsValid = true;
+            this.eventIsConflicting = false;
+            this.eventConflictingAcknowledgement = false;
         }
 
-        // function to update visibility of both buttons
-        private void updateButtonVisibility()
+        private void AddEventCancelButton_Click(object sender, EventArgs e)
         {
-            PreviousPageButton.Visible = this.pageNumber > 1;
-            NextPageButton.Visible = this.pageNumber < lastPageNumber;
+            this.Close();
         }
 
-        //previous button clicked
-        private void PreviousPageButton_Click(object sender, EventArgs e)
+        private void AddEventConfirmButton_Click(object sender, EventArgs e)
         {
-            //conditional page decrement (safeguard in case of accidental render)
-            if(this.pageNumber > 1)
+            if(this.formIsValid)
             {
-                this.pageNumber--;
-            }
-            //update button visibility
-            this.updateButtonVisibility();
-        }
+                if(this.eventIsConflicting)
+                {
+                    // load confirmation form for conflicting event
+                    // will set the eventConflictingAcknowledgement flag based on user response
 
-        private void NextPageButton_Click(object sender, EventArgs e)
-        {
-            // conditional page increment (safeguard in case of accidental render)
-            if(this.pageNumber < lastPageNumber)
+                    if(!this.eventConflictingAcknowledgement)
+                    {
+                        // does not save event, returns to form without closing form
+                        return;
+                    }
+                }
+
+                //
+            } else
             {
-                this.pageNumber++;
+                // prompt regarding invalid input selections, prevents form close
+                return;
             }
-            // update button visibility
-            this.updateButtonVisibility();
+
+            // if it makes it to the end, will close the form
+            this.Close();
         }
     }
 }
