@@ -42,5 +42,11 @@ namespace TeamProject
             // close the window
             this.Close();
         }
+
+        private void EventsDetailsCloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

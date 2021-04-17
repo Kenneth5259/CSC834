@@ -32,25 +32,28 @@ namespace TeamProject
             this.EventDetailContainerTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.EventTitleDynamicLabel = new System.Windows.Forms.Label();
             this.EventDetailsTimeTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.EventDetailsStartTimeStaticLabel = new System.Windows.Forms.Label();
-            this.EventDetailsEndTimeStaticLabel = new System.Windows.Forms.Label();
-            this.EventDetailsStartTimeDynamicLabel = new System.Windows.Forms.Label();
             this.EventDetailsEndTimeDynamicLabel = new System.Windows.Forms.Label();
+            this.EventDetailsStartTimeDynamicLabel = new System.Windows.Forms.Label();
+            this.EventDetailsEndTimeStaticLabel = new System.Windows.Forms.Label();
+            this.EventDetailsStartTimeStaticLabel = new System.Windows.Forms.Label();
             this.EventDetailsNotesTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.EventDetailsNotesStaticLabel = new System.Windows.Forms.Label();
             this.EventDetailsNotesDynamicLabel = new System.Windows.Forms.Label();
             this.EventDetailsCreatorTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.EventDetailsCreatorStaticLabel = new System.Windows.Forms.Label();
             this.EventDetailsCreatorDynamicLabel = new System.Windows.Forms.Label();
+            this.EventDetailsButtonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.EventDetailsDeleteButton = new System.Windows.Forms.Button();
+            this.EventsDetailsCloseButton = new System.Windows.Forms.Button();
             this.EventDetailsDeletionsConfirmationTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.EventDetailsDeletionConfirmationYesButton = new System.Windows.Forms.Button();
             this.EventDetailsDeletionConfirmationMessage = new System.Windows.Forms.Label();
             this.EventDetailsDeletionConfirmationNoButton = new System.Windows.Forms.Button();
-            this.EventDetailsDeletionConfirmationYesButton = new System.Windows.Forms.Button();
             this.EventDetailContainerTableLayoutPanel.SuspendLayout();
             this.EventDetailsTimeTableLayoutPanel.SuspendLayout();
             this.EventDetailsNotesTableLayoutPanel.SuspendLayout();
             this.EventDetailsCreatorTableLayoutPanel.SuspendLayout();
+            this.EventDetailsButtonsTableLayoutPanel.SuspendLayout();
             this.EventDetailsDeletionsConfirmationTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +66,7 @@ namespace TeamProject
             this.EventDetailContainerTableLayoutPanel.Controls.Add(this.EventDetailsTimeTableLayoutPanel, 0, 1);
             this.EventDetailContainerTableLayoutPanel.Controls.Add(this.EventDetailsNotesTableLayoutPanel, 0, 2);
             this.EventDetailContainerTableLayoutPanel.Controls.Add(this.EventDetailsCreatorTableLayoutPanel, 0, 3);
-            this.EventDetailContainerTableLayoutPanel.Controls.Add(this.EventDetailsDeleteButton, 0, 4);
+            this.EventDetailContainerTableLayoutPanel.Controls.Add(this.EventDetailsButtonsTableLayoutPanel, 0, 4);
             this.EventDetailContainerTableLayoutPanel.Location = new System.Drawing.Point(12, 12);
             this.EventDetailContainerTableLayoutPanel.Name = "EventDetailContainerTableLayoutPanel";
             this.EventDetailContainerTableLayoutPanel.RowCount = 5;
@@ -104,27 +107,16 @@ namespace TeamProject
             this.EventDetailsTimeTableLayoutPanel.Size = new System.Drawing.Size(750, 173);
             this.EventDetailsTimeTableLayoutPanel.TabIndex = 1;
             // 
-            // EventDetailsStartTimeStaticLabel
+            // EventDetailsEndTimeDynamicLabel
             // 
-            this.EventDetailsStartTimeStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.EventDetailsStartTimeStaticLabel.AutoSize = true;
-            this.EventDetailsStartTimeStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EventDetailsStartTimeStaticLabel.Location = new System.Drawing.Point(102, 31);
-            this.EventDetailsStartTimeStaticLabel.Name = "EventDetailsStartTimeStaticLabel";
-            this.EventDetailsStartTimeStaticLabel.Size = new System.Drawing.Size(171, 25);
-            this.EventDetailsStartTimeStaticLabel.TabIndex = 0;
-            this.EventDetailsStartTimeStaticLabel.Text = "Event Start Time";
-            // 
-            // EventDetailsEndTimeStaticLabel
-            // 
-            this.EventDetailsEndTimeStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.EventDetailsEndTimeStaticLabel.AutoSize = true;
-            this.EventDetailsEndTimeStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EventDetailsEndTimeStaticLabel.Location = new System.Drawing.Point(480, 31);
-            this.EventDetailsEndTimeStaticLabel.Name = "EventDetailsEndTimeStaticLabel";
-            this.EventDetailsEndTimeStaticLabel.Size = new System.Drawing.Size(164, 25);
-            this.EventDetailsEndTimeStaticLabel.TabIndex = 1;
-            this.EventDetailsEndTimeStaticLabel.Text = "Event End Time";
+            this.EventDetailsEndTimeDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EventDetailsEndTimeDynamicLabel.AutoSize = true;
+            this.EventDetailsEndTimeDynamicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EventDetailsEndTimeDynamicLabel.Location = new System.Drawing.Point(420, 116);
+            this.EventDetailsEndTimeDynamicLabel.Name = "EventDetailsEndTimeDynamicLabel";
+            this.EventDetailsEndTimeDynamicLabel.Size = new System.Drawing.Size(284, 25);
+            this.EventDetailsEndTimeDynamicLabel.TabIndex = 3;
+            this.EventDetailsEndTimeDynamicLabel.Text = "Event End Time Placeholder";
             // 
             // EventDetailsStartTimeDynamicLabel
             // 
@@ -137,16 +129,27 @@ namespace TeamProject
             this.EventDetailsStartTimeDynamicLabel.TabIndex = 2;
             this.EventDetailsStartTimeDynamicLabel.Text = "Event Start Time Placeholder";
             // 
-            // EventDetailsEndTimeDynamicLabel
+            // EventDetailsEndTimeStaticLabel
             // 
-            this.EventDetailsEndTimeDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.EventDetailsEndTimeDynamicLabel.AutoSize = true;
-            this.EventDetailsEndTimeDynamicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EventDetailsEndTimeDynamicLabel.Location = new System.Drawing.Point(420, 116);
-            this.EventDetailsEndTimeDynamicLabel.Name = "EventDetailsEndTimeDynamicLabel";
-            this.EventDetailsEndTimeDynamicLabel.Size = new System.Drawing.Size(284, 25);
-            this.EventDetailsEndTimeDynamicLabel.TabIndex = 3;
-            this.EventDetailsEndTimeDynamicLabel.Text = "Event End Time Placeholder";
+            this.EventDetailsEndTimeStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EventDetailsEndTimeStaticLabel.AutoSize = true;
+            this.EventDetailsEndTimeStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EventDetailsEndTimeStaticLabel.Location = new System.Drawing.Point(480, 31);
+            this.EventDetailsEndTimeStaticLabel.Name = "EventDetailsEndTimeStaticLabel";
+            this.EventDetailsEndTimeStaticLabel.Size = new System.Drawing.Size(164, 25);
+            this.EventDetailsEndTimeStaticLabel.TabIndex = 1;
+            this.EventDetailsEndTimeStaticLabel.Text = "Event End Time";
+            // 
+            // EventDetailsStartTimeStaticLabel
+            // 
+            this.EventDetailsStartTimeStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EventDetailsStartTimeStaticLabel.AutoSize = true;
+            this.EventDetailsStartTimeStaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EventDetailsStartTimeStaticLabel.Location = new System.Drawing.Point(102, 31);
+            this.EventDetailsStartTimeStaticLabel.Name = "EventDetailsStartTimeStaticLabel";
+            this.EventDetailsStartTimeStaticLabel.Size = new System.Drawing.Size(171, 25);
+            this.EventDetailsStartTimeStaticLabel.TabIndex = 0;
+            this.EventDetailsStartTimeStaticLabel.Text = "Event Start Time";
             // 
             // EventDetailsNotesTableLayoutPanel
             // 
@@ -197,7 +200,7 @@ namespace TeamProject
             this.EventDetailsCreatorTableLayoutPanel.Name = "EventDetailsCreatorTableLayoutPanel";
             this.EventDetailsCreatorTableLayoutPanel.RowCount = 1;
             this.EventDetailsCreatorTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.EventDetailsCreatorTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.EventDetailsCreatorTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.EventDetailsCreatorTableLayoutPanel.Size = new System.Drawing.Size(750, 58);
             this.EventDetailsCreatorTableLayoutPanel.TabIndex = 3;
             // 
@@ -223,17 +226,44 @@ namespace TeamProject
             this.EventDetailsCreatorDynamicLabel.TabIndex = 1;
             this.EventDetailsCreatorDynamicLabel.Text = "Created By Placeholder";
             // 
+            // EventDetailsButtonsTableLayoutPanel
+            // 
+            this.EventDetailsButtonsTableLayoutPanel.ColumnCount = 2;
+            this.EventDetailsButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.EventDetailsButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.EventDetailsButtonsTableLayoutPanel.Controls.Add(this.EventDetailsDeleteButton, 1, 0);
+            this.EventDetailsButtonsTableLayoutPanel.Controls.Add(this.EventsDetailsCloseButton, 0, 0);
+            this.EventDetailsButtonsTableLayoutPanel.Location = new System.Drawing.Point(4, 608);
+            this.EventDetailsButtonsTableLayoutPanel.Name = "EventDetailsButtonsTableLayoutPanel";
+            this.EventDetailsButtonsTableLayoutPanel.RowCount = 1;
+            this.EventDetailsButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.EventDetailsButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 176F));
+            this.EventDetailsButtonsTableLayoutPanel.Size = new System.Drawing.Size(750, 176);
+            this.EventDetailsButtonsTableLayoutPanel.TabIndex = 4;
+            // 
             // EventDetailsDeleteButton
             // 
             this.EventDetailsDeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EventDetailsDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EventDetailsDeleteButton.Location = new System.Drawing.Point(196, 636);
+            this.EventDetailsDeleteButton.Location = new System.Drawing.Point(380, 3);
             this.EventDetailsDeleteButton.Name = "EventDetailsDeleteButton";
-            this.EventDetailsDeleteButton.Size = new System.Drawing.Size(365, 120);
-            this.EventDetailsDeleteButton.TabIndex = 4;
+            this.EventDetailsDeleteButton.Size = new System.Drawing.Size(365, 170);
+            this.EventDetailsDeleteButton.TabIndex = 7;
             this.EventDetailsDeleteButton.Text = "Delete Event From Calendar";
             this.EventDetailsDeleteButton.UseVisualStyleBackColor = true;
             this.EventDetailsDeleteButton.Click += new System.EventHandler(this.EventDetailsDeleteButton_Click);
+            // 
+            // EventsDetailsCloseButton
+            // 
+            this.EventsDetailsCloseButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EventsDetailsCloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EventsDetailsCloseButton.Location = new System.Drawing.Point(5, 3);
+            this.EventsDetailsCloseButton.Name = "EventsDetailsCloseButton";
+            this.EventsDetailsCloseButton.Size = new System.Drawing.Size(365, 170);
+            this.EventsDetailsCloseButton.TabIndex = 6;
+            this.EventsDetailsCloseButton.Text = "Close Events Details";
+            this.EventsDetailsCloseButton.UseVisualStyleBackColor = true;
+            this.EventsDetailsCloseButton.Click += new System.EventHandler(this.EventsDetailsCloseButton_Click);
             // 
             // EventDetailsDeletionsConfirmationTableLayoutPanel
             // 
@@ -252,6 +282,17 @@ namespace TeamProject
             this.EventDetailsDeletionsConfirmationTableLayoutPanel.Size = new System.Drawing.Size(758, 788);
             this.EventDetailsDeletionsConfirmationTableLayoutPanel.TabIndex = 1;
             this.EventDetailsDeletionsConfirmationTableLayoutPanel.Visible = false;
+            // 
+            // EventDetailsDeletionConfirmationYesButton
+            // 
+            this.EventDetailsDeletionConfirmationYesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EventDetailsDeletionConfirmationYesButton.Location = new System.Drawing.Point(3, 527);
+            this.EventDetailsDeletionConfirmationYesButton.Name = "EventDetailsDeletionConfirmationYesButton";
+            this.EventDetailsDeletionConfirmationYesButton.Size = new System.Drawing.Size(752, 256);
+            this.EventDetailsDeletionConfirmationYesButton.TabIndex = 2;
+            this.EventDetailsDeletionConfirmationYesButton.Text = "Yes";
+            this.EventDetailsDeletionConfirmationYesButton.UseVisualStyleBackColor = true;
+            this.EventDetailsDeletionConfirmationYesButton.Click += new System.EventHandler(this.EventDetailsDeletionConfirmationYesButton_Click);
             // 
             // EventDetailsDeletionConfirmationMessage
             // 
@@ -275,17 +316,6 @@ namespace TeamProject
             this.EventDetailsDeletionConfirmationNoButton.UseVisualStyleBackColor = true;
             this.EventDetailsDeletionConfirmationNoButton.Click += new System.EventHandler(this.EventDetailsDeletionConfirmationNoButton_Click);
             // 
-            // EventDetailsDeletionConfirmationYesButton
-            // 
-            this.EventDetailsDeletionConfirmationYesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EventDetailsDeletionConfirmationYesButton.Location = new System.Drawing.Point(3, 527);
-            this.EventDetailsDeletionConfirmationYesButton.Name = "EventDetailsDeletionConfirmationYesButton";
-            this.EventDetailsDeletionConfirmationYesButton.Size = new System.Drawing.Size(752, 256);
-            this.EventDetailsDeletionConfirmationYesButton.TabIndex = 2;
-            this.EventDetailsDeletionConfirmationYesButton.Text = "Yes";
-            this.EventDetailsDeletionConfirmationYesButton.UseVisualStyleBackColor = true;
-            this.EventDetailsDeletionConfirmationYesButton.Click += new System.EventHandler(this.EventDetailsDeletionConfirmationYesButton_Click);
-            // 
             // EventDetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,6 +333,7 @@ namespace TeamProject
             this.EventDetailsNotesTableLayoutPanel.PerformLayout();
             this.EventDetailsCreatorTableLayoutPanel.ResumeLayout(false);
             this.EventDetailsCreatorTableLayoutPanel.PerformLayout();
+            this.EventDetailsButtonsTableLayoutPanel.ResumeLayout(false);
             this.EventDetailsDeletionsConfirmationTableLayoutPanel.ResumeLayout(false);
             this.EventDetailsDeletionsConfirmationTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -324,10 +355,12 @@ namespace TeamProject
         private System.Windows.Forms.TableLayoutPanel EventDetailsCreatorTableLayoutPanel;
         private System.Windows.Forms.Label EventDetailsCreatorStaticLabel;
         private System.Windows.Forms.Label EventDetailsCreatorDynamicLabel;
-        private System.Windows.Forms.Button EventDetailsDeleteButton;
         private System.Windows.Forms.TableLayoutPanel EventDetailsDeletionsConfirmationTableLayoutPanel;
         private System.Windows.Forms.Button EventDetailsDeletionConfirmationYesButton;
         private System.Windows.Forms.Label EventDetailsDeletionConfirmationMessage;
         private System.Windows.Forms.Button EventDetailsDeletionConfirmationNoButton;
+        private System.Windows.Forms.TableLayoutPanel EventDetailsButtonsTableLayoutPanel;
+        private System.Windows.Forms.Button EventDetailsDeleteButton;
+        private System.Windows.Forms.Button EventsDetailsCloseButton;
     }
 }
