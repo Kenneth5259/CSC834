@@ -34,31 +34,31 @@ namespace TeamProject
             this.FormLabelAndInputContainerTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.AddEventFormStaticLabel = new System.Windows.Forms.Label();
             this.AddEventInputsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AddEventEndTimeInput = new System.Windows.Forms.DateTimePicker();
+            this.AddEventStartTimeInput = new System.Windows.Forms.DateTimePicker();
             this.AddEventDateInputStaticLabel = new System.Windows.Forms.Label();
             this.AddEventEndTimeInputStaticLabel = new System.Windows.Forms.Label();
             this.AddEventStartTimeInputStaticLabel = new System.Windows.Forms.Label();
             this.AddEventNotesInputStaticLabel = new System.Windows.Forms.Label();
             this.AddEventTitleInputStaticLabel = new System.Windows.Forms.Label();
-            this.AddEventButtonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.AddEventCancelButton = new System.Windows.Forms.Button();
-            this.AddEventConfirmButton = new System.Windows.Forms.Button();
             this.AddEventDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.AddEventTItleTextBoxInput = new System.Windows.Forms.TextBox();
-            this.AddEventStartTimeInput = new System.Windows.Forms.DateTimePicker();
-            this.AddEventEndTimeInput = new System.Windows.Forms.DateTimePicker();
             this.AddEventNotesInput = new System.Windows.Forms.TextBox();
+            this.AddEventButtonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AddEventConfirmButton = new System.Windows.Forms.Button();
+            this.AddEventCancelButton = new System.Windows.Forms.Button();
             this.AddEventConflictingMessageTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.AddEventConflictingEventErrorLabel = new System.Windows.Forms.Label();
             this.AddEventConflictingEventDescriptionLabel = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.EventConflicNoButton = new System.Windows.Forms.Button();
+            this.EventButtonContainerTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.EventConflicYesButton = new System.Windows.Forms.Button();
+            this.EventConflicNoButton = new System.Windows.Forms.Button();
             this.AddEventFormContainerTableLayoutPanel.SuspendLayout();
             this.FormLabelAndInputContainerTableLayoutPanel.SuspendLayout();
             this.AddEventInputsTableLayoutPanel.SuspendLayout();
             this.AddEventButtonsTableLayoutPanel.SuspendLayout();
             this.AddEventConflictingMessageTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.EventButtonContainerTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddEventFormContainerTableLayoutPanel
@@ -130,6 +130,30 @@ namespace TeamProject
             this.AddEventInputsTableLayoutPanel.Size = new System.Drawing.Size(1193, 806);
             this.AddEventInputsTableLayoutPanel.TabIndex = 3;
             // 
+            // AddEventEndTimeInput
+            // 
+            this.AddEventEndTimeInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddEventEndTimeInput.CustomFormat = "hh:mm tt";
+            this.AddEventEndTimeInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddEventEndTimeInput.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AddEventEndTimeInput.Location = new System.Drawing.Point(362, 480);
+            this.AddEventEndTimeInput.Name = "AddEventEndTimeInput";
+            this.AddEventEndTimeInput.ShowUpDown = true;
+            this.AddEventEndTimeInput.Size = new System.Drawing.Size(827, 62);
+            this.AddEventEndTimeInput.TabIndex = 9;
+            // 
+            // AddEventStartTimeInput
+            // 
+            this.AddEventStartTimeInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddEventStartTimeInput.CustomFormat = "hh:mm tt";
+            this.AddEventStartTimeInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddEventStartTimeInput.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AddEventStartTimeInput.Location = new System.Drawing.Point(362, 334);
+            this.AddEventStartTimeInput.Name = "AddEventStartTimeInput";
+            this.AddEventStartTimeInput.ShowUpDown = true;
+            this.AddEventStartTimeInput.Size = new System.Drawing.Size(827, 62);
+            this.AddEventStartTimeInput.TabIndex = 8;
+            // 
             // AddEventDateInputStaticLabel
             // 
             this.AddEventDateInputStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -185,43 +209,6 @@ namespace TeamProject
             this.AddEventTitleInputStaticLabel.TabIndex = 3;
             this.AddEventTitleInputStaticLabel.Text = "Enter Event Title";
             // 
-            // AddEventButtonsTableLayoutPanel
-            // 
-            this.AddEventButtonsTableLayoutPanel.ColumnCount = 2;
-            this.AddEventButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddEventButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddEventButtonsTableLayoutPanel.Controls.Add(this.AddEventConfirmButton, 1, 0);
-            this.AddEventButtonsTableLayoutPanel.Controls.Add(this.AddEventCancelButton, 0, 0);
-            this.AddEventButtonsTableLayoutPanel.Location = new System.Drawing.Point(3, 891);
-            this.AddEventButtonsTableLayoutPanel.Name = "AddEventButtonsTableLayoutPanel";
-            this.AddEventButtonsTableLayoutPanel.RowCount = 1;
-            this.AddEventButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.AddEventButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AddEventButtonsTableLayoutPanel.Size = new System.Drawing.Size(1199, 151);
-            this.AddEventButtonsTableLayoutPanel.TabIndex = 2;
-            // 
-            // AddEventCancelButton
-            // 
-            this.AddEventCancelButton.Location = new System.Drawing.Point(9, 9);
-            this.AddEventCancelButton.Margin = new System.Windows.Forms.Padding(9);
-            this.AddEventCancelButton.Name = "AddEventCancelButton";
-            this.AddEventCancelButton.Size = new System.Drawing.Size(581, 133);
-            this.AddEventCancelButton.TabIndex = 0;
-            this.AddEventCancelButton.Text = "Cancel Event Creation";
-            this.AddEventCancelButton.UseVisualStyleBackColor = true;
-            this.AddEventCancelButton.Click += new System.EventHandler(this.AddEventCancelButton_Click);
-            // 
-            // AddEventConfirmButton
-            // 
-            this.AddEventConfirmButton.Location = new System.Drawing.Point(608, 9);
-            this.AddEventConfirmButton.Margin = new System.Windows.Forms.Padding(9);
-            this.AddEventConfirmButton.Name = "AddEventConfirmButton";
-            this.AddEventConfirmButton.Size = new System.Drawing.Size(581, 133);
-            this.AddEventConfirmButton.TabIndex = 1;
-            this.AddEventConfirmButton.Text = "Confirm Event Creation";
-            this.AddEventConfirmButton.UseVisualStyleBackColor = true;
-            this.AddEventConfirmButton.Click += new System.EventHandler(this.AddEventConfirmButton_Click);
-            // 
             // AddEventDateTimePicker
             // 
             this.AddEventDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -240,30 +227,6 @@ namespace TeamProject
             this.AddEventTItleTextBoxInput.Size = new System.Drawing.Size(827, 62);
             this.AddEventTItleTextBoxInput.TabIndex = 7;
             // 
-            // AddEventStartTimeInput
-            // 
-            this.AddEventStartTimeInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddEventStartTimeInput.CustomFormat = "hh:mm tt";
-            this.AddEventStartTimeInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddEventStartTimeInput.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.AddEventStartTimeInput.Location = new System.Drawing.Point(362, 334);
-            this.AddEventStartTimeInput.Name = "AddEventStartTimeInput";
-            this.AddEventStartTimeInput.ShowUpDown = true;
-            this.AddEventStartTimeInput.Size = new System.Drawing.Size(827, 62);
-            this.AddEventStartTimeInput.TabIndex = 8;
-            // 
-            // AddEventEndTimeInput
-            // 
-            this.AddEventEndTimeInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddEventEndTimeInput.CustomFormat = "hh:mm tt";
-            this.AddEventEndTimeInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddEventEndTimeInput.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.AddEventEndTimeInput.Location = new System.Drawing.Point(362, 480);
-            this.AddEventEndTimeInput.Name = "AddEventEndTimeInput";
-            this.AddEventEndTimeInput.ShowUpDown = true;
-            this.AddEventEndTimeInput.Size = new System.Drawing.Size(827, 62);
-            this.AddEventEndTimeInput.TabIndex = 9;
-            // 
             // AddEventNotesInput
             // 
             this.AddEventNotesInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -273,13 +236,50 @@ namespace TeamProject
             this.AddEventNotesInput.Size = new System.Drawing.Size(827, 62);
             this.AddEventNotesInput.TabIndex = 10;
             // 
+            // AddEventButtonsTableLayoutPanel
+            // 
+            this.AddEventButtonsTableLayoutPanel.ColumnCount = 2;
+            this.AddEventButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AddEventButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AddEventButtonsTableLayoutPanel.Controls.Add(this.AddEventConfirmButton, 1, 0);
+            this.AddEventButtonsTableLayoutPanel.Controls.Add(this.AddEventCancelButton, 0, 0);
+            this.AddEventButtonsTableLayoutPanel.Location = new System.Drawing.Point(3, 891);
+            this.AddEventButtonsTableLayoutPanel.Name = "AddEventButtonsTableLayoutPanel";
+            this.AddEventButtonsTableLayoutPanel.RowCount = 1;
+            this.AddEventButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AddEventButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 151F));
+            this.AddEventButtonsTableLayoutPanel.Size = new System.Drawing.Size(1199, 151);
+            this.AddEventButtonsTableLayoutPanel.TabIndex = 2;
+            // 
+            // AddEventConfirmButton
+            // 
+            this.AddEventConfirmButton.Location = new System.Drawing.Point(608, 9);
+            this.AddEventConfirmButton.Margin = new System.Windows.Forms.Padding(9);
+            this.AddEventConfirmButton.Name = "AddEventConfirmButton";
+            this.AddEventConfirmButton.Size = new System.Drawing.Size(581, 133);
+            this.AddEventConfirmButton.TabIndex = 1;
+            this.AddEventConfirmButton.Text = "Confirm Event Creation";
+            this.AddEventConfirmButton.UseVisualStyleBackColor = true;
+            this.AddEventConfirmButton.Click += new System.EventHandler(this.AddEventConfirmButton_Click);
+            // 
+            // AddEventCancelButton
+            // 
+            this.AddEventCancelButton.Location = new System.Drawing.Point(9, 9);
+            this.AddEventCancelButton.Margin = new System.Windows.Forms.Padding(9);
+            this.AddEventCancelButton.Name = "AddEventCancelButton";
+            this.AddEventCancelButton.Size = new System.Drawing.Size(581, 133);
+            this.AddEventCancelButton.TabIndex = 0;
+            this.AddEventCancelButton.Text = "Cancel Event Creation";
+            this.AddEventCancelButton.UseVisualStyleBackColor = true;
+            this.AddEventCancelButton.Click += new System.EventHandler(this.AddEventCancelButton_Click);
+            // 
             // AddEventConflictingMessageTableLayoutPanel
             // 
             this.AddEventConflictingMessageTableLayoutPanel.ColumnCount = 1;
             this.AddEventConflictingMessageTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.AddEventConflictingMessageTableLayoutPanel.Controls.Add(this.AddEventConflictingEventErrorLabel, 0, 0);
             this.AddEventConflictingMessageTableLayoutPanel.Controls.Add(this.AddEventConflictingEventDescriptionLabel, 0, 1);
-            this.AddEventConflictingMessageTableLayoutPanel.Controls.Add(this.tableLayoutPanel1, 0, 2);
+            this.AddEventConflictingMessageTableLayoutPanel.Controls.Add(this.EventButtonContainerTableLayoutPanel, 0, 2);
             this.AddEventConflictingMessageTableLayoutPanel.Location = new System.Drawing.Point(12, 13);
             this.AddEventConflictingMessageTableLayoutPanel.Name = "AddEventConflictingMessageTableLayoutPanel";
             this.AddEventConflictingMessageTableLayoutPanel.RowCount = 3;
@@ -313,31 +313,20 @@ namespace TeamProject
             this.AddEventConflictingEventDescriptionLabel.TabIndex = 1;
             this.AddEventConflictingEventDescriptionLabel.Text = resources.GetString("AddEventConflictingEventDescriptionLabel.Text");
             // 
-            // tableLayoutPanel1
+            // EventButtonContainerTableLayoutPanel
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.EventConflicYesButton, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.EventConflicNoButton, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 838);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 204);
-            this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // EventConflicNoButton
-            // 
-            this.EventConflicNoButton.Location = new System.Drawing.Point(9, 9);
-            this.EventConflicNoButton.Margin = new System.Windows.Forms.Padding(9);
-            this.EventConflicNoButton.Name = "EventConflicNoButton";
-            this.EventConflicNoButton.Size = new System.Drawing.Size(582, 186);
-            this.EventConflicNoButton.TabIndex = 0;
-            this.EventConflicNoButton.Text = "No";
-            this.EventConflicNoButton.UseVisualStyleBackColor = true;
-            this.EventConflicNoButton.Click += new System.EventHandler(this.EventConflicNoButton_Click);
+            this.EventButtonContainerTableLayoutPanel.ColumnCount = 2;
+            this.EventButtonContainerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.EventButtonContainerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.EventButtonContainerTableLayoutPanel.Controls.Add(this.EventConflicYesButton, 1, 0);
+            this.EventButtonContainerTableLayoutPanel.Controls.Add(this.EventConflicNoButton, 0, 0);
+            this.EventButtonContainerTableLayoutPanel.Location = new System.Drawing.Point(3, 838);
+            this.EventButtonContainerTableLayoutPanel.Name = "EventButtonContainerTableLayoutPanel";
+            this.EventButtonContainerTableLayoutPanel.RowCount = 1;
+            this.EventButtonContainerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.EventButtonContainerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.EventButtonContainerTableLayoutPanel.Size = new System.Drawing.Size(1200, 204);
+            this.EventButtonContainerTableLayoutPanel.TabIndex = 2;
             // 
             // EventConflicYesButton
             // 
@@ -349,6 +338,17 @@ namespace TeamProject
             this.EventConflicYesButton.Text = "Yes";
             this.EventConflicYesButton.UseVisualStyleBackColor = true;
             this.EventConflicYesButton.Click += new System.EventHandler(this.EventConflicYesButton_Click);
+            // 
+            // EventConflicNoButton
+            // 
+            this.EventConflicNoButton.Location = new System.Drawing.Point(9, 9);
+            this.EventConflicNoButton.Margin = new System.Windows.Forms.Padding(9);
+            this.EventConflicNoButton.Name = "EventConflicNoButton";
+            this.EventConflicNoButton.Size = new System.Drawing.Size(582, 186);
+            this.EventConflicNoButton.TabIndex = 0;
+            this.EventConflicNoButton.Text = "No";
+            this.EventConflicNoButton.UseVisualStyleBackColor = true;
+            this.EventConflicNoButton.Click += new System.EventHandler(this.EventConflicNoButton_Click);
             // 
             // AddEventForm
             // 
@@ -367,7 +367,7 @@ namespace TeamProject
             this.AddEventButtonsTableLayoutPanel.ResumeLayout(false);
             this.AddEventConflictingMessageTableLayoutPanel.ResumeLayout(false);
             this.AddEventConflictingMessageTableLayoutPanel.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.EventButtonContainerTableLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -394,7 +394,7 @@ namespace TeamProject
         private System.Windows.Forms.TableLayoutPanel AddEventConflictingMessageTableLayoutPanel;
         private System.Windows.Forms.Label AddEventConflictingEventErrorLabel;
         private System.Windows.Forms.Label AddEventConflictingEventDescriptionLabel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel EventButtonContainerTableLayoutPanel;
         private System.Windows.Forms.Button EventConflicYesButton;
         private System.Windows.Forms.Button EventConflicNoButton;
     }

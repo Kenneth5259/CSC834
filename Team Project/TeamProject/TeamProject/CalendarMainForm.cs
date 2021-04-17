@@ -16,6 +16,9 @@ namespace TeamProject
         // private form for addEventForm
         private Form addEventForm;
 
+        // private form for event details
+        private Form eventDetails;
+
         // private current date for calendar population
         private DateTime currentDate;
 
@@ -92,6 +95,12 @@ namespace TeamProject
 
             //test for accessing specific cell of a table layout panel
             CalendarGridTableLayoutPanel.GetControlFromPosition(0, 0);
+        }
+
+        private void EventDataGridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.eventDetails = new EventDetailForm();
+            this.eventDetails.Show();
         }
     }
     class CalendarEvent

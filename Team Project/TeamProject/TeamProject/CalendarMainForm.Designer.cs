@@ -644,6 +644,7 @@ namespace TeamProject
             this.Week1SundayDataGridview.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Week1SundayDataGridview.Size = new System.Drawing.Size(162, 89);
             this.Week1SundayDataGridview.TabIndex = 2;
+            this.Week1SundayDataGridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EventDataGridview_CellContentClick);
             // 
             // Week1SundayDate
             // 
@@ -686,6 +687,7 @@ namespace TeamProject
             this.Week1ThursdayDataGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Week1ThursdayDataGridView.Size = new System.Drawing.Size(172, 97);
             this.Week1ThursdayDataGridView.TabIndex = 9;
+
             // 
             // Week1ThursdayLabel
             // 
@@ -2245,7 +2247,7 @@ namespace TeamProject
             this.UserCalendarOptionsTableLayoutPanel.Name = "UserCalendarOptionsTableLayoutPanel";
             this.UserCalendarOptionsTableLayoutPanel.RowCount = 1;
             this.UserCalendarOptionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.UserCalendarOptionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.UserCalendarOptionsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
             this.UserCalendarOptionsTableLayoutPanel.Size = new System.Drawing.Size(1230, 99);
             this.UserCalendarOptionsTableLayoutPanel.TabIndex = 2;
             this.UserCalendarOptionsTableLayoutPanel.Visible = false;
