@@ -52,6 +52,12 @@
     <Compile Include="AddEventForm.Designer.cs">
       <DependentUpon>AddEventForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddTeamEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeamEventForm.Designer.cs">
+      <DependentUpon>AddTeamEventForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalendarMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddEventForm.resx">
       <DependentUpon>AddEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeamEventForm.resx">
+      <DependentUpon>AddTeamEventForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalendarMainForm.resx">
       <DependentUpon>CalendarMainForm.cs</DependentUpon>

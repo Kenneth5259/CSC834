@@ -11,3 +11,4 @@ C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\
 C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.CalendarBaseForm.resources
 C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.EventDetailForm.resources
 C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.EventListForm.resources
+C:\Users\kenne\Documents\CSC 834\Team Project\TeamProject\TeamProject\obj\Debug\TeamProject.AddTeamEventForm.resources

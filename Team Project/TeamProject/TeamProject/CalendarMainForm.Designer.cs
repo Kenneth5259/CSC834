@@ -2340,6 +2340,7 @@ namespace TeamProject
             this.ManagerAddTeamEventButton.TabIndex = 3;
             this.ManagerAddTeamEventButton.Text = "Add a Team Event";
             this.ManagerAddTeamEventButton.UseVisualStyleBackColor = true;
+            this.ManagerAddTeamEventButton.Click += new System.EventHandler(this.ManagerAddTeamEventButton_Click);
             // 
             // ManagerCancelTeamEventButton
             // 

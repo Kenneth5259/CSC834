@@ -37,8 +37,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -58,7 +58,7 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _id = GUID 0032ce29-b956-4ab1-8538-b1b9b10ee22c;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 898 1194 ;
+			- _DownRight = 1292 744 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
@@ -149,8 +149,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -169,13 +169,13 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _name = "calendar";
 				- _id = GUID 39957ef5-b331-46f1-8858-61fd717c4e06;
 			}
-			- _UpLeft = 0 10 ;
-			- _DownRight = 792 282 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1136 1066 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 5;
 		}
 	}
-	- _fullName = "C:\\Users\\kenne\\Desktop\\calendar\\calendarrevised";
+	- _fullName = "C:\\Users\\kenne\\Documents\\CSC 834\\Team Project\\From Charles\\calendar\\calendarrevised";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}

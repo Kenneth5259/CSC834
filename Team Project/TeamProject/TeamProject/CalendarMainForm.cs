@@ -190,6 +190,11 @@ namespace TeamProject
         {
             new EventListForm(this.eventList, VIEW_MODE).Show();
         }
+
+        private void ManagerAddTeamEventButton_Click(object sender, EventArgs e)
+        {
+            new AddTeamEventForm().Show();
+        }
     }
     public class CalendarEvent
     {
@@ -220,9 +225,12 @@ namespace TeamProject
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
+
+        public string fullName => $"{firstName} {lastName}";
         public int userId { get; set; }
         public int managerId { get; set; }
         public int userType { get; set; } // 1 = User, 2 = Manager
+
 
     }
     public class Manager : User
