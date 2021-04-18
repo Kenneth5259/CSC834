@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddEventConflictingEventDescriptionLabel.Text" xml:space="preserve">
+    <value>Error! There are one or more events on your calendar that conflict with the given time slot for your event. Select Yes to acknowledge the conflict and still save the changes to the calendar. Select No to return to the form if you wish to change the time slot for the event.</value>
+  </data>
 </root>

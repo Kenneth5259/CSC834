@@ -51,7 +51,7 @@ namespace TeamProject
             this.Week1TuesdayDataGridView = new System.Windows.Forms.DataGridView();
             this.Week1TuesdayDate = new System.Windows.Forms.Label();
             this.Week1SundayPanel = new System.Windows.Forms.Panel();
-            this.Week1SundayDataGridview = new System.Windows.Forms.DataGridView();
+            this.Week1SundayDataGridView = new System.Windows.Forms.DataGridView();
             this.Week1SundayDate = new System.Windows.Forms.Label();
             this.Week1ThursdayPanel = new System.Windows.Forms.Panel();
             this.Week1ThursdayDataGridView = new System.Windows.Forms.DataGridView();
@@ -69,7 +69,7 @@ namespace TeamProject
             this.Week2FridayDataGridView = new System.Windows.Forms.DataGridView();
             this.Week2FridayLabel = new System.Windows.Forms.Label();
             this.Week2ThursdayPanel = new System.Windows.Forms.Panel();
-            this.Week2ThurdayDataGridView = new System.Windows.Forms.DataGridView();
+            this.Week2ThursdayDataGridView = new System.Windows.Forms.DataGridView();
             this.Week2ThursdayLabel = new System.Windows.Forms.Label();
             this.Week2WednesdayPanel = new System.Windows.Forms.Panel();
             this.Week2WednesdayDataGridView = new System.Windows.Forms.DataGridView();
@@ -194,7 +194,7 @@ namespace TeamProject
             this.Week1TuesdayPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Week1TuesdayDataGridView)).BeginInit();
             this.Week1SundayPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Week1SundayDataGridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Week1SundayDataGridView)).BeginInit();
             this.Week1ThursdayPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Week1ThursdayDataGridView)).BeginInit();
             this.Week1FridayPanel.SuspendLayout();
@@ -206,7 +206,7 @@ namespace TeamProject
             this.Week2FridayPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Week2FridayDataGridView)).BeginInit();
             this.Week2ThursdayPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Week2ThurdayDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Week2ThursdayDataGridView)).BeginInit();
             this.Week2WednesdayPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Week2WednesdayDataGridView)).BeginInit();
             this.Week2TuesdayPanel.SuspendLayout();
@@ -615,36 +615,35 @@ namespace TeamProject
             // 
             // Week1SundayPanel
             // 
-            this.Week1SundayPanel.Controls.Add(this.Week1SundayDataGridview);
+            this.Week1SundayPanel.Controls.Add(this.Week1SundayDataGridView);
             this.Week1SundayPanel.Controls.Add(this.Week1SundayDate);
             this.Week1SundayPanel.Location = new System.Drawing.Point(4, 128);
             this.Week1SundayPanel.Name = "Week1SundayPanel";
             this.Week1SundayPanel.Size = new System.Drawing.Size(168, 114);
             this.Week1SundayPanel.TabIndex = 52;
             // 
-            // Week1SundayDataGridview
+            // Week1SundayDataGridView
             // 
-            this.Week1SundayDataGridview.AllowUserToAddRows = false;
-            this.Week1SundayDataGridview.AllowUserToDeleteRows = false;
-            this.Week1SundayDataGridview.AllowUserToResizeColumns = false;
-            this.Week1SundayDataGridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.Week1SundayDataGridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.Week1SundayDataGridview.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.Week1SundayDataGridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Week1SundayDataGridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Week1SundayDataGridview.ColumnHeadersVisible = false;
-            this.Week1SundayDataGridview.Location = new System.Drawing.Point(3, 17);
-            this.Week1SundayDataGridview.Margin = new System.Windows.Forms.Padding(0);
-            this.Week1SundayDataGridview.MultiSelect = false;
-            this.Week1SundayDataGridview.Name = "Week1SundayDataGridview";
-            this.Week1SundayDataGridview.ReadOnly = true;
-            this.Week1SundayDataGridview.RowHeadersVisible = false;
-            this.Week1SundayDataGridview.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.Week1SundayDataGridview.RowTemplate.ReadOnly = true;
-            this.Week1SundayDataGridview.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Week1SundayDataGridview.Size = new System.Drawing.Size(162, 89);
-            this.Week1SundayDataGridview.TabIndex = 2;
-            this.Week1SundayDataGridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EventDataGridview_CellContentClick);
+            this.Week1SundayDataGridView.AllowUserToAddRows = false;
+            this.Week1SundayDataGridView.AllowUserToDeleteRows = false;
+            this.Week1SundayDataGridView.AllowUserToResizeColumns = false;
+            this.Week1SundayDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.Week1SundayDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.Week1SundayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.Week1SundayDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Week1SundayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Week1SundayDataGridView.ColumnHeadersVisible = false;
+            this.Week1SundayDataGridView.Location = new System.Drawing.Point(3, 17);
+            this.Week1SundayDataGridView.Margin = new System.Windows.Forms.Padding(0);
+            this.Week1SundayDataGridView.MultiSelect = false;
+            this.Week1SundayDataGridView.Name = "Week1SundayDataGridView";
+            this.Week1SundayDataGridView.ReadOnly = true;
+            this.Week1SundayDataGridView.RowHeadersVisible = false;
+            this.Week1SundayDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.Week1SundayDataGridView.RowTemplate.ReadOnly = true;
+            this.Week1SundayDataGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Week1SundayDataGridView.Size = new System.Drawing.Size(162, 89);
+            this.Week1SundayDataGridView.TabIndex = 2;
             // 
             // Week1SundayDate
             // 
@@ -863,35 +862,35 @@ namespace TeamProject
             // 
             // Week2ThursdayPanel
             // 
-            this.Week2ThursdayPanel.Controls.Add(this.Week2ThurdayDataGridView);
+            this.Week2ThursdayPanel.Controls.Add(this.Week2ThursdayDataGridView);
             this.Week2ThursdayPanel.Controls.Add(this.Week2ThursdayLabel);
             this.Week2ThursdayPanel.Location = new System.Drawing.Point(704, 252);
             this.Week2ThursdayPanel.Name = "Week2ThursdayPanel";
             this.Week2ThursdayPanel.Size = new System.Drawing.Size(168, 117);
             this.Week2ThursdayPanel.TabIndex = 58;
             // 
-            // Week2ThurdayDataGridView
+            // Week2ThursdayDataGridView
             // 
-            this.Week2ThurdayDataGridView.AllowUserToAddRows = false;
-            this.Week2ThurdayDataGridView.AllowUserToDeleteRows = false;
-            this.Week2ThurdayDataGridView.AllowUserToResizeColumns = false;
-            this.Week2ThurdayDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.Week2ThurdayDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.Week2ThurdayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.Week2ThurdayDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Week2ThurdayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Week2ThurdayDataGridView.ColumnHeadersVisible = false;
-            this.Week2ThurdayDataGridView.Location = new System.Drawing.Point(3, 16);
-            this.Week2ThurdayDataGridView.Margin = new System.Windows.Forms.Padding(0);
-            this.Week2ThurdayDataGridView.MultiSelect = false;
-            this.Week2ThurdayDataGridView.Name = "Week2ThurdayDataGridView";
-            this.Week2ThurdayDataGridView.ReadOnly = true;
-            this.Week2ThurdayDataGridView.RowHeadersVisible = false;
-            this.Week2ThurdayDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.Week2ThurdayDataGridView.RowTemplate.ReadOnly = true;
-            this.Week2ThurdayDataGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Week2ThurdayDataGridView.Size = new System.Drawing.Size(165, 101);
-            this.Week2ThurdayDataGridView.TabIndex = 24;
+            this.Week2ThursdayDataGridView.AllowUserToAddRows = false;
+            this.Week2ThursdayDataGridView.AllowUserToDeleteRows = false;
+            this.Week2ThursdayDataGridView.AllowUserToResizeColumns = false;
+            this.Week2ThursdayDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.Week2ThursdayDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.Week2ThursdayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.Week2ThursdayDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Week2ThursdayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Week2ThursdayDataGridView.ColumnHeadersVisible = false;
+            this.Week2ThursdayDataGridView.Location = new System.Drawing.Point(3, 16);
+            this.Week2ThursdayDataGridView.Margin = new System.Windows.Forms.Padding(0);
+            this.Week2ThursdayDataGridView.MultiSelect = false;
+            this.Week2ThursdayDataGridView.Name = "Week2ThursdayDataGridView";
+            this.Week2ThursdayDataGridView.ReadOnly = true;
+            this.Week2ThursdayDataGridView.RowHeadersVisible = false;
+            this.Week2ThursdayDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.Week2ThursdayDataGridView.RowTemplate.ReadOnly = true;
+            this.Week2ThursdayDataGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Week2ThursdayDataGridView.Size = new System.Drawing.Size(165, 101);
+            this.Week2ThursdayDataGridView.TabIndex = 24;
             // 
             // Week2ThursdayLabel
             // 
@@ -2269,6 +2268,7 @@ namespace TeamProject
             this.EditCalendarEventButton.TabIndex = 1;
             this.EditCalendarEventButton.Text = "Edit an Event";
             this.EditCalendarEventButton.UseVisualStyleBackColor = true;
+            this.EditCalendarEventButton.Click += new System.EventHandler(this.EditCalendarEventButton_Click);
             // 
             // FilterCalendarEventsButton
             // 
@@ -2320,6 +2320,7 @@ namespace TeamProject
             this.ManagerEditEventButton.TabIndex = 1;
             this.ManagerEditEventButton.Text = "Edit an Event";
             this.ManagerEditEventButton.UseVisualStyleBackColor = true;
+            this.ManagerEditEventButton.Click += new System.EventHandler(this.EditCalendarEventButton_Click);
             // 
             // ManagerFilterCalendarEventButton
             // 
@@ -2348,14 +2349,15 @@ namespace TeamProject
             this.ManagerCancelTeamEventButton.TabIndex = 4;
             this.ManagerCancelTeamEventButton.Text = "Cancel a Team Event";
             this.ManagerCancelTeamEventButton.UseVisualStyleBackColor = true;
+            this.ManagerCancelTeamEventButton.Click += new System.EventHandler(this.ManagerCancelTeamEventButton_Click);
             // 
             // CalendarBaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 1070);
-            this.Controls.Add(this.UserCalendarOptionsTableLayoutPanel);
             this.Controls.Add(this.ManagerCalendarOptionsTableLayoutPanel);
+            this.Controls.Add(this.UserCalendarOptionsTableLayoutPanel);
             this.Controls.Add(this.ShowCalendarOptionsButton);
             this.Controls.Add(this.CalendarLayoutPanelContainer);
             this.Name = "CalendarBaseForm";
@@ -2376,7 +2378,7 @@ namespace TeamProject
             ((System.ComponentModel.ISupportInitialize)(this.Week1TuesdayDataGridView)).EndInit();
             this.Week1SundayPanel.ResumeLayout(false);
             this.Week1SundayPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Week1SundayDataGridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Week1SundayDataGridView)).EndInit();
             this.Week1ThursdayPanel.ResumeLayout(false);
             this.Week1ThursdayPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Week1ThursdayDataGridView)).EndInit();
@@ -2394,7 +2396,7 @@ namespace TeamProject
             ((System.ComponentModel.ISupportInitialize)(this.Week2FridayDataGridView)).EndInit();
             this.Week2ThursdayPanel.ResumeLayout(false);
             this.Week2ThursdayPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Week2ThurdayDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Week2ThursdayDataGridView)).EndInit();
             this.Week2WednesdayPanel.ResumeLayout(false);
             this.Week2WednesdayPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Week2WednesdayDataGridView)).EndInit();
@@ -2518,7 +2520,7 @@ namespace TeamProject
         private System.Windows.Forms.Panel Week1TuesdayPanel;
         private System.Windows.Forms.Label Week1TuesdayDate;
         private System.Windows.Forms.Panel Week1SundayPanel;
-        private System.Windows.Forms.DataGridView Week1SundayDataGridview;
+        private System.Windows.Forms.DataGridView Week1SundayDataGridView;
         private System.Windows.Forms.Label Week1SundayDate;
         private System.Windows.Forms.DataGridView Week1WednesdayDataGridView;
         private System.Windows.Forms.DataGridView Week1TuesdayDataGridView;
@@ -2538,7 +2540,7 @@ namespace TeamProject
         private System.Windows.Forms.DataGridView Week2FridayDataGridView;
         private System.Windows.Forms.Label Week2FridayLabel;
         private System.Windows.Forms.Panel Week2ThursdayPanel;
-        private System.Windows.Forms.DataGridView Week2ThurdayDataGridView;
+        private System.Windows.Forms.DataGridView Week2ThursdayDataGridView;
         private System.Windows.Forms.Label Week2ThursdayLabel;
         private System.Windows.Forms.Panel Week2WednesdayPanel;
         private System.Windows.Forms.DataGridView Week2WednesdayDataGridView;

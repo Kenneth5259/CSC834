@@ -21,6 +21,7 @@ namespace TeamProject
             this.eventList = new List<CalendarEvent>();
             InitializeComponent();
             this.FormatEventListBox();
+            this.FormatModeButton();
         }
         public EventListForm(List<CalendarEvent> eventList, bool mode)
         {
@@ -28,12 +29,20 @@ namespace TeamProject
             this.eventList = eventList;
             InitializeComponent();
             this.FormatEventListBox();
+            this.FormatModeButton();
         }
 
         private void FormatEventListBox()
         {
             EventListFilteredListBox.DataSource = eventList;
-            EventListFilteredListBox.DisplayMember = "name";
+            EventListFilteredListBox.DisplayMember = "Title";
+
+            if(eventList.Count < 1)
+            {
+                EventListFilteredListBox.Visible = false;
+                EventListFilteredNoEventsMessageBox.Visible = true;
+                EventListFilteredModeButton.Enabled = false;
+            }
         }
         private void EventListFilterByDateButton_Click(object sender, EventArgs e)
         {
@@ -60,10 +69,23 @@ namespace TeamProject
         {
             this.Close();
         }
-
+        
+        private void FormatModeButton()
+        {
+            if(this.mode) // indicates EDIT
+            {
+                EventListFilteredModeButton.Text = "Edit";
+            } 
+        }
         private void EventListFilteredViewButton_Click(object sender, EventArgs e)
         {
-            new EventDetailForm().Show();
+            if(this.mode)
+            {
+                new EventDetailForm(eventList[0], this.mode).Show();
+            } else
+            {
+                new EventDetailForm(eventList[0], this.mode).Show();
+            }
         }
     }
 }
