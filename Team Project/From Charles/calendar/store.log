@@ -1,21 +1,35 @@
-04, 13, 2021 (21:28:50): Starting Pre-Save actions
+04, 18, 2021 (17:54:16): Starting Pre-Save actions
 
-04, 13, 2021 (21:28:50): Starting Dialogs Check/Save
-04, 13, 2021 (21:28:50): Finished Dialogs Check/Save
-04, 13, 2021 (21:28:50): Starting Controlled Files Resolution
-04, 13, 2021 (21:28:50): Finished Controlled Files Resolution
-04, 13, 2021 (21:28:50): Finished Pre-Save actions
+04, 18, 2021 (17:54:16): Starting Dialogs Check/Save
+04, 18, 2021 (17:54:16): Finished Dialogs Check/Save
+04, 18, 2021 (17:54:16): Starting Controlled Files Resolution
+04, 18, 2021 (17:54:16): Finished Controlled Files Resolution
+04, 18, 2021 (17:54:16): Finished Pre-Save actions
 
-04, 13, 2021 (21:28:50): Creating C:\Users\kenne\Desktop\calendar\calendarrevised.rpy
-04, 13, 2021 (21:28:50): 
-Started writing C:\Users\kenne\Desktop\calendar\calendarrevised.rpy on Tuesday, April 13, 2021 (21:28:50)
+04, 18, 2021 (17:54:16): Creating C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised.rpy
+04, 18, 2021 (17:54:16): 
+Started writing C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised.rpy on Sunday, April 18, 2021 (17:54:16)
 
-04, 13, 2021 (21:28:50): version 8.5.2
-04, 13, 2021 (21:28:50): 
-Started writing C:\Users\kenne\Desktop\calendar\calendarrevised_rpy\filesTable.dat on Tuesday, April 13, 2021 (21:28:50)
+04, 18, 2021 (17:54:16): version 8.5.2
+04, 18, 2021 (17:54:16): 
+Started writing C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised_rpy\filesTable.dat on Sunday, April 18, 2021 (17:54:16)
 
-04, 13, 2021 (21:28:50): Finished writing C:\Users\kenne\Desktop\calendar\calendarrevised_rpy\filesTable.dat on Tuesday, April 13, 2021 (21:28:50)
+04, 18, 2021 (17:54:16): Finished writing C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised_rpy\filesTable.dat on Sunday, April 18, 2021 (17:54:16)
 
-04, 13, 2021 (21:28:50): Finished writing C:\Users\kenne\Desktop\calendar\calendarrevised.rpy on Tuesday, April 13, 2021 (21:28:50)
+04, 18, 2021 (17:54:16): Creating C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised_rpy\Default.sbs
+04, 18, 2021 (17:54:16): 
+Started writing C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised_rpy\Default.sbs on Sunday, April 18, 2021 (17:54:16)
 
-04, 13, 2021 (21:28:50): End Log
+04, 18, 2021 (17:54:16): version 8.5.2
+04, 18, 2021 (17:54:16): Finished writing C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised_rpy\Default.sbs on Sunday, April 18, 2021 (17:54:16)
+
+04, 18, 2021 (17:54:16): Creating C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised_rpy\DefaultComponent.cmp
+04, 18, 2021 (17:54:16): 
+Started writing C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised_rpy\DefaultComponent.cmp on Sunday, April 18, 2021 (17:54:16)
+
+04, 18, 2021 (17:54:16): version 8.5.2
+04, 18, 2021 (17:54:16): Finished writing C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised_rpy\DefaultComponent.cmp on Sunday, April 18, 2021 (17:54:16)
+
+04, 18, 2021 (17:54:16): Finished writing C:\Users\kenne\Documents\CSC 834\Team Project\From Charles\calendar\calendarrevised.rpy on Sunday, April 18, 2021 (17:54:16)
+
+04, 18, 2021 (17:54:16): End Log

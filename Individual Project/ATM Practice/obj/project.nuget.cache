@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "jP7vc2kmPKrugJ7ujdQkoBmneC7VQJ/OhWAVJ+wfwECCZqfvBlX+q7N5kWXVSKvUlf9oVUe3E2oOVr3pZzZnXQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kenne\\Documents\\CSC 834\\Individual Project\\ATM Practice\\ATM Practice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kenne\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\kenne\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\kenne\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\kenne\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\3.1.11\\microsoft.netcore.app.host.win-x86.3.1.11.nupkg.sha512"
+  ],
+  "logs": []
+}
