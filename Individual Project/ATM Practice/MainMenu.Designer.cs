@@ -29,17 +29,96 @@ namespace ATM_Practice
         /// </summary>
         private void InitializeComponent()
         {
-            this.MainMenuFormTable = new System.Windows.Forms.TableLayoutPanel();
-            this.CheckBalanceButton = new System.Windows.Forms.Button();
-            this.WithdrawMoneyButton = new System.Windows.Forms.Button();
-            this.DepositMoneyButton = new System.Windows.Forms.Button();
-            this.TransferMoneyButton = new System.Windows.Forms.Button();
-            this.ExitButton = new System.Windows.Forms.Button();
             this.WelcomeLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
+            this.TransferMoneyButton = new System.Windows.Forms.Button();
+            this.DepositMoneyButton = new System.Windows.Forms.Button();
+            this.WithdrawMoneyButton = new System.Windows.Forms.Button();
+            this.CheckBalanceButton = new System.Windows.Forms.Button();
+            this.MainMenuFormTable = new System.Windows.Forms.TableLayoutPanel();
             this.MainMenuFormTable.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // WelcomeLabel
+            // 
+            this.WelcomeLabel.AutoSize = true;
+            this.WelcomeLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.WelcomeLabel.Location = new System.Drawing.Point(30, 24);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(332, 45);
+            this.WelcomeLabel.TabIndex = 2;
+            this.WelcomeLabel.Text = "Welcome to ZZZ Bank";
+            //  
+            // ExitButton
+            // 
+            this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ExitButton.Location = new System.Drawing.Point(5, 422);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(808, 92);
+            this.ExitButton.TabIndex = 4;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            // 
+            // TransferMoneyButton
+            // 
+            this.TransferMoneyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TransferMoneyButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TransferMoneyButton.Location = new System.Drawing.Point(5, 318);
+            this.TransferMoneyButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.TransferMoneyButton.Name = "TransferMoneyButton";
+            this.TransferMoneyButton.Size = new System.Drawing.Size(808, 92);
+            this.TransferMoneyButton.TabIndex = 3;
+            this.TransferMoneyButton.Text = "Transfer Money";
+            this.TransferMoneyButton.UseVisualStyleBackColor = true;
+            // 
+            // DepositMoneyButton
+            // 
+            this.DepositMoneyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DepositMoneyButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DepositMoneyButton.Location = new System.Drawing.Point(5, 214);
+            this.DepositMoneyButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.DepositMoneyButton.Name = "DepositMoneyButton";
+            this.DepositMoneyButton.Size = new System.Drawing.Size(808, 92);
+            this.DepositMoneyButton.TabIndex = 2;
+            this.DepositMoneyButton.Text = "Deposit Money";
+            this.DepositMoneyButton.UseVisualStyleBackColor = true;
+            // 
+            // WithdrawMoneyButton
+            // 
+            this.WithdrawMoneyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.WithdrawMoneyButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.WithdrawMoneyButton.Location = new System.Drawing.Point(5, 110);
+            this.WithdrawMoneyButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.WithdrawMoneyButton.Name = "WithdrawMoneyButton";
+            this.WithdrawMoneyButton.Size = new System.Drawing.Size(808, 92);
+            this.WithdrawMoneyButton.TabIndex = 1;
+            this.WithdrawMoneyButton.Text = "Withdraw Money";
+            this.WithdrawMoneyButton.UseVisualStyleBackColor = true;
+            // 
+            // CheckBalanceButton
+            // 
+            this.CheckBalanceButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CheckBalanceButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CheckBalanceButton.Location = new System.Drawing.Point(5, 6);
+            this.CheckBalanceButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.CheckBalanceButton.Name = "CheckBalanceButton";
+            this.CheckBalanceButton.Size = new System.Drawing.Size(808, 92);
+            this.CheckBalanceButton.TabIndex = 0;
+            this.CheckBalanceButton.Text = "Check Balance";
+            this.CheckBalanceButton.UseVisualStyleBackColor = true;
+            this.CheckBalanceButton.Click += new System.EventHandler(this.CheckBalanceButton_Click);
             // 
             // MainMenuFormTable
             // 
@@ -67,104 +146,6 @@ namespace ATM_Practice
             this.MainMenuFormTable.TabIndex = 0;
             this.MainMenuFormTable.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMenuFormTable_Paint);
             // 
-            // CheckBalanceButton
-            // 
-            this.CheckBalanceButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CheckBalanceButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CheckBalanceButton.Location = new System.Drawing.Point(5, 6);
-            this.CheckBalanceButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.CheckBalanceButton.Name = "CheckBalanceButton";
-            this.CheckBalanceButton.Size = new System.Drawing.Size(808, 92);
-            this.CheckBalanceButton.TabIndex = 0;
-            this.CheckBalanceButton.Text = "Check Balance";
-            this.CheckBalanceButton.UseVisualStyleBackColor = true;
-            this.CheckBalanceButton.Click += new System.EventHandler(this.CheckBalanceButton_Click);
-            // 
-            // WithdrawMoneyButton
-            // 
-            this.WithdrawMoneyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.WithdrawMoneyButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WithdrawMoneyButton.Location = new System.Drawing.Point(5, 110);
-            this.WithdrawMoneyButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.WithdrawMoneyButton.Name = "WithdrawMoneyButton";
-            this.WithdrawMoneyButton.Size = new System.Drawing.Size(808, 92);
-            this.WithdrawMoneyButton.TabIndex = 1;
-            this.WithdrawMoneyButton.Text = "Withdraw Money";
-            this.WithdrawMoneyButton.UseVisualStyleBackColor = true;
-            // 
-            // DepositMoneyButton
-            // 
-            this.DepositMoneyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DepositMoneyButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DepositMoneyButton.Location = new System.Drawing.Point(5, 214);
-            this.DepositMoneyButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.DepositMoneyButton.Name = "DepositMoneyButton";
-            this.DepositMoneyButton.Size = new System.Drawing.Size(808, 92);
-            this.DepositMoneyButton.TabIndex = 2;
-            this.DepositMoneyButton.Text = "Deposit Money";
-            this.DepositMoneyButton.UseVisualStyleBackColor = true;
-            // 
-            // TransferMoneyButton
-            // 
-            this.TransferMoneyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TransferMoneyButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TransferMoneyButton.Location = new System.Drawing.Point(5, 318);
-            this.TransferMoneyButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.TransferMoneyButton.Name = "TransferMoneyButton";
-            this.TransferMoneyButton.Size = new System.Drawing.Size(808, 92);
-            this.TransferMoneyButton.TabIndex = 3;
-            this.TransferMoneyButton.Text = "Transfer Money";
-            this.TransferMoneyButton.UseVisualStyleBackColor = true;
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExitButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ExitButton.Location = new System.Drawing.Point(5, 422);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(808, 92);
-            this.ExitButton.TabIndex = 4;
-            this.ExitButton.Text = "Exit";
-            this.ExitButton.UseVisualStyleBackColor = true;
-            // 
-            // WelcomeLabel
-            // 
-            this.WelcomeLabel.AutoSize = true;
-            this.WelcomeLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WelcomeLabel.Location = new System.Drawing.Point(30, 24);
-            this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(332, 45);
-            this.WelcomeLabel.TabIndex = 2;
-            this.WelcomeLabel.Text = "Welcome to ZZZ Bank";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "label3";
-            // 
-            // button19
-            // 
-            this.button19.Location = new System.Drawing.Point(275, 183);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(198, 84);
-            this.button19.TabIndex = 9;
-            this.button19.Text = "1";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
@@ -184,16 +165,13 @@ namespace ATM_Practice
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel MainMenuFormTable;
-        private System.Windows.Forms.Button CheckBalanceButton;
-        private System.Windows.Forms.Button WithdrawMoneyButton;
-        private System.Windows.Forms.Button TransferMoneyButton;
-        private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.Button DepositMoneyButton;
         private System.Windows.Forms.Label WelcomeLabel;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button TransferMoneyButton;
+        private System.Windows.Forms.Button DepositMoneyButton;
+        private System.Windows.Forms.Button WithdrawMoneyButton;
+        private System.Windows.Forms.Button CheckBalanceButton;
+        private System.Windows.Forms.TableLayoutPanel MainMenuFormTable;
     }
 }
 

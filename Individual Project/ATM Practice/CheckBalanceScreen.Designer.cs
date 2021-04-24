@@ -30,11 +30,11 @@ namespace ATM_Practice
         private void InitializeComponent()
         {
             this.AccountBalanceFormTable = new System.Windows.Forms.TableLayoutPanel();
-            this.AccBalanceReturnButton = new System.Windows.Forms.Button();
             this.AccBalanceMainMenuButton = new System.Windows.Forms.Button();
             this.AccBalanceSplitContainer = new System.Windows.Forms.SplitContainer();
             this.BalanceStaticLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.CheckBalanceDynamicLabel = new System.Windows.Forms.Label();
+            this.AccBalanceReturnButton = new System.Windows.Forms.Button();
             this.AccountBalanceFormTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AccBalanceSplitContainer)).BeginInit();
             this.AccBalanceSplitContainer.Panel1.SuspendLayout();
@@ -60,19 +60,6 @@ namespace ATM_Practice
             this.AccountBalanceFormTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.AccountBalanceFormTable.Size = new System.Drawing.Size(861, 620);
             this.AccountBalanceFormTable.TabIndex = 5;
-            // 
-            // AccBalanceReturnButton
-            // 
-            this.AccBalanceReturnButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AccBalanceReturnButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AccBalanceReturnButton.Location = new System.Drawing.Point(3, 127);
-            this.AccBalanceReturnButton.Name = "AccBalanceReturnButton";
-            this.AccBalanceReturnButton.Size = new System.Drawing.Size(855, 242);
-            this.AccBalanceReturnButton.TabIndex = 5;
-            this.AccBalanceReturnButton.Text = "Check Another Balance";
-            this.AccBalanceReturnButton.UseVisualStyleBackColor = true;
             // 
             // AccBalanceMainMenuButton
             // 
@@ -101,7 +88,7 @@ namespace ATM_Practice
             // 
             // AccBalanceSplitContainer.Panel2
             // 
-            this.AccBalanceSplitContainer.Panel2.Controls.Add(this.label2);
+            this.AccBalanceSplitContainer.Panel2.Controls.Add(this.CheckBalanceDynamicLabel);
             this.AccBalanceSplitContainer.Size = new System.Drawing.Size(855, 118);
             this.AccBalanceSplitContainer.SplitterDistance = 283;
             this.AccBalanceSplitContainer.TabIndex = 6;
@@ -117,17 +104,30 @@ namespace ATM_Practice
             this.BalanceStaticLabel.TabIndex = 0;
             this.BalanceStaticLabel.Text = "Balance:";
             // 
-            // label2
+            // CheckBalanceDynamicLabel
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(396, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 45);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "$1234.56";
+            this.CheckBalanceDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CheckBalanceDynamicLabel.AutoSize = true;
+            this.CheckBalanceDynamicLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CheckBalanceDynamicLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.CheckBalanceDynamicLabel.Location = new System.Drawing.Point(396, 32);
+            this.CheckBalanceDynamicLabel.Name = "CheckBalanceDynamicLabel";
+            this.CheckBalanceDynamicLabel.Size = new System.Drawing.Size(146, 45);
+            this.CheckBalanceDynamicLabel.TabIndex = 0;
+            this.CheckBalanceDynamicLabel.Text = "$1234.56";
+            // 
+            // AccBalanceReturnButton
+            // 
+            this.AccBalanceReturnButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AccBalanceReturnButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccBalanceReturnButton.Location = new System.Drawing.Point(3, 127);
+            this.AccBalanceReturnButton.Name = "AccBalanceReturnButton";
+            this.AccBalanceReturnButton.Size = new System.Drawing.Size(855, 242);
+            this.AccBalanceReturnButton.TabIndex = 5;
+            this.AccBalanceReturnButton.Text = "Check Another Balance";
+            this.AccBalanceReturnButton.UseVisualStyleBackColor = true;
             // 
             // CheckBalanceScreen
             // 
@@ -154,7 +154,7 @@ namespace ATM_Practice
         private System.Windows.Forms.Button AccBalanceMainMenuButton;
         private System.Windows.Forms.SplitContainer AccBalanceSplitContainer;
         private System.Windows.Forms.Label BalanceStaticLabel;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label CheckBalanceDynamicLabel;
         private System.Windows.Forms.Button AccBalanceReturnButton;
     }
 }
