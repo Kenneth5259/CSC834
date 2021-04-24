@@ -42,9 +42,27 @@ namespace ATM_Practice
             this.AccountDepositAdditionalDepositButton = new System.Windows.Forms.Button();
             this.AccountDepositAdditionalCompleteButton = new System.Windows.Forms.Button();
             this.AccountDepositAdditionalDynamicLabel = new System.Windows.Forms.Label();
+            this.AccountDepositAmountTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountDepositAmountDynamicLabel = new System.Windows.Forms.Label();
+            this.AccountDepositConfirmButton = new System.Windows.Forms.Button();
+            this.AccountDepositInputsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountDepositInputClearButton = new System.Windows.Forms.Button();
+            this.AccountDepositInputDotButton = new System.Windows.Forms.Button();
+            this.AccountDepositInput3Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput6Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput5Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput4Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput9Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput7Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput0Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput2Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput1Button = new System.Windows.Forms.Button();
+            this.AccountDepositInput8Button = new System.Windows.Forms.Button();
             this.AdditionalDepositTableLayoutPanel.SuspendLayout();
             this.AccountDepositTypeTableLayoutPanel.SuspendLayout();
             this.AccountDepositAdditionalTableLayoutPanel.SuspendLayout();
+            this.AccountDepositAmountTableLayoutPanel.SuspendLayout();
+            this.AccountDepositInputsTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdditionalDepositTableLayoutPanel
@@ -213,11 +231,215 @@ namespace ATM_Practice
             this.AccountDepositAdditionalDynamicLabel.TabIndex = 2;
             this.AccountDepositAdditionalDynamicLabel.Text = "$1234.56";
             // 
+            // AccountDepositAmountTableLayoutPanel
+            // 
+            this.AccountDepositAmountTableLayoutPanel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.AccountDepositAmountTableLayoutPanel.ColumnCount = 1;
+            this.AccountDepositAmountTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountDepositAmountTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountDepositAmountTableLayoutPanel.Controls.Add(this.AccountDepositAmountDynamicLabel, 0, 0);
+            this.AccountDepositAmountTableLayoutPanel.Controls.Add(this.AccountDepositConfirmButton, 0, 2);
+            this.AccountDepositAmountTableLayoutPanel.Controls.Add(this.AccountDepositInputsTableLayoutPanel, 0, 1);
+            this.AccountDepositAmountTableLayoutPanel.Location = new System.Drawing.Point(30, 93);
+            this.AccountDepositAmountTableLayoutPanel.Name = "AccountDepositAmountTableLayoutPanel";
+            this.AccountDepositAmountTableLayoutPanel.RowCount = 3;
+            this.AccountDepositAmountTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.AccountDepositAmountTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.AccountDepositAmountTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.AccountDepositAmountTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
+            this.AccountDepositAmountTableLayoutPanel.TabIndex = 16;
+            // 
+            // AccountDepositAmountDynamicLabel
+            // 
+            this.AccountDepositAmountDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.AccountDepositAmountDynamicLabel.AutoSize = true;
+            this.AccountDepositAmountDynamicLabel.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositAmountDynamicLabel.Location = new System.Drawing.Point(719, 11);
+            this.AccountDepositAmountDynamicLabel.Name = "AccountDepositAmountDynamicLabel";
+            this.AccountDepositAmountDynamicLabel.Size = new System.Drawing.Size(102, 30);
+            this.AccountDepositAmountDynamicLabel.TabIndex = 0;
+            this.AccountDepositAmountDynamicLabel.Text = "$1234.56";
+            // 
+            // AccountDepositConfirmButton
+            // 
+            this.AccountDepositConfirmButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositConfirmButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.AccountDepositConfirmButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositConfirmButton.ForeColor = System.Drawing.Color.Coral;
+            this.AccountDepositConfirmButton.Location = new System.Drawing.Point(17, 428);
+            this.AccountDepositConfirmButton.Name = "AccountDepositConfirmButton";
+            this.AccountDepositConfirmButton.Size = new System.Drawing.Size(789, 90);
+            this.AccountDepositConfirmButton.TabIndex = 1;
+            this.AccountDepositConfirmButton.Text = "Confirm";
+            this.AccountDepositConfirmButton.UseVisualStyleBackColor = false;
+            // 
+            // AccountDepositInputsTableLayoutPanel
+            // 
+            this.AccountDepositInputsTableLayoutPanel.ColumnCount = 3;
+            this.AccountDepositInputsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
+            this.AccountDepositInputsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.AccountDepositInputsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInputClearButton, 2, 3);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInputDotButton, 1, 3);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput3Button, 2, 2);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput6Button, 2, 1);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput5Button, 1, 1);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput4Button, 0, 1);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput9Button, 2, 0);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput7Button, 0, 0);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput0Button, 0, 3);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput2Button, 1, 2);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput1Button, 0, 2);
+            this.AccountDepositInputsTableLayoutPanel.Controls.Add(this.AccountDepositInput8Button, 1, 0);
+            this.AccountDepositInputsTableLayoutPanel.Location = new System.Drawing.Point(3, 55);
+            this.AccountDepositInputsTableLayoutPanel.Name = "AccountDepositInputsTableLayoutPanel";
+            this.AccountDepositInputsTableLayoutPanel.RowCount = 4;
+            this.AccountDepositInputsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountDepositInputsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountDepositInputsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountDepositInputsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountDepositInputsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountDepositInputsTableLayoutPanel.Size = new System.Drawing.Size(818, 362);
+            this.AccountDepositInputsTableLayoutPanel.TabIndex = 2;
+            // 
+            // AccountDepositInputClearButton
+            // 
+            this.AccountDepositInputClearButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInputClearButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInputClearButton.Location = new System.Drawing.Point(548, 276);
+            this.AccountDepositInputClearButton.Name = "AccountDepositInputClearButton";
+            this.AccountDepositInputClearButton.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInputClearButton.TabIndex = 14;
+            this.AccountDepositInputClearButton.Text = "Clear";
+            this.AccountDepositInputClearButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInputDotButton
+            // 
+            this.AccountDepositInputDotButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInputDotButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInputDotButton.Location = new System.Drawing.Point(275, 276);
+            this.AccountDepositInputDotButton.Name = "AccountDepositInputDotButton";
+            this.AccountDepositInputDotButton.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInputDotButton.TabIndex = 13;
+            this.AccountDepositInputDotButton.Text = ".";
+            this.AccountDepositInputDotButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput3Button
+            // 
+            this.AccountDepositInput3Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput3Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput3Button.Location = new System.Drawing.Point(548, 185);
+            this.AccountDepositInput3Button.Name = "AccountDepositInput3Button";
+            this.AccountDepositInput3Button.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInput3Button.TabIndex = 12;
+            this.AccountDepositInput3Button.Text = "3";
+            this.AccountDepositInput3Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput6Button
+            // 
+            this.AccountDepositInput6Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput6Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput6Button.Location = new System.Drawing.Point(547, 95);
+            this.AccountDepositInput6Button.Name = "AccountDepositInput6Button";
+            this.AccountDepositInput6Button.Size = new System.Drawing.Size(268, 79);
+            this.AccountDepositInput6Button.TabIndex = 7;
+            this.AccountDepositInput6Button.Text = "6";
+            this.AccountDepositInput6Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput5Button
+            // 
+            this.AccountDepositInput5Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput5Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput5Button.Location = new System.Drawing.Point(275, 95);
+            this.AccountDepositInput5Button.Name = "AccountDepositInput5Button";
+            this.AccountDepositInput5Button.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInput5Button.TabIndex = 6;
+            this.AccountDepositInput5Button.Text = "5";
+            this.AccountDepositInput5Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput4Button
+            // 
+            this.AccountDepositInput4Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput4Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput4Button.Location = new System.Drawing.Point(3, 95);
+            this.AccountDepositInput4Button.Name = "AccountDepositInput4Button";
+            this.AccountDepositInput4Button.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInput4Button.TabIndex = 5;
+            this.AccountDepositInput4Button.Text = "4";
+            this.AccountDepositInput4Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput9Button
+            // 
+            this.AccountDepositInput9Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput9Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput9Button.Location = new System.Drawing.Point(547, 5);
+            this.AccountDepositInput9Button.Name = "AccountDepositInput9Button";
+            this.AccountDepositInput9Button.Size = new System.Drawing.Size(268, 79);
+            this.AccountDepositInput9Button.TabIndex = 3;
+            this.AccountDepositInput9Button.Text = "9";
+            this.AccountDepositInput9Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput7Button
+            // 
+            this.AccountDepositInput7Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput7Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput7Button.Location = new System.Drawing.Point(3, 5);
+            this.AccountDepositInput7Button.Name = "AccountDepositInput7Button";
+            this.AccountDepositInput7Button.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInput7Button.TabIndex = 1;
+            this.AccountDepositInput7Button.Text = "7";
+            this.AccountDepositInput7Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput0Button
+            // 
+            this.AccountDepositInput0Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput0Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput0Button.Location = new System.Drawing.Point(3, 276);
+            this.AccountDepositInput0Button.Name = "AccountDepositInput0Button";
+            this.AccountDepositInput0Button.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInput0Button.TabIndex = 0;
+            this.AccountDepositInput0Button.Text = "0";
+            this.AccountDepositInput0Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput2Button
+            // 
+            this.AccountDepositInput2Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput2Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput2Button.Location = new System.Drawing.Point(275, 185);
+            this.AccountDepositInput2Button.Name = "AccountDepositInput2Button";
+            this.AccountDepositInput2Button.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInput2Button.TabIndex = 10;
+            this.AccountDepositInput2Button.Text = "2";
+            this.AccountDepositInput2Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput1Button
+            // 
+            this.AccountDepositInput1Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput1Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput1Button.Location = new System.Drawing.Point(3, 185);
+            this.AccountDepositInput1Button.Name = "AccountDepositInput1Button";
+            this.AccountDepositInput1Button.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInput1Button.TabIndex = 11;
+            this.AccountDepositInput1Button.Text = "1";
+            this.AccountDepositInput1Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositInput8Button
+            // 
+            this.AccountDepositInput8Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositInput8Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositInput8Button.Location = new System.Drawing.Point(275, 5);
+            this.AccountDepositInput8Button.Name = "AccountDepositInput8Button";
+            this.AccountDepositInput8Button.Size = new System.Drawing.Size(266, 79);
+            this.AccountDepositInput8Button.TabIndex = 2;
+            this.AccountDepositInput8Button.Text = "8";
+            this.AccountDepositInput8Button.UseVisualStyleBackColor = true;
+            // 
             // AccountDepositScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountDepositAmountTableLayoutPanel);
             this.Controls.Add(this.AccountDepositAdditionalTableLayoutPanel);
             this.Controls.Add(this.AdditionalDepositTableLayoutPanel);
             this.Controls.Add(this.AccountDepositTypeTableLayoutPanel);
@@ -229,6 +451,9 @@ namespace ATM_Practice
             this.AccountDepositTypeTableLayoutPanel.ResumeLayout(false);
             this.AccountDepositAdditionalTableLayoutPanel.ResumeLayout(false);
             this.AccountDepositAdditionalTableLayoutPanel.PerformLayout();
+            this.AccountDepositAmountTableLayoutPanel.ResumeLayout(false);
+            this.AccountDepositAmountTableLayoutPanel.PerformLayout();
+            this.AccountDepositInputsTableLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,5 +475,21 @@ namespace ATM_Practice
         private System.Windows.Forms.Button AccountDepositAdditionalDepositButton;
         private System.Windows.Forms.Button AccountDepositAdditionalCompleteButton;
         private System.Windows.Forms.Label AccountDepositAdditionalDynamicLabel;
+        private System.Windows.Forms.TableLayoutPanel AccountDepositAmountTableLayoutPanel;
+        private System.Windows.Forms.Label AccountDepositAmountDynamicLabel;
+        private System.Windows.Forms.Button AccountDepositConfirmButton;
+        private System.Windows.Forms.TableLayoutPanel AccountDepositInputsTableLayoutPanel;
+        private System.Windows.Forms.Button AccountDepositInputClearButton;
+        private System.Windows.Forms.Button AccountDepositInputDotButton;
+        private System.Windows.Forms.Button AccountDepositInput3Button;
+        private System.Windows.Forms.Button AccountDepositInput6Button;
+        private System.Windows.Forms.Button AccountDepositInput5Button;
+        private System.Windows.Forms.Button AccountDepositInput4Button;
+        private System.Windows.Forms.Button AccountDepositInput9Button;
+        private System.Windows.Forms.Button AccountDepositInput7Button;
+        private System.Windows.Forms.Button AccountDepositInput0Button;
+        private System.Windows.Forms.Button AccountDepositInput2Button;
+        private System.Windows.Forms.Button AccountDepositInput1Button;
+        private System.Windows.Forms.Button AccountDepositInput8Button;
     }
 }

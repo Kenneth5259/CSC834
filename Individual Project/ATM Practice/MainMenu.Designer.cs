@@ -36,29 +36,10 @@ namespace ATM_Practice
             this.TransferMoneyButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.WelcomeLabel = new System.Windows.Forms.Label();
-            this.WidthdrawErrorMessageTableForm = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button8 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.button38 = new System.Windows.Forms.Button();
@@ -95,10 +76,7 @@ namespace ATM_Practice
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.MainMenuFormTable.SuspendLayout();
-            this.WidthdrawErrorMessageTableForm.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
             this.TransferToSelectListTableForm.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
@@ -215,42 +193,6 @@ namespace ATM_Practice
             this.WelcomeLabel.TabIndex = 2;
             this.WelcomeLabel.Text = "Welcome to ZZZ Bank";
             // 
-            // WidthdrawErrorMessageTableForm
-            // 
-            this.WidthdrawErrorMessageTableForm.ColumnCount = 1;
-            this.WidthdrawErrorMessageTableForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.WidthdrawErrorMessageTableForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.WidthdrawErrorMessageTableForm.Controls.Add(this.label4, 0, 0);
-            this.WidthdrawErrorMessageTableForm.Controls.Add(this.button7, 0, 1);
-            this.WidthdrawErrorMessageTableForm.ForeColor = System.Drawing.Color.Red;
-            this.WidthdrawErrorMessageTableForm.Location = new System.Drawing.Point(27, 76);
-            this.WidthdrawErrorMessageTableForm.Name = "WidthdrawErrorMessageTableForm";
-            this.WidthdrawErrorMessageTableForm.RowCount = 2;
-            this.WidthdrawErrorMessageTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.WidthdrawErrorMessageTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.WidthdrawErrorMessageTableForm.Size = new System.Drawing.Size(821, 522);
-            this.WidthdrawErrorMessageTableForm.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(811, 344);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Account has reached $3000 limit or transaction wlll place account over the $3000 " +
-    "limit";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(3, 394);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(815, 125);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "Return";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.Location = new System.Drawing.Point(0, 0);
@@ -299,182 +241,6 @@ namespace ATM_Practice
             this.label5.TabIndex = 0;
             this.label5.Text = "Please insert the check(s) into the slot designated by the blinking light on the " +
     "machine.";
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button9, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(24, 72);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(824, 526);
-            this.tableLayoutPanel2.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(719, 11);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 30);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "$1234.56";
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button9.ForeColor = System.Drawing.Color.Coral;
-            this.button9.Location = new System.Drawing.Point(3, 423);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(818, 100);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "Confirm";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel3.Controls.Add(this.button22, 2, 3);
-            this.tableLayoutPanel3.Controls.Add(this.button21, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.button18, 2, 2);
-            this.tableLayoutPanel3.Controls.Add(this.button17, 2, 1);
-            this.tableLayoutPanel3.Controls.Add(this.button16, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.button15, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.button13, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.button11, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.button10, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.button20, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.button14, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.button12, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 55);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 5;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(818, 362);
-            this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // button22
-            // 
-            this.button22.Location = new System.Drawing.Point(547, 258);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(266, 79);
-            this.button22.TabIndex = 14;
-            this.button22.Text = "Clear";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.Location = new System.Drawing.Point(275, 258);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(266, 79);
-            this.button21.TabIndex = 13;
-            this.button21.Text = ".";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(547, 173);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(266, 79);
-            this.button18.TabIndex = 12;
-            this.button18.Text = "3";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(547, 88);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(268, 79);
-            this.button17.TabIndex = 7;
-            this.button17.Text = "6";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(275, 88);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(266, 79);
-            this.button16.TabIndex = 6;
-            this.button16.Text = "5";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(3, 88);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(266, 79);
-            this.button15.TabIndex = 5;
-            this.button15.Text = "4";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(547, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(268, 79);
-            this.button13.TabIndex = 3;
-            this.button13.Text = "9";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(3, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(266, 79);
-            this.button11.TabIndex = 1;
-            this.button11.Text = "7";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(3, 258);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(266, 79);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "0";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(275, 173);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(266, 79);
-            this.button20.TabIndex = 10;
-            this.button20.Text = "2";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(3, 173);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(266, 79);
-            this.button14.TabIndex = 11;
-            this.button14.Text = "1";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(275, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(266, 79);
-            this.button12.TabIndex = 2;
-            this.button12.Text = "8";
-            this.button12.UseVisualStyleBackColor = true;
             // 
             // button19
             // 
@@ -919,24 +685,17 @@ namespace ATM_Practice
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(885, 644);
             this.Controls.Add(this.TransferAmountTableForm);
-            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel15);
             this.Controls.Add(this.TransferToSelectListTableForm);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.WidthdrawErrorMessageTableForm);
             this.Controls.Add(this.WelcomeLabel);
             this.Controls.Add(this.MainMenuFormTable);
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "MainMenuForm";
             this.Text = "Form1";
             this.MainMenuFormTable.ResumeLayout(false);
-            this.WidthdrawErrorMessageTableForm.ResumeLayout(false);
-            this.WidthdrawErrorMessageTableForm.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
             this.TransferToSelectListTableForm.ResumeLayout(false);
@@ -962,30 +721,11 @@ namespace ATM_Practice
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Button DepositMoneyButton;
         private System.Windows.Forms.Label WelcomeLabel;
-        private System.Windows.Forms.TableLayoutPanel WidthdrawErrorMessageTableForm;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button41;

@@ -24,6 +24,10 @@ namespace ATM_Practice
         {
             switch(errorCode)
             {
+                case 161:
+                    this.errorText = "Account has reached $3000 limit or transaction wlll place account over the $3000 limit";
+                    this.buttonText = "Return";
+                    break;
                 case 55:
                     this.errorText = "You have entered an incorrect PIN. If 3 incorrect PINs are entered in this session, the account will be locked until the bank unlocks the account. Please return to the pin entry screen.";
                     this.buttonText = "PIN Entry Screen";
