@@ -29,29 +29,30 @@ namespace ATM_Practice
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountTransferConfirmationTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.AccountTransferChangeAmountButton = new System.Windows.Forms.Button();
             this.AccountTransferAmountDynamicLabel = new System.Windows.Forms.Label();
             this.AccountTransferFinalizeButto = new System.Windows.Forms.Button();
             this.AccountTransferWelcomeLabel = new System.Windows.Forms.Label();
-            this.tableLayoutPanel25.SuspendLayout();
+            this.AccountTransferConfirmationTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel25
+            // AccountTransferConfirmationTableLayoutPanel
             // 
-            this.tableLayoutPanel25.ColumnCount = 1;
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel25.Controls.Add(this.AccountTransferChangeAmountButton, 0, 1);
-            this.tableLayoutPanel25.Controls.Add(this.AccountTransferAmountDynamicLabel, 0, 0);
-            this.tableLayoutPanel25.Controls.Add(this.AccountTransferFinalizeButto, 0, 2);
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(29, 98);
-            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
-            this.tableLayoutPanel25.RowCount = 3;
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(824, 534);
-            this.tableLayoutPanel25.TabIndex = 19;
+            this.AccountTransferConfirmationTableLayoutPanel.ColumnCount = 1;
+            this.AccountTransferConfirmationTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountTransferConfirmationTableLayoutPanel.Controls.Add(this.AccountTransferChangeAmountButton, 0, 1);
+            this.AccountTransferConfirmationTableLayoutPanel.Controls.Add(this.AccountTransferAmountDynamicLabel, 0, 0);
+            this.AccountTransferConfirmationTableLayoutPanel.Controls.Add(this.AccountTransferFinalizeButto, 0, 2);
+            this.AccountTransferConfirmationTableLayoutPanel.Location = new System.Drawing.Point(29, 98);
+            this.AccountTransferConfirmationTableLayoutPanel.Name = "AccountTransferConfirmationTableLayoutPanel";
+            this.AccountTransferConfirmationTableLayoutPanel.RowCount = 3;
+            this.AccountTransferConfirmationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.AccountTransferConfirmationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.AccountTransferConfirmationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.AccountTransferConfirmationTableLayoutPanel.Size = new System.Drawing.Size(824, 534);
+            this.AccountTransferConfirmationTableLayoutPanel.TabIndex = 19;
+            this.AccountTransferConfirmationTableLayoutPanel.Visible = false;
             // 
             // AccountTransferChangeAmountButton
             // 
@@ -103,11 +104,11 @@ namespace ATM_Practice
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
             this.Controls.Add(this.AccountTransferWelcomeLabel);
-            this.Controls.Add(this.tableLayoutPanel25);
+            this.Controls.Add(this.AccountTransferConfirmationTableLayoutPanel);
             this.Name = "AccountTransferForm";
             this.Text = "AccountTransferForm";
-            this.tableLayoutPanel25.ResumeLayout(false);
-            this.tableLayoutPanel25.PerformLayout();
+            this.AccountTransferConfirmationTableLayoutPanel.ResumeLayout(false);
+            this.AccountTransferConfirmationTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,7 +116,7 @@ namespace ATM_Practice
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel25;
+        private System.Windows.Forms.TableLayoutPanel AccountTransferConfirmationTableLayoutPanel;
         private System.Windows.Forms.Button AccountTransferChangeAmountButton;
         private System.Windows.Forms.Button AccountTransferFinalizeButto;
         private System.Windows.Forms.Label Accou;
