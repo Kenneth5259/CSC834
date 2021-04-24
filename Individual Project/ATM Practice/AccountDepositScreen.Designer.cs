@@ -58,11 +58,16 @@ namespace ATM_Practice
             this.AccountDepositInput2Button = new System.Windows.Forms.Button();
             this.AccountDepositInput1Button = new System.Windows.Forms.Button();
             this.AccountDepositInput8Button = new System.Windows.Forms.Button();
+            this.AccountDepositFinalizeTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountDepositFinalizeDepositButton = new System.Windows.Forms.Button();
+            this.AccountDepositFinalizeReturnButton = new System.Windows.Forms.Button();
+            this.AccountDepositFinalizeDynamicLabel = new System.Windows.Forms.Label();
             this.AdditionalDepositTableLayoutPanel.SuspendLayout();
             this.AccountDepositTypeTableLayoutPanel.SuspendLayout();
             this.AccountDepositAdditionalTableLayoutPanel.SuspendLayout();
             this.AccountDepositAmountTableLayoutPanel.SuspendLayout();
             this.AccountDepositInputsTableLayoutPanel.SuspendLayout();
+            this.AccountDepositFinalizeTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdditionalDepositTableLayoutPanel
@@ -434,11 +439,65 @@ namespace ATM_Practice
             this.AccountDepositInput8Button.Text = "8";
             this.AccountDepositInput8Button.UseVisualStyleBackColor = true;
             // 
+            // AccountDepositFinalizeTableLayoutPanel
+            // 
+            this.AccountDepositFinalizeTableLayoutPanel.ColumnCount = 1;
+            this.AccountDepositFinalizeTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountDepositFinalizeTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountDepositFinalizeTableLayoutPanel.Controls.Add(this.AccountDepositFinalizeDepositButton, 0, 1);
+            this.AccountDepositFinalizeTableLayoutPanel.Controls.Add(this.AccountDepositFinalizeReturnButton, 0, 2);
+            this.AccountDepositFinalizeTableLayoutPanel.Controls.Add(this.AccountDepositFinalizeDynamicLabel, 0, 0);
+            this.AccountDepositFinalizeTableLayoutPanel.Location = new System.Drawing.Point(30, 93);
+            this.AccountDepositFinalizeTableLayoutPanel.Name = "AccountDepositFinalizeTableLayoutPanel";
+            this.AccountDepositFinalizeTableLayoutPanel.RowCount = 3;
+            this.AccountDepositFinalizeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositFinalizeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositFinalizeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositFinalizeTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
+            this.AccountDepositFinalizeTableLayoutPanel.TabIndex = 17;
+            // 
+            // AccountDepositFinalizeDepositButton
+            // 
+            this.AccountDepositFinalizeDepositButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositFinalizeDepositButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AccountDepositFinalizeDepositButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositFinalizeDepositButton.Location = new System.Drawing.Point(17, 188);
+            this.AccountDepositFinalizeDepositButton.Name = "AccountDepositFinalizeDepositButton";
+            this.AccountDepositFinalizeDepositButton.Size = new System.Drawing.Size(789, 149);
+            this.AccountDepositFinalizeDepositButton.TabIndex = 1;
+            this.AccountDepositFinalizeDepositButton.Text = "Finalize Deposit";
+            this.AccountDepositFinalizeDepositButton.UseVisualStyleBackColor = false;
+            // 
+            // AccountDepositFinalizeReturnButton
+            // 
+            this.AccountDepositFinalizeReturnButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositFinalizeReturnButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.AccountDepositFinalizeReturnButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositFinalizeReturnButton.Location = new System.Drawing.Point(17, 363);
+            this.AccountDepositFinalizeReturnButton.Name = "AccountDepositFinalizeReturnButton";
+            this.AccountDepositFinalizeReturnButton.Size = new System.Drawing.Size(789, 149);
+            this.AccountDepositFinalizeReturnButton.TabIndex = 2;
+            this.AccountDepositFinalizeReturnButton.Text = "Return to Previous Screen";
+            this.AccountDepositFinalizeReturnButton.UseVisualStyleBackColor = false;
+            // 
+            // AccountDepositFinalizeDynamicLabel
+            // 
+            this.AccountDepositFinalizeDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.AccountDepositFinalizeDynamicLabel.AutoSize = true;
+            this.AccountDepositFinalizeDynamicLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositFinalizeDynamicLabel.ForeColor = System.Drawing.Color.ForestGreen;
+            this.AccountDepositFinalizeDynamicLabel.Location = new System.Drawing.Point(675, 65);
+            this.AccountDepositFinalizeDynamicLabel.Name = "AccountDepositFinalizeDynamicLabel";
+            this.AccountDepositFinalizeDynamicLabel.Size = new System.Drawing.Size(146, 45);
+            this.AccountDepositFinalizeDynamicLabel.TabIndex = 3;
+            this.AccountDepositFinalizeDynamicLabel.Text = "$1234.56";
+            // 
             // AccountDepositScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountDepositFinalizeTableLayoutPanel);
             this.Controls.Add(this.AccountDepositAmountTableLayoutPanel);
             this.Controls.Add(this.AccountDepositAdditionalTableLayoutPanel);
             this.Controls.Add(this.AdditionalDepositTableLayoutPanel);
@@ -454,6 +513,8 @@ namespace ATM_Practice
             this.AccountDepositAmountTableLayoutPanel.ResumeLayout(false);
             this.AccountDepositAmountTableLayoutPanel.PerformLayout();
             this.AccountDepositInputsTableLayoutPanel.ResumeLayout(false);
+            this.AccountDepositFinalizeTableLayoutPanel.ResumeLayout(false);
+            this.AccountDepositFinalizeTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,5 +552,9 @@ namespace ATM_Practice
         private System.Windows.Forms.Button AccountDepositInput2Button;
         private System.Windows.Forms.Button AccountDepositInput1Button;
         private System.Windows.Forms.Button AccountDepositInput8Button;
+        private System.Windows.Forms.TableLayoutPanel AccountDepositFinalizeTableLayoutPanel;
+        private System.Windows.Forms.Button AccountDepositFinalizeDepositButton;
+        private System.Windows.Forms.Button AccountDepositFinalizeReturnButton;
+        private System.Windows.Forms.Label AccountDepositFinalizeDynamicLabel;
     }
 }

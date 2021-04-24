@@ -41,10 +41,6 @@ namespace ATM_Practice
             this.button8 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.button19 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
             this.TransferToSelectListTableForm = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.button42 = new System.Windows.Forms.Button();
@@ -57,7 +53,6 @@ namespace ATM_Practice
             this.button49 = new System.Windows.Forms.Button();
             this.MainMenuFormTable.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
             this.TransferToSelectListTableForm.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
             this.SuspendLayout();
@@ -227,55 +222,6 @@ namespace ATM_Practice
             this.button19.Text = "1";
             this.button19.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel15
-            // 
-            this.tableLayoutPanel15.ColumnCount = 1;
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.Controls.Add(this.button38, 0, 1);
-            this.tableLayoutPanel15.Controls.Add(this.button41, 0, 2);
-            this.tableLayoutPanel15.Controls.Add(this.label16, 0, 0);
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(18, 72);
-            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
-            this.tableLayoutPanel15.RowCount = 3;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(824, 526);
-            this.tableLayoutPanel15.TabIndex = 12;
-            // 
-            // button38
-            // 
-            this.button38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button38.Location = new System.Drawing.Point(3, 178);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(818, 169);
-            this.button38.TabIndex = 1;
-            this.button38.Text = "Finalize Deposit";
-            this.button38.UseVisualStyleBackColor = false;
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button41.Location = new System.Drawing.Point(3, 353);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(818, 170);
-            this.button41.TabIndex = 2;
-            this.button41.Text = "Return to Previous Screen";
-            this.button41.UseVisualStyleBackColor = false;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label16.Location = new System.Drawing.Point(675, 65);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(146, 45);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "$1234.56";
-            // 
             // TransferToSelectListTableForm
             // 
             this.TransferToSelectListTableForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -433,7 +379,6 @@ namespace ATM_Practice
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(885, 644);
-            this.Controls.Add(this.tableLayoutPanel15);
             this.Controls.Add(this.TransferToSelectListTableForm);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.WelcomeLabel);
@@ -444,8 +389,6 @@ namespace ATM_Practice
             this.MainMenuFormTable.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel15.ResumeLayout(false);
-            this.tableLayoutPanel15.PerformLayout();
             this.TransferToSelectListTableForm.ResumeLayout(false);
             this.TransferToSelectListTableForm.PerformLayout();
             this.tableLayoutPanel18.ResumeLayout(false);
@@ -468,10 +411,6 @@ namespace ATM_Practice
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TableLayoutPanel TransferToSelectListTableForm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private System.Windows.Forms.Button button42;
