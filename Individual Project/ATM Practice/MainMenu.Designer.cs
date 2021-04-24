@@ -91,14 +91,6 @@ namespace ATM_Practice
             this.button14 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
@@ -151,8 +143,6 @@ namespace ATM_Practice
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
             this.TransferToSelectListTableForm.SuspendLayout();
@@ -954,96 +944,6 @@ namespace ATM_Practice
             this.button19.Text = "1";
             this.button19.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel13, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.button25, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.button26, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.button24, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(24, 72);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 4;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(824, 526);
-            this.tableLayoutPanel5.TabIndex = 9;
-            // 
-            // tableLayoutPanel13
-            // 
-            this.tableLayoutPanel13.ColumnCount = 1;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel13.Controls.Add(this.button35, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.button36, 0, 1);
-            this.tableLayoutPanel13.Controls.Add(this.button37, 0, 2);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 507);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 3;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(818, 10);
-            this.tableLayoutPanel13.TabIndex = 10;
-            // 
-            // button35
-            // 
-            this.button35.Location = new System.Drawing.Point(3, 3);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(812, 1);
-            this.button35.TabIndex = 0;
-            this.button35.Text = "Cash";
-            this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.Location = new System.Drawing.Point(3, 6);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(812, 1);
-            this.button36.TabIndex = 1;
-            this.button36.Text = "Check";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.Location = new System.Drawing.Point(3, 9);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(812, 1);
-            this.button37.TabIndex = 2;
-            this.button37.Text = "Main Menu";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(3, 171);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(818, 162);
-            this.button25.TabIndex = 1;
-            this.button25.Text = "Check";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(3, 339);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(818, 162);
-            this.button26.TabIndex = 2;
-            this.button26.Text = "Main Menu";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(3, 3);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(818, 162);
-            this.button24.TabIndex = 0;
-            this.button24.Text = "Cash";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel8
             // 
             this.tableLayoutPanel8.ColumnCount = 1;
@@ -1525,7 +1425,6 @@ namespace ATM_Practice
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(885, 644);
-            this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.TransferAmountTableForm);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel15);
@@ -1564,8 +1463,6 @@ namespace ATM_Practice
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel15.ResumeLayout(false);
@@ -1630,10 +1527,6 @@ namespace ATM_Practice
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label8;
@@ -1656,10 +1549,6 @@ namespace ATM_Practice
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button41;

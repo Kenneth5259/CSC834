@@ -34,7 +34,12 @@ namespace ATM_Practice
             this.AdditionalDepositNoButton = new System.Windows.Forms.Button();
             this.AdditionalDepositStaticLabel = new System.Windows.Forms.Label();
             this.AccountDepositWelcomeLabel = new System.Windows.Forms.Label();
+            this.AccountDepositTypeTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountDepositTypeCheckButton = new System.Windows.Forms.Button();
+            this.AccountDepositTypeMainMenuButton = new System.Windows.Forms.Button();
+            this.AccountDepositTypeCashButton = new System.Windows.Forms.Button();
             this.AdditionalDepositTableLayoutPanel.SuspendLayout();
+            this.AccountDepositTypeTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdditionalDepositTableLayoutPanel
@@ -53,6 +58,7 @@ namespace ATM_Practice
             this.AdditionalDepositTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.AdditionalDepositTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
             this.AdditionalDepositTableLayoutPanel.TabIndex = 12;
+            this.AdditionalDepositTableLayoutPanel.Visible = false;
             // 
             // AddtionalDepositYesButton
             // 
@@ -100,17 +106,69 @@ namespace ATM_Practice
             this.AccountDepositWelcomeLabel.TabIndex = 13;
             this.AccountDepositWelcomeLabel.Text = "Welcome to ZZZ Bank";
             // 
+            // AccountDepositTypeTableLayoutPanel
+            // 
+            this.AccountDepositTypeTableLayoutPanel.ColumnCount = 1;
+            this.AccountDepositTypeTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountDepositTypeTableLayoutPanel.Controls.Add(this.AccountDepositTypeCheckButton, 0, 1);
+            this.AccountDepositTypeTableLayoutPanel.Controls.Add(this.AccountDepositTypeMainMenuButton, 0, 2);
+            this.AccountDepositTypeTableLayoutPanel.Controls.Add(this.AccountDepositTypeCashButton, 0, 0);
+            this.AccountDepositTypeTableLayoutPanel.Location = new System.Drawing.Point(30, 93);
+            this.AccountDepositTypeTableLayoutPanel.Name = "AccountDepositTypeTableLayoutPanel";
+            this.AccountDepositTypeTableLayoutPanel.RowCount = 3;
+            this.AccountDepositTypeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositTypeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositTypeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositTypeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountDepositTypeTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
+            this.AccountDepositTypeTableLayoutPanel.TabIndex = 14;
+            // 
+            // AccountDepositTypeCheckButton
+            // 
+            this.AccountDepositTypeCheckButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositTypeCheckButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositTypeCheckButton.Location = new System.Drawing.Point(17, 187);
+            this.AccountDepositTypeCheckButton.Name = "AccountDepositTypeCheckButton";
+            this.AccountDepositTypeCheckButton.Size = new System.Drawing.Size(789, 151);
+            this.AccountDepositTypeCheckButton.TabIndex = 1;
+            this.AccountDepositTypeCheckButton.Text = "Check";
+            this.AccountDepositTypeCheckButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositTypeMainMenuButton
+            // 
+            this.AccountDepositTypeMainMenuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositTypeMainMenuButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositTypeMainMenuButton.Location = new System.Drawing.Point(17, 362);
+            this.AccountDepositTypeMainMenuButton.Name = "AccountDepositTypeMainMenuButton";
+            this.AccountDepositTypeMainMenuButton.Size = new System.Drawing.Size(789, 151);
+            this.AccountDepositTypeMainMenuButton.TabIndex = 2;
+            this.AccountDepositTypeMainMenuButton.Text = "Main Menu";
+            this.AccountDepositTypeMainMenuButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositTypeCashButton
+            // 
+            this.AccountDepositTypeCashButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositTypeCashButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositTypeCashButton.Location = new System.Drawing.Point(17, 12);
+            this.AccountDepositTypeCashButton.Name = "AccountDepositTypeCashButton";
+            this.AccountDepositTypeCashButton.Size = new System.Drawing.Size(789, 151);
+            this.AccountDepositTypeCashButton.TabIndex = 0;
+            this.AccountDepositTypeCashButton.Text = "Cash";
+            this.AccountDepositTypeCashButton.UseVisualStyleBackColor = true;
+            // 
             // AccountDepositScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
-            this.Controls.Add(this.AccountDepositWelcomeLabel);
             this.Controls.Add(this.AdditionalDepositTableLayoutPanel);
+            this.Controls.Add(this.AccountDepositTypeTableLayoutPanel);
+            this.Controls.Add(this.AccountDepositWelcomeLabel);
             this.Name = "AccountDepositScreen";
             this.Text = "AccountDepositScreen";
             this.AdditionalDepositTableLayoutPanel.ResumeLayout(false);
             this.AdditionalDepositTableLayoutPanel.PerformLayout();
+            this.AccountDepositTypeTableLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +182,9 @@ namespace ATM_Practice
         private System.Windows.Forms.Label AdditionalDepositStaticLabel;
         private System.Windows.Forms.Label AccountDepositWelcomeLabel;
         private System.Windows.Forms.Button t;
+        private System.Windows.Forms.TableLayoutPanel AccountDepositTypeTableLayoutPanel;
+        private System.Windows.Forms.Button AccountDepositTypeCheckButton;
+        private System.Windows.Forms.Button AccountDepositTypeMainMenuButton;
+        private System.Windows.Forms.Button AccountDepositTypeCashButton;
     }
 }
