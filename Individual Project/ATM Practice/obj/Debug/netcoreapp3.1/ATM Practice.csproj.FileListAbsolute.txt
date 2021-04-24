@@ -32,3 +32,4 @@ C:\Users\kenne\Documents\CSC 834\Individual Project\ATM Practice\bin\Debug\netco
 C:\Users\kenne\Documents\CSC 834\Individual Project\ATM Practice\bin\Debug\netcoreapp3.1\ATM Practice.dll
 C:\Users\kenne\Documents\CSC 834\Individual Project\ATM Practice\bin\Debug\netcoreapp3.1\ATM Practice.pdb
 C:\Users\kenne\Documents\CSC 834\Individual Project\ATM Practice\obj\Debug\netcoreapp3.1\ATM Practice.genruntimeconfig.cache
+C:\Users\kenne\Documents\CSC 834\Individual Project\ATM Practice\obj\Debug\netcoreapp3.1\ATM_Practice.AccountDepositScreen.resources

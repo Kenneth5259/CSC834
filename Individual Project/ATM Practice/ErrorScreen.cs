@@ -12,14 +12,14 @@ namespace ATM_Practice
     {
         private string errorText;
         private string buttonText;
-        public ErrorScreen()
+        public ErrorScreen(int err)
         {
             InitializeComponent();
-            this.switchOnError(55);
+            this.switchOnError(err);
         }
 
         // intakes an error code to set the values based on the requirement error
-        // error referenced in requirement 5 as 5.5 will be input as 55, requirement 4 as 4.2.1 would be 421
+        // error referenced in requirement 5 as 5.5 will be input as 55, requirement 4 as 3.3.1.1 would be 3311
         public void switchOnError(int errorCode)
         {
             switch(errorCode)
@@ -27,6 +27,11 @@ namespace ATM_Practice
                 case 55:
                     this.errorText = "You have entered an incorrect PIN. If 3 incorrect PINs are entered in this session, the account will be locked until the bank unlocks the account. Please return to the pin entry screen.";
                     this.buttonText = "PIN Entry Screen";
+                    break;
+
+                case 3311:
+                    this.errorText = "At least two accounts are required to be held with this bank to initiate a transfer. Please return to the main menu.";
+                    this.buttonText = "Main Menu";
                     break;
 
                 default:
