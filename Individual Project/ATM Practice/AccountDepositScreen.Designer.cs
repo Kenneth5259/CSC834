@@ -62,12 +62,16 @@ namespace ATM_Practice
             this.AccountDepositFinalizeDepositButton = new System.Windows.Forms.Button();
             this.AccountDepositFinalizeReturnButton = new System.Windows.Forms.Button();
             this.AccountDepositFinalizeDynamicLabel = new System.Windows.Forms.Label();
+            this.AccountDepositCheckPromptTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountDepositCheckPromptReturnButton = new System.Windows.Forms.Button();
+            this.AccountDepositCheckPromptStaticLabel = new System.Windows.Forms.Label();
             this.AdditionalDepositTableLayoutPanel.SuspendLayout();
             this.AccountDepositTypeTableLayoutPanel.SuspendLayout();
             this.AccountDepositAdditionalTableLayoutPanel.SuspendLayout();
             this.AccountDepositAmountTableLayoutPanel.SuspendLayout();
             this.AccountDepositInputsTableLayoutPanel.SuspendLayout();
             this.AccountDepositFinalizeTableLayoutPanel.SuspendLayout();
+            this.AccountDepositCheckPromptTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdditionalDepositTableLayoutPanel
@@ -492,11 +496,55 @@ namespace ATM_Practice
             this.AccountDepositFinalizeDynamicLabel.TabIndex = 3;
             this.AccountDepositFinalizeDynamicLabel.Text = "$1234.56";
             // 
+            // AccountDepositCheckPromptTableLayoutPanel
+            // 
+            this.AccountDepositCheckPromptTableLayoutPanel.ColumnCount = 1;
+            this.AccountDepositCheckPromptTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountDepositCheckPromptTableLayoutPanel.Controls.Add(this.AccountDepositCheckPromptStaticLabel, 0, 0);
+            this.AccountDepositCheckPromptTableLayoutPanel.Controls.Add(this.AccountDepositCheckPromptReturnButton, 0, 1);
+            this.AccountDepositCheckPromptTableLayoutPanel.ForeColor = System.Drawing.Color.Red;
+            this.AccountDepositCheckPromptTableLayoutPanel.Location = new System.Drawing.Point(30, 93);
+            this.AccountDepositCheckPromptTableLayoutPanel.Name = "AccountDepositCheckPromptTableLayoutPanel";
+            this.AccountDepositCheckPromptTableLayoutPanel.RowCount = 2;
+            this.AccountDepositCheckPromptTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.AccountDepositCheckPromptTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountDepositCheckPromptTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountDepositCheckPromptTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountDepositCheckPromptTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountDepositCheckPromptTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
+            this.AccountDepositCheckPromptTableLayoutPanel.TabIndex = 18;
+            // 
+            // AccountDepositCheckPromptReturnButton
+            // 
+            this.AccountDepositCheckPromptReturnButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositCheckPromptReturnButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositCheckPromptReturnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AccountDepositCheckPromptReturnButton.Location = new System.Drawing.Point(11, 405);
+            this.AccountDepositCheckPromptReturnButton.Name = "AccountDepositCheckPromptReturnButton";
+            this.AccountDepositCheckPromptReturnButton.Size = new System.Drawing.Size(802, 109);
+            this.AccountDepositCheckPromptReturnButton.TabIndex = 1;
+            this.AccountDepositCheckPromptReturnButton.Text = "Return";
+            this.AccountDepositCheckPromptReturnButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositCheckPromptStaticLabel
+            // 
+            this.AccountDepositCheckPromptStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositCheckPromptStaticLabel.AutoSize = true;
+            this.AccountDepositCheckPromptStaticLabel.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositCheckPromptStaticLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AccountDepositCheckPromptStaticLabel.Location = new System.Drawing.Point(24, 86);
+            this.AccountDepositCheckPromptStaticLabel.Name = "AccountDepositCheckPromptStaticLabel";
+            this.AccountDepositCheckPromptStaticLabel.Size = new System.Drawing.Size(776, 222);
+            this.AccountDepositCheckPromptStaticLabel.TabIndex = 0;
+            this.AccountDepositCheckPromptStaticLabel.Text = "Please insert the check(s) into the slot designated by the blinking light on the " +
+    "machine.";
+            // 
             // AccountDepositScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountDepositCheckPromptTableLayoutPanel);
             this.Controls.Add(this.AccountDepositFinalizeTableLayoutPanel);
             this.Controls.Add(this.AccountDepositAmountTableLayoutPanel);
             this.Controls.Add(this.AccountDepositAdditionalTableLayoutPanel);
@@ -515,6 +563,8 @@ namespace ATM_Practice
             this.AccountDepositInputsTableLayoutPanel.ResumeLayout(false);
             this.AccountDepositFinalizeTableLayoutPanel.ResumeLayout(false);
             this.AccountDepositFinalizeTableLayoutPanel.PerformLayout();
+            this.AccountDepositCheckPromptTableLayoutPanel.ResumeLayout(false);
+            this.AccountDepositCheckPromptTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -556,5 +606,8 @@ namespace ATM_Practice
         private System.Windows.Forms.Button AccountDepositFinalizeDepositButton;
         private System.Windows.Forms.Button AccountDepositFinalizeReturnButton;
         private System.Windows.Forms.Label AccountDepositFinalizeDynamicLabel;
+        private System.Windows.Forms.TableLayoutPanel AccountDepositCheckPromptTableLayoutPanel;
+        private System.Windows.Forms.Label AccountDepositCheckPromptStaticLabel;
+        private System.Windows.Forms.Button AccountDepositCheckPromptReturnButton;
     }
 }
