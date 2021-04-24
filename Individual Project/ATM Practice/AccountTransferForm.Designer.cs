@@ -38,8 +38,13 @@ namespace ATM_Practice
             this.AccountTransferLimitErrorChangeButton = new System.Windows.Forms.Button();
             this.AccountTransferLimitMainMenuButton = new System.Windows.Forms.Button();
             this.AccountTransferLimitErrorStaticLabel = new System.Windows.Forms.Label();
+            this.AccountTransferBalanceErrorTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountTransferBalanceErrorMainMenuButton = new System.Windows.Forms.Button();
+            this.AccountTransferBalanceErrorStaticLabel = new System.Windows.Forms.Label();
+            this.AccountTransferBalanceErrorChangeAmountButton = new System.Windows.Forms.Button();
             this.AccountTransferConfirmationTableLayoutPanel.SuspendLayout();
             this.AccountTransferLimitErrorTableLayoutPanel.SuspendLayout();
+            this.AccountTransferBalanceErrorTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AccountTransferConfirmationTableLayoutPanel
@@ -156,11 +161,64 @@ namespace ATM_Practice
             this.AccountTransferLimitErrorStaticLabel.Text = "Transfer Amount Requested Will Place One or Both Accounts Above Daily $3000 Limit" +
     ".";
             // 
+            // AccountTransferBalanceErrorTableLayoutPanel
+            // 
+            this.AccountTransferBalanceErrorTableLayoutPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferBalanceErrorTableLayoutPanel.ColumnCount = 1;
+            this.AccountTransferBalanceErrorTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountTransferBalanceErrorTableLayoutPanel.Controls.Add(this.AccountTransferBalanceErrorMainMenuButton, 0, 2);
+            this.AccountTransferBalanceErrorTableLayoutPanel.Controls.Add(this.AccountTransferBalanceErrorStaticLabel, 0, 0);
+            this.AccountTransferBalanceErrorTableLayoutPanel.Controls.Add(this.AccountTransferBalanceErrorChangeAmountButton, 0, 1);
+            this.AccountTransferBalanceErrorTableLayoutPanel.Location = new System.Drawing.Point(29, 82);
+            this.AccountTransferBalanceErrorTableLayoutPanel.Name = "AccountTransferBalanceErrorTableLayoutPanel";
+            this.AccountTransferBalanceErrorTableLayoutPanel.RowCount = 3;
+            this.AccountTransferBalanceErrorTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.AccountTransferBalanceErrorTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.AccountTransferBalanceErrorTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.AccountTransferBalanceErrorTableLayoutPanel.Size = new System.Drawing.Size(824, 550);
+            this.AccountTransferBalanceErrorTableLayoutPanel.TabIndex = 22;
+            // 
+            // AccountTransferBalanceErrorMainMenuButton
+            // 
+            this.AccountTransferBalanceErrorMainMenuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferBalanceErrorMainMenuButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferBalanceErrorMainMenuButton.Location = new System.Drawing.Point(20, 359);
+            this.AccountTransferBalanceErrorMainMenuButton.Name = "AccountTransferBalanceErrorMainMenuButton";
+            this.AccountTransferBalanceErrorMainMenuButton.Size = new System.Drawing.Size(784, 162);
+            this.AccountTransferBalanceErrorMainMenuButton.TabIndex = 2;
+            this.AccountTransferBalanceErrorMainMenuButton.Text = "Main Menu";
+            this.AccountTransferBalanceErrorMainMenuButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferBalanceErrorStaticLabel
+            // 
+            this.AccountTransferBalanceErrorStaticLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferBalanceErrorStaticLabel.AutoSize = true;
+            this.AccountTransferBalanceErrorStaticLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferBalanceErrorStaticLabel.ForeColor = System.Drawing.Color.Red;
+            this.AccountTransferBalanceErrorStaticLabel.Location = new System.Drawing.Point(18, 10);
+            this.AccountTransferBalanceErrorStaticLabel.Name = "AccountTransferBalanceErrorStaticLabel";
+            this.AccountTransferBalanceErrorStaticLabel.Size = new System.Drawing.Size(787, 90);
+            this.AccountTransferBalanceErrorStaticLabel.TabIndex = 11;
+            this.AccountTransferBalanceErrorStaticLabel.Text = "Transfer Amount Greater Than Origin Account. Please transfer a smaller amount or " +
+    "return to the main menu.";
+            // 
+            // AccountTransferBalanceErrorChangeAmountButton
+            // 
+            this.AccountTransferBalanceErrorChangeAmountButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferBalanceErrorChangeAmountButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferBalanceErrorChangeAmountButton.Location = new System.Drawing.Point(20, 139);
+            this.AccountTransferBalanceErrorChangeAmountButton.Name = "AccountTransferBalanceErrorChangeAmountButton";
+            this.AccountTransferBalanceErrorChangeAmountButton.Size = new System.Drawing.Size(784, 162);
+            this.AccountTransferBalanceErrorChangeAmountButton.TabIndex = 1;
+            this.AccountTransferBalanceErrorChangeAmountButton.Text = "Change Transfer Amount";
+            this.AccountTransferBalanceErrorChangeAmountButton.UseVisualStyleBackColor = true;
+            // 
             // AccountTransferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountTransferBalanceErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferLimitErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferWelcomeLabel);
             this.Controls.Add(this.AccountTransferConfirmationTableLayoutPanel);
@@ -170,6 +228,8 @@ namespace ATM_Practice
             this.AccountTransferConfirmationTableLayoutPanel.PerformLayout();
             this.AccountTransferLimitErrorTableLayoutPanel.ResumeLayout(false);
             this.AccountTransferLimitErrorTableLayoutPanel.PerformLayout();
+            this.AccountTransferBalanceErrorTableLayoutPanel.ResumeLayout(false);
+            this.AccountTransferBalanceErrorTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,5 +250,10 @@ namespace ATM_Practice
         private System.Windows.Forms.Button AccountTransferLimitErrorChangeButton;
         private System.Windows.Forms.Button AccountTransferLimitMainMenuButton;
         private System.Windows.Forms.Label AccountTransferLimitErrorStaticLabel;
+        private System.Windows.Forms.TableLayoutPanel AccountTransferBalanceErrorTableLayoutPanel;
+        private System.Windows.Forms.Button AccountTransferBalanceErrorChangeAmountButton;
+        private System.Windows.Forms.Button AccountTransferBalanceErrorMainMenuButton;
+        private System.Windows.Forms.Label AccountTr;
+        private System.Windows.Forms.Label AccountTransferBalanceErrorStaticLabel;
     }
 }
