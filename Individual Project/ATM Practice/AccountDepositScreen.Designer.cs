@@ -38,8 +38,13 @@ namespace ATM_Practice
             this.AccountDepositTypeCheckButton = new System.Windows.Forms.Button();
             this.AccountDepositTypeMainMenuButton = new System.Windows.Forms.Button();
             this.AccountDepositTypeCashButton = new System.Windows.Forms.Button();
+            this.AccountDepositAdditionalTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountDepositAdditionalDepositButton = new System.Windows.Forms.Button();
+            this.AccountDepositAdditionalCompleteButton = new System.Windows.Forms.Button();
+            this.AccountDepositAdditionalDynamicLabel = new System.Windows.Forms.Label();
             this.AdditionalDepositTableLayoutPanel.SuspendLayout();
             this.AccountDepositTypeTableLayoutPanel.SuspendLayout();
+            this.AccountDepositAdditionalTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdditionalDepositTableLayoutPanel
@@ -156,11 +161,64 @@ namespace ATM_Practice
             this.AccountDepositTypeCashButton.Text = "Cash";
             this.AccountDepositTypeCashButton.UseVisualStyleBackColor = true;
             // 
+            // AccountDepositAdditionalTableLayoutPanel
+            // 
+            this.AccountDepositAdditionalTableLayoutPanel.ColumnCount = 1;
+            this.AccountDepositAdditionalTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountDepositAdditionalTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountDepositAdditionalTableLayoutPanel.Controls.Add(this.AccountDepositAdditionalDepositButton, 0, 1);
+            this.AccountDepositAdditionalTableLayoutPanel.Controls.Add(this.AccountDepositAdditionalCompleteButton, 0, 2);
+            this.AccountDepositAdditionalTableLayoutPanel.Controls.Add(this.AccountDepositAdditionalDynamicLabel, 0, 0);
+            this.AccountDepositAdditionalTableLayoutPanel.Location = new System.Drawing.Point(30, 93);
+            this.AccountDepositAdditionalTableLayoutPanel.Name = "AccountDepositAdditionalTableLayoutPanel";
+            this.AccountDepositAdditionalTableLayoutPanel.RowCount = 3;
+            this.AccountDepositAdditionalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositAdditionalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositAdditionalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.AccountDepositAdditionalTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
+            this.AccountDepositAdditionalTableLayoutPanel.TabIndex = 15;
+            // 
+            // AccountDepositAdditionalDepositButton
+            // 
+            this.AccountDepositAdditionalDepositButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositAdditionalDepositButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositAdditionalDepositButton.Location = new System.Drawing.Point(17, 188);
+            this.AccountDepositAdditionalDepositButton.Name = "AccountDepositAdditionalDepositButton";
+            this.AccountDepositAdditionalDepositButton.Size = new System.Drawing.Size(789, 149);
+            this.AccountDepositAdditionalDepositButton.TabIndex = 0;
+            this.AccountDepositAdditionalDepositButton.Text = "Additional Deposits";
+            this.AccountDepositAdditionalDepositButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositAdditionalCompleteButton
+            // 
+            this.AccountDepositAdditionalCompleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositAdditionalCompleteButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositAdditionalCompleteButton.Location = new System.Drawing.Point(17, 363);
+            this.AccountDepositAdditionalCompleteButton.Name = "AccountDepositAdditionalCompleteButton";
+            this.AccountDepositAdditionalCompleteButton.Size = new System.Drawing.Size(789, 149);
+            this.AccountDepositAdditionalCompleteButton.TabIndex = 1;
+            this.AccountDepositAdditionalCompleteButton.Text = "Complete Deposit";
+            this.AccountDepositAdditionalCompleteButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountDepositAdditionalDynamicLabel
+            // 
+            this.AccountDepositAdditionalDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.AccountDepositAdditionalDynamicLabel.AutoSize = true;
+            this.AccountDepositAdditionalDynamicLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.AccountDepositAdditionalDynamicLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositAdditionalDynamicLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AccountDepositAdditionalDynamicLabel.Location = new System.Drawing.Point(660, 64);
+            this.AccountDepositAdditionalDynamicLabel.Name = "AccountDepositAdditionalDynamicLabel";
+            this.AccountDepositAdditionalDynamicLabel.Size = new System.Drawing.Size(161, 47);
+            this.AccountDepositAdditionalDynamicLabel.TabIndex = 2;
+            this.AccountDepositAdditionalDynamicLabel.Text = "$1234.56";
+            // 
             // AccountDepositScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountDepositAdditionalTableLayoutPanel);
             this.Controls.Add(this.AdditionalDepositTableLayoutPanel);
             this.Controls.Add(this.AccountDepositTypeTableLayoutPanel);
             this.Controls.Add(this.AccountDepositWelcomeLabel);
@@ -169,6 +227,8 @@ namespace ATM_Practice
             this.AdditionalDepositTableLayoutPanel.ResumeLayout(false);
             this.AdditionalDepositTableLayoutPanel.PerformLayout();
             this.AccountDepositTypeTableLayoutPanel.ResumeLayout(false);
+            this.AccountDepositAdditionalTableLayoutPanel.ResumeLayout(false);
+            this.AccountDepositAdditionalTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +246,9 @@ namespace ATM_Practice
         private System.Windows.Forms.Button AccountDepositTypeCheckButton;
         private System.Windows.Forms.Button AccountDepositTypeMainMenuButton;
         private System.Windows.Forms.Button AccountDepositTypeCashButton;
+        private System.Windows.Forms.TableLayoutPanel AccountDepositAdditionalTableLayoutPanel;
+        private System.Windows.Forms.Button AccountDepositAdditionalDepositButton;
+        private System.Windows.Forms.Button AccountDepositAdditionalCompleteButton;
+        private System.Windows.Forms.Label AccountDepositAdditionalDynamicLabel;
     }
 }
