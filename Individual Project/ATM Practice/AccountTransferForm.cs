@@ -14,5 +14,10 @@ namespace ATM_Practice
         {
             InitializeComponent();
         }
+
+        private void TransferAmountTableForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

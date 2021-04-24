@@ -10,6 +10,9 @@
     <Compile Update="AccountTransferForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AccountWithdrawScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CheckBalanceScreen.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -42,9 +42,33 @@ namespace ATM_Practice
             this.AccountTransferBalanceErrorMainMenuButton = new System.Windows.Forms.Button();
             this.AccountTransferBalanceErrorStaticLabel = new System.Windows.Forms.Label();
             this.AccountTransferBalanceErrorChangeAmountButton = new System.Windows.Forms.Button();
+            this.AccountTransferInputTableForm = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountTransferAllButtonsTableLayoutPanels = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountTransferInputAmountDynamicLabel = new System.Windows.Forms.Label();
+            this.AccountTransferConfirmButton = new System.Windows.Forms.Button();
+            this.AccountTransferInputButtonsTableLayoutPanels = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountTransferInputClearButton = new System.Windows.Forms.Button();
+            this.AccountTransferInputDotButton = new System.Windows.Forms.Button();
+            this.AccountTransferInput3Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput6Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput5Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput4Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput9Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput7Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput2Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput1Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput8Button = new System.Windows.Forms.Button();
+            this.AccountTransferInput0Button = new System.Windows.Forms.Button();
+            this.AccountTransferLabelsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.AccountTransferFromDynamicLabel = new System.Windows.Forms.Label();
+            this.AccountTransferToDynamicLabel = new System.Windows.Forms.Label();
             this.AccountTransferConfirmationTableLayoutPanel.SuspendLayout();
             this.AccountTransferLimitErrorTableLayoutPanel.SuspendLayout();
             this.AccountTransferBalanceErrorTableLayoutPanel.SuspendLayout();
+            this.AccountTransferInputTableForm.SuspendLayout();
+            this.AccountTransferAllButtonsTableLayoutPanels.SuspendLayout();
+            this.AccountTransferInputButtonsTableLayoutPanels.SuspendLayout();
+            this.AccountTransferLabelsTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AccountTransferConfirmationTableLayoutPanel
@@ -213,11 +237,265 @@ namespace ATM_Practice
             this.AccountTransferBalanceErrorChangeAmountButton.Text = "Change Transfer Amount";
             this.AccountTransferBalanceErrorChangeAmountButton.UseVisualStyleBackColor = true;
             // 
+            // AccountTransferInputTableForm
+            // 
+            this.AccountTransferInputTableForm.ColumnCount = 1;
+            this.AccountTransferInputTableForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountTransferInputTableForm.Controls.Add(this.AccountTransferAllButtonsTableLayoutPanels, 0, 1);
+            this.AccountTransferInputTableForm.Controls.Add(this.AccountTransferLabelsTableLayoutPanel, 0, 0);
+            this.AccountTransferInputTableForm.Location = new System.Drawing.Point(29, 82);
+            this.AccountTransferInputTableForm.Name = "AccountTransferInputTableForm";
+            this.AccountTransferInputTableForm.RowCount = 2;
+            this.AccountTransferInputTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.AccountTransferInputTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.AccountTransferInputTableForm.Size = new System.Drawing.Size(824, 550);
+            this.AccountTransferInputTableForm.TabIndex = 23;
+            this.AccountTransferInputTableForm.Paint += new System.Windows.Forms.PaintEventHandler(this.TransferAmountTableForm_Paint);
+            // 
+            // AccountTransferAllButtonsTableLayoutPanels
+            // 
+            this.AccountTransferAllButtonsTableLayoutPanels.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.AccountTransferAllButtonsTableLayoutPanels.ColumnCount = 1;
+            this.AccountTransferAllButtonsTableLayoutPanels.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.AccountTransferAllButtonsTableLayoutPanels.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.AccountTransferAllButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInputAmountDynamicLabel, 0, 0);
+            this.AccountTransferAllButtonsTableLayoutPanels.Controls.Add(this.AccountTransferConfirmButton, 0, 2);
+            this.AccountTransferAllButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInputButtonsTableLayoutPanels, 0, 1);
+            this.AccountTransferAllButtonsTableLayoutPanels.Location = new System.Drawing.Point(3, 113);
+            this.AccountTransferAllButtonsTableLayoutPanels.Name = "AccountTransferAllButtonsTableLayoutPanels";
+            this.AccountTransferAllButtonsTableLayoutPanels.RowCount = 3;
+            this.AccountTransferAllButtonsTableLayoutPanels.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.AccountTransferAllButtonsTableLayoutPanels.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.AccountTransferAllButtonsTableLayoutPanels.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.AccountTransferAllButtonsTableLayoutPanels.Size = new System.Drawing.Size(818, 434);
+            this.AccountTransferAllButtonsTableLayoutPanels.TabIndex = 18;
+            // 
+            // AccountTransferInputAmountDynamicLabel
+            // 
+            this.AccountTransferInputAmountDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.AccountTransferInputAmountDynamicLabel.AutoSize = true;
+            this.AccountTransferInputAmountDynamicLabel.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInputAmountDynamicLabel.Location = new System.Drawing.Point(713, 6);
+            this.AccountTransferInputAmountDynamicLabel.Name = "AccountTransferInputAmountDynamicLabel";
+            this.AccountTransferInputAmountDynamicLabel.Size = new System.Drawing.Size(102, 30);
+            this.AccountTransferInputAmountDynamicLabel.TabIndex = 0;
+            this.AccountTransferInputAmountDynamicLabel.Text = "$1234.56";
+            // 
+            // AccountTransferConfirmButton
+            // 
+            this.AccountTransferConfirmButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferConfirmButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.AccountTransferConfirmButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferConfirmButton.ForeColor = System.Drawing.Color.Coral;
+            this.AccountTransferConfirmButton.Location = new System.Drawing.Point(14, 355);
+            this.AccountTransferConfirmButton.Name = "AccountTransferConfirmButton";
+            this.AccountTransferConfirmButton.Size = new System.Drawing.Size(790, 70);
+            this.AccountTransferConfirmButton.TabIndex = 1;
+            this.AccountTransferConfirmButton.Text = "Confirm";
+            this.AccountTransferConfirmButton.UseVisualStyleBackColor = false;
+            // 
+            // AccountTransferInputButtonsTableLayoutPanels
+            // 
+            this.AccountTransferInputButtonsTableLayoutPanels.ColumnCount = 3;
+            this.AccountTransferInputButtonsTableLayoutPanels.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
+            this.AccountTransferInputButtonsTableLayoutPanels.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.AccountTransferInputButtonsTableLayoutPanels.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInputClearButton, 2, 3);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInputDotButton, 1, 3);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput3Button, 2, 2);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput6Button, 2, 1);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput5Button, 1, 1);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput4Button, 0, 1);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput9Button, 2, 0);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput7Button, 0, 0);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput2Button, 1, 2);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput1Button, 0, 2);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput8Button, 1, 0);
+            this.AccountTransferInputButtonsTableLayoutPanels.Controls.Add(this.AccountTransferInput0Button, 0, 3);
+            this.AccountTransferInputButtonsTableLayoutPanels.Location = new System.Drawing.Point(3, 46);
+            this.AccountTransferInputButtonsTableLayoutPanels.Name = "AccountTransferInputButtonsTableLayoutPanels";
+            this.AccountTransferInputButtonsTableLayoutPanels.RowCount = 4;
+            this.AccountTransferInputButtonsTableLayoutPanels.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountTransferInputButtonsTableLayoutPanels.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountTransferInputButtonsTableLayoutPanels.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountTransferInputButtonsTableLayoutPanels.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.AccountTransferInputButtonsTableLayoutPanels.Size = new System.Drawing.Size(812, 286);
+            this.AccountTransferInputButtonsTableLayoutPanels.TabIndex = 2;
+            // 
+            // AccountTransferInputClearButton
+            // 
+            this.AccountTransferInputClearButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInputClearButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInputClearButton.Location = new System.Drawing.Point(543, 219);
+            this.AccountTransferInputClearButton.Name = "AccountTransferInputClearButton";
+            this.AccountTransferInputClearButton.Size = new System.Drawing.Size(266, 60);
+            this.AccountTransferInputClearButton.TabIndex = 14;
+            this.AccountTransferInputClearButton.Text = "Clear";
+            this.AccountTransferInputClearButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInputDotButton
+            // 
+            this.AccountTransferInputDotButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInputDotButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInputDotButton.Location = new System.Drawing.Point(273, 219);
+            this.AccountTransferInputDotButton.Name = "AccountTransferInputDotButton";
+            this.AccountTransferInputDotButton.Size = new System.Drawing.Size(264, 60);
+            this.AccountTransferInputDotButton.TabIndex = 13;
+            this.AccountTransferInputDotButton.Text = ".";
+            this.AccountTransferInputDotButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput3Button
+            // 
+            this.AccountTransferInput3Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput3Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput3Button.Location = new System.Drawing.Point(543, 147);
+            this.AccountTransferInput3Button.Name = "AccountTransferInput3Button";
+            this.AccountTransferInput3Button.Size = new System.Drawing.Size(266, 60);
+            this.AccountTransferInput3Button.TabIndex = 12;
+            this.AccountTransferInput3Button.Text = "3";
+            this.AccountTransferInput3Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput6Button
+            // 
+            this.AccountTransferInput6Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput6Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput6Button.Location = new System.Drawing.Point(543, 76);
+            this.AccountTransferInput6Button.Name = "AccountTransferInput6Button";
+            this.AccountTransferInput6Button.Size = new System.Drawing.Size(266, 60);
+            this.AccountTransferInput6Button.TabIndex = 7;
+            this.AccountTransferInput6Button.Text = "6";
+            this.AccountTransferInput6Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput5Button
+            // 
+            this.AccountTransferInput5Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput5Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput5Button.Location = new System.Drawing.Point(273, 76);
+            this.AccountTransferInput5Button.Name = "AccountTransferInput5Button";
+            this.AccountTransferInput5Button.Size = new System.Drawing.Size(264, 60);
+            this.AccountTransferInput5Button.TabIndex = 6;
+            this.AccountTransferInput5Button.Text = "5";
+            this.AccountTransferInput5Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput4Button
+            // 
+            this.AccountTransferInput4Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput4Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput4Button.Location = new System.Drawing.Point(3, 76);
+            this.AccountTransferInput4Button.Name = "AccountTransferInput4Button";
+            this.AccountTransferInput4Button.Size = new System.Drawing.Size(264, 60);
+            this.AccountTransferInput4Button.TabIndex = 5;
+            this.AccountTransferInput4Button.Text = "4";
+            this.AccountTransferInput4Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput9Button
+            // 
+            this.AccountTransferInput9Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput9Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput9Button.Location = new System.Drawing.Point(543, 5);
+            this.AccountTransferInput9Button.Name = "AccountTransferInput9Button";
+            this.AccountTransferInput9Button.Size = new System.Drawing.Size(266, 60);
+            this.AccountTransferInput9Button.TabIndex = 3;
+            this.AccountTransferInput9Button.Text = "9";
+            this.AccountTransferInput9Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput7Button
+            // 
+            this.AccountTransferInput7Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput7Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput7Button.Location = new System.Drawing.Point(3, 5);
+            this.AccountTransferInput7Button.Name = "AccountTransferInput7Button";
+            this.AccountTransferInput7Button.Size = new System.Drawing.Size(264, 60);
+            this.AccountTransferInput7Button.TabIndex = 1;
+            this.AccountTransferInput7Button.Text = "7";
+            this.AccountTransferInput7Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput2Button
+            // 
+            this.AccountTransferInput2Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput2Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput2Button.Location = new System.Drawing.Point(273, 147);
+            this.AccountTransferInput2Button.Name = "AccountTransferInput2Button";
+            this.AccountTransferInput2Button.Size = new System.Drawing.Size(264, 60);
+            this.AccountTransferInput2Button.TabIndex = 10;
+            this.AccountTransferInput2Button.Text = "2";
+            this.AccountTransferInput2Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput1Button
+            // 
+            this.AccountTransferInput1Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput1Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput1Button.Location = new System.Drawing.Point(3, 147);
+            this.AccountTransferInput1Button.Name = "AccountTransferInput1Button";
+            this.AccountTransferInput1Button.Size = new System.Drawing.Size(264, 60);
+            this.AccountTransferInput1Button.TabIndex = 11;
+            this.AccountTransferInput1Button.Text = "1";
+            this.AccountTransferInput1Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput8Button
+            // 
+            this.AccountTransferInput8Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput8Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput8Button.Location = new System.Drawing.Point(273, 5);
+            this.AccountTransferInput8Button.Name = "AccountTransferInput8Button";
+            this.AccountTransferInput8Button.Size = new System.Drawing.Size(264, 60);
+            this.AccountTransferInput8Button.TabIndex = 2;
+            this.AccountTransferInput8Button.Text = "8";
+            this.AccountTransferInput8Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferInput0Button
+            // 
+            this.AccountTransferInput0Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountTransferInput0Button.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferInput0Button.Location = new System.Drawing.Point(3, 219);
+            this.AccountTransferInput0Button.Name = "AccountTransferInput0Button";
+            this.AccountTransferInput0Button.Size = new System.Drawing.Size(264, 60);
+            this.AccountTransferInput0Button.TabIndex = 0;
+            this.AccountTransferInput0Button.Text = "0";
+            this.AccountTransferInput0Button.UseVisualStyleBackColor = true;
+            // 
+            // AccountTransferLabelsTableLayoutPanel
+            // 
+            this.AccountTransferLabelsTableLayoutPanel.ColumnCount = 2;
+            this.AccountTransferLabelsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AccountTransferLabelsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AccountTransferLabelsTableLayoutPanel.Controls.Add(this.AccountTransferFromDynamicLabel, 0, 0);
+            this.AccountTransferLabelsTableLayoutPanel.Controls.Add(this.AccountTransferToDynamicLabel, 1, 0);
+            this.AccountTransferLabelsTableLayoutPanel.Location = new System.Drawing.Point(3, 3);
+            this.AccountTransferLabelsTableLayoutPanel.Name = "AccountTransferLabelsTableLayoutPanel";
+            this.AccountTransferLabelsTableLayoutPanel.RowCount = 1;
+            this.AccountTransferLabelsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AccountTransferLabelsTableLayoutPanel.Size = new System.Drawing.Size(818, 99);
+            this.AccountTransferLabelsTableLayoutPanel.TabIndex = 16;
+            // 
+            // AccountTransferFromDynamicLabel
+            // 
+            this.AccountTransferFromDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.AccountTransferFromDynamicLabel.AutoSize = true;
+            this.AccountTransferFromDynamicLabel.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferFromDynamicLabel.Location = new System.Drawing.Point(3, 20);
+            this.AccountTransferFromDynamicLabel.Name = "AccountTransferFromDynamicLabel";
+            this.AccountTransferFromDynamicLabel.Size = new System.Drawing.Size(273, 59);
+            this.AccountTransferFromDynamicLabel.TabIndex = 0;
+            this.AccountTransferFromDynamicLabel.Text = "From: xxx222";
+            // 
+            // AccountTransferToDynamicLabel
+            // 
+            this.AccountTransferToDynamicLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.AccountTransferToDynamicLabel.AutoSize = true;
+            this.AccountTransferToDynamicLabel.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountTransferToDynamicLabel.Location = new System.Drawing.Point(412, 20);
+            this.AccountTransferToDynamicLabel.Name = "AccountTransferToDynamicLabel";
+            this.AccountTransferToDynamicLabel.Size = new System.Drawing.Size(219, 59);
+            this.AccountTransferToDynamicLabel.TabIndex = 1;
+            this.AccountTransferToDynamicLabel.Text = "To: xxx223";
+            // 
             // AccountTransferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountTransferInputTableForm);
             this.Controls.Add(this.AccountTransferBalanceErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferLimitErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferWelcomeLabel);
@@ -230,6 +508,12 @@ namespace ATM_Practice
             this.AccountTransferLimitErrorTableLayoutPanel.PerformLayout();
             this.AccountTransferBalanceErrorTableLayoutPanel.ResumeLayout(false);
             this.AccountTransferBalanceErrorTableLayoutPanel.PerformLayout();
+            this.AccountTransferInputTableForm.ResumeLayout(false);
+            this.AccountTransferAllButtonsTableLayoutPanels.ResumeLayout(false);
+            this.AccountTransferAllButtonsTableLayoutPanels.PerformLayout();
+            this.AccountTransferInputButtonsTableLayoutPanels.ResumeLayout(false);
+            this.AccountTransferLabelsTableLayoutPanel.ResumeLayout(false);
+            this.AccountTransferLabelsTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,5 +539,32 @@ namespace ATM_Practice
         private System.Windows.Forms.Button AccountTransferBalanceErrorMainMenuButton;
         private System.Windows.Forms.Label AccountTr;
         private System.Windows.Forms.Label AccountTransferBalanceErrorStaticLabel;
+        private System.Windows.Forms.TableLayoutPanel AccountTransferInputTableForm;
+        private System.Windows.Forms.TableLayoutPanel AccountTransferLabelsTableLayoutPanel;
+        private System.Windows.Forms.Label AccountTransferFromDynamicLabel;
+        private System.Windows.Forms.Label AccountTransferToDynamicLabel;
+        private System.Windows.Forms.TableLayoutPanel ut;
+        private System.Windows.Forms.Label AccountTransferInputAmountDynamicLabel;
+        private System.Windows.Forms.Button AccountTransferConfirmButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
+        private System.Windows.Forms.Button AccountTransferInputClearButton;
+        private System.Windows.Forms.Button AccountTransferInput16Button;
+        private System.Windows.Forms.Button AccountTransferInput3Button;
+        private System.Windows.Forms.Button AccountTransferInput6Button;
+        private System.Windows.Forms.Button AccountTransferInput5Button;
+        private System.Windows.Forms.Button button56;
+        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button AccountTransferInput7Button;
+        private System.Windows.Forms.Button AccountTransferInput0Button;
+        private System.Windows.Forms.Button AccountTransferInput2Button;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button AccountTransferInput8Button;
+        private System.Windows.Forms.TableLayoutPanel AccountTransferAllButtonsTableLayoutPanels;
+        private System.Windows.Forms.TableLayoutPanel AccountTransferInputButtonsTableLayoutPanels;
+        private System.Windows.Forms.Button AccountTransferInput4Button;
+        private System.Windows.Forms.Button AccountTransferInput9Button;
+        private System.Windows.Forms.Button AccountTransferInput1Button;
+        private System.Windows.Forms.Button AccountTransferInputButton;
+        private System.Windows.Forms.Button AccountTransferInputDotButton;
     }
 }
