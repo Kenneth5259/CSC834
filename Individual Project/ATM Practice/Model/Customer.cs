@@ -32,8 +32,10 @@ namespace ATM_Practice.Model
 
         public Customer()
         {
-
+            // declare connection string
             string connStr = "server=157.89.28.130;user=ChangK;database=test;port=3306;password=Wallace#409;";
+            
+            // create a new connection instance for the object
             this.conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
         }
 
@@ -100,13 +102,18 @@ namespace ATM_Practice.Model
          */
         public Customer mapReaderToObject(MySqlDataReader myreader)
         {
+            // declare return object
             Customer c = new Customer();
+
+            // parse each attribute by its name and by the value type from the DB
             c.id = Int32.Parse(myreader["id"].ToString());
             c.pin = Int32.Parse(myreader["pin"].ToString());
             c.lastSignOn = DateTime.Parse(myreader["lastSignOn"].ToString());
             c.lastSignOff = DateTime.Parse(myreader["lastSignOff"].ToString());
             c.dateOfLastFailedPin = DateTime.Parse(myreader["dateOfLastFailedPin"].ToString());
             c.failedPinCount = Int32.Parse(myreader["failedPinCount"].ToString());
+
+            // return the object with the assigned parsed attributes
             return c;
         }
 
