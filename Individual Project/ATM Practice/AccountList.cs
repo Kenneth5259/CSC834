@@ -10,40 +10,16 @@ namespace ATM_Practice
 {
     public partial class AccountList : Form
     {
+        public Form previousForm;
+        
         public AccountList()
         {
             InitializeComponent();
-            Hide();
         }
 
-        private void AccountListItem6_Click(object sender, EventArgs e)
+        private void WithdrawMainMenuButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void AccountListItem5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AccountListItem4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AccountListItem3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AccountListItem2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AccountListItem1_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
         }
     }
 }

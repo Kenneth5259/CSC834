@@ -48,7 +48,7 @@ namespace ATM_Practice
             this.WelcomeLabel.Size = new System.Drawing.Size(332, 45);
             this.WelcomeLabel.TabIndex = 2;
             this.WelcomeLabel.Text = "Welcome to ZZZ Bank";
-            //  
+            // 
             // ExitButton
             // 
             this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -62,6 +62,7 @@ namespace ATM_Practice
             this.ExitButton.TabIndex = 4;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // TransferMoneyButton
             // 
@@ -144,7 +145,6 @@ namespace ATM_Practice
             this.MainMenuFormTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.MainMenuFormTable.Size = new System.Drawing.Size(818, 520);
             this.MainMenuFormTable.TabIndex = 0;
-            this.MainMenuFormTable.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMenuFormTable_Paint);
             // 
             // MainMenuForm
             // 

@@ -62,7 +62,6 @@ namespace ATM_Practice
             this.WithdrawAccountsTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.WithdrawAccountsTableForm.Size = new System.Drawing.Size(818, 520);
             this.WithdrawAccountsTableForm.TabIndex = 10;
-            this.WithdrawAccountsTableForm.Visible = false;
             // 
             // WithdrawAccountsListTableForm
             // 
@@ -193,6 +192,7 @@ namespace ATM_Practice
             this.WithdrawMainMenuButton.TabIndex = 5;
             this.WithdrawMainMenuButton.Text = "Main Menu";
             this.WithdrawMainMenuButton.UseVisualStyleBackColor = true;
+            this.WithdrawMainMenuButton.Click += new System.EventHandler(this.WithdrawMainMenuButton_Click);
             // 
             // AccountListWelcomeLabel
             // 

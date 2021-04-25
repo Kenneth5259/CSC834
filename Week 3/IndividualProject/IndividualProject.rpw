@@ -9,8 +9,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -29,16 +29,16 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _name = "ATM";
 				- _id = GUID ad60f113-88e3-422a-9467-40cba5330c39;
 			}
-			- _UpLeft = 251 119 ;
-			- _DownRight = 1253 717 ;
+			- _UpLeft = 251 109 ;
+			- _DownRight = 1167 937 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 15;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -58,7 +58,7 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _id = GUID f0eda153-edb0-49e0-ae69-c20d13311efc;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1700 1714 ;
+			- _DownRight = 2721 1624 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 16;
 		}
