@@ -23,5 +23,16 @@ namespace ATM_Practice.Model
         {
             conn = null;
         }
+
+
+        /**
+         *  Method to return all transactions with the assocatiated  
+         *  account throught the 1-m relationship. Will become list 
+         *  populated by SQL statement.
+         */
+        public List<Transaction> getAllTransactions()
+        {
+            return new List<Transaction>();
+        }
     }
 }

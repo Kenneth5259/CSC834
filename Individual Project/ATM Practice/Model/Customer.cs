@@ -29,6 +29,9 @@ namespace ATM_Practice.Model
         // public Date of Last Failed Pin Count
         public DateTime dateOfLastFailedPin { get; set; }
 
+        // list of accounts associated with the Customer
+        public List<int> customerAccounts { get; set; }
+
 
         public Customer()
         {
@@ -115,16 +118,6 @@ namespace ATM_Practice.Model
 
             // return the object with the assigned parsed attributes
             return c;
-        }
-
-        /**
-        *  Method to return all accounts with the assocatiated  
-        *  customer throught the 1-m relationship. Will become list 
-        *  populated by SQL statement.
-        */
-        public List<Account> getAllAccounts()
-        {
-            return new List<Account>();
         }
     }
 }
