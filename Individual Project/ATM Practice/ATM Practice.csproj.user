@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="AccountDepositScreen.cs">
+    <Compile Update="View\AccountDepositScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AccountList.cs">
+    <Compile Update="View\AccountList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AccountTransferForm.cs">
+    <Compile Update="View\AccountTransferForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AccountWithdrawScreen.cs">
+    <Compile Update="View\AccountWithdrawScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CheckBalanceScreen.cs">
+    <Compile Update="View\CheckBalanceScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ErrorScreen.cs">
+    <Compile Update="View\ErrorScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LogInScreen.cs">
+    <Compile Update="View\LogInScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MainMenu.cs">
+    <Compile Update="View\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
