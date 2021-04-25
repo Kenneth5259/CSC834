@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ATM_Practice.Model;
 
 namespace ATM_Practice
 {
     public partial class MainMenuForm : Form
     {
+        private Customer customer;
         public MainMenuForm()
         {
-            // initialization of teh component
+            this.customer = new Customer().getCustomerById(1);
+            // initialization of the component
             InitializeComponent();
         }
         private void CheckBalanceButton_Click(object sender, EventArgs e)
