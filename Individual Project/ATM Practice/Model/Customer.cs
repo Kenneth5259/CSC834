@@ -93,6 +93,9 @@ namespace ATM_Practice.Model
                 Console.WriteLine(ex.ToString());
             }
 
+            // Close the connection once used
+            conn.Close();
+
             // return found customer if successful or an empty customer if not 
             return c;
         }

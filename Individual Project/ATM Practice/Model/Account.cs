@@ -7,16 +7,31 @@ namespace ATM_Practice.Model
 {
     class Account
     {
+        //private database connection
         private MySql.Data.MySqlClient.MySqlConnection conn;
-        public int accountNum { get; set; }
+
+        //private account number attribute
+        private int accountNum { get; set; }
+
+        // public daily transaction date attribute
         public DateTime dailyTransactionDate { get; set; }
+
+        // public daily transaction total attribute
         public double dailyTransactionTotal { get; set; }
 
+        //public balance attribute
         public double balance { get; set; }
+
+        // public double daily transaction limit
         public double dailyTransactionLimit { get; set; }
-        public int customerId { get; set; }
+
+        // private int customer id
+        private int customerId { get; set; }
+
+        // public double pending deposit amount
         public double pendingDepositAmount { get; set; }
 
+        // Account constructor with database connection
         public Account()
         {
 
@@ -58,9 +73,14 @@ namespace ATM_Practice.Model
                 if (myreader.Read())
                 {
                     // map value to a customer
-                    ids.Add(Int32.Parse(myreader["accountNum"].ToString()));
+                    acc = this.mapReaderToObject(myreader);
                 }
-                return ids;
+
+                // close the connection
+                conn.Close();
+
+                // return the account
+                return acc;
 
             }
         }
@@ -102,6 +122,11 @@ namespace ATM_Practice.Model
                     // map value to a customer
                     ids.Add(Int32.Parse(myreader["accountNum"].ToString()));
                 }
+
+                // close the connection
+                conn.Close();
+
+                // return the IDs
                 return ids;
 
             }
@@ -120,5 +145,24 @@ namespace ATM_Practice.Model
          *  Method to parse the values from the reader to the acount object
          * 
          */
+
+        public Account mapReaderToObject(MySqlDataReader myreader)
+        {
+            
+            // declare account for return
+            Account a = new Account();
+
+            // assign each attribute
+            a.accountNum = Int32.Parse(myreader["accountNum"].ToString());
+            a.customerId = Int32.Parse(myreader["customerId"].ToString());
+            a.balance = Double.Parse(myreader["balance"].ToString());
+            a.pendingDepositAmount = Double.Parse(myreader["pendingDespositAmount"].ToString());
+            a.dailyTransactionLimit = Double.Parse(myreader["dailyTransactionLimit"].ToString());
+            a.dailyTransactionDate = DateTime.Parse(myreader["dailyTransactionDate"].ToString());
+            a.dailyTransactionTotal = Double.Parse(myreader["dailyTransactionTotal"].ToString());
+
+            // return the value
+            return a;
+        }
     }
 }
