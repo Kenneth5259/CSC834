@@ -16,16 +16,16 @@ namespace ATM_Practice
     {
         private Customer customer;
         public MainMenuForm()
-        {           
+        {
+            this.customer = new Customer().getCustomerById(1);
             // initialization of the component
             InitializeComponent();
-            WelcomeLabel.Text = this.customer.id.ToString();
         }
         private void CheckBalanceButton_Click(object sender, EventArgs e)
         {
             //CheckBalanceFormTable.Visible = true;
             //MainMenuFormTable.Visible = false;
-            new AccountList(this, this.customer).Show();
+            new AccountList(this, this.customer, "CheckBalance").Show();
             this.Hide();
         }
 

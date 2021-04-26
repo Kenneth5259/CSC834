@@ -28,6 +28,9 @@ namespace ATM_Practice
         // store From Account
         private Account fromAccount;
 
+        // store the Mode that the list is being used in
+        private string mode;
+
         // constructor without a customer
         public AccountList(Form parent)
         {
@@ -49,7 +52,7 @@ namespace ATM_Practice
         }
 
         // constructor with a customer
-        public AccountList(Form parent, Customer c)
+        public AccountList(Form parent, Customer c, string mode)
         {
 
             // initialize a component
@@ -57,6 +60,9 @@ namespace ATM_Practice
 
             // store the parent reference
             this.parent = parent;
+
+            // store the mode
+            this.mode = mode;
 
             // store the active customer
             activeCustomer = c;
@@ -119,6 +125,13 @@ namespace ATM_Practice
         private void AccountListDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             Trace.WriteLine("Cell Clicked");
+
+            switch(this.mode)
+            {
+                default:
+                    new CheckBalanceScreen(this, this.customerAccounts[e.RowIndex]).Show();
+                    break;
+            }
         }
 
     }

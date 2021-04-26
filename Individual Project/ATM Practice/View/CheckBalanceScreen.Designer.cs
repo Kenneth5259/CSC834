@@ -73,6 +73,7 @@ namespace ATM_Practice
             this.AccBalanceMainMenuButton.TabIndex = 0;
             this.AccBalanceMainMenuButton.Text = "Main Menu";
             this.AccBalanceMainMenuButton.UseVisualStyleBackColor = true;
+            this.AccBalanceMainMenuButton.Click += new System.EventHandler(this.AccBalanceMainMenuButton_Click);
             // 
             // AccBalanceSplitContainer
             // 
@@ -128,6 +129,7 @@ namespace ATM_Practice
             this.AccBalanceReturnButton.TabIndex = 5;
             this.AccBalanceReturnButton.Text = "Check Another Balance";
             this.AccBalanceReturnButton.UseVisualStyleBackColor = true;
+            this.AccBalanceReturnButton.Click += new System.EventHandler(this.AccBalanceReturnButton_Click);
             // 
             // CheckBalanceScreen
             // 

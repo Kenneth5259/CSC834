@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using MySql.Data.MySqlClient;
 
@@ -145,7 +146,7 @@ namespace ATM_Practice.Model
             {
 
                 // notify the exception to console
-                Console.WriteLine(ex.ToString());
+                Trace.WriteLine(ex.ToString());
             }
             return new List<int>();
         }
@@ -161,17 +162,33 @@ namespace ATM_Practice.Model
             // declare account for return
             Account a = new Account();
 
+            // notify that the attribute mapping is beginning
+            Trace.WriteLine("Mapping Attributes");
+
             // assign each attribute
             a.accountNum = Int32.Parse(myreader["accountNum"].ToString());
             a.customerId = Int32.Parse(myreader["customerId"].ToString());
             a.balance = Double.Parse(myreader["balance"].ToString());
-            a.pendingDepositAmount = Double.Parse(myreader["pendingDespositAmount"].ToString());
+            a.pendingDepositAmount = Double.Parse(myreader["pendingDepositAmount"].ToString());
             a.dailyTransactionLimit = Double.Parse(myreader["dailyTransactionLimit"].ToString());
             a.dailyTransactionDate = DateTime.Parse(myreader["dailyTransactionDate"].ToString());
             a.dailyTransactionTotal = Double.Parse(myreader["dailyTransactionTotal"].ToString());
 
             // return the value
             return a;
+        }
+
+        /**
+         *  method for comparing the date and updating daily transaction
+         *  values if the date does not match
+         */
+        public void updateDailyTransactionDate()
+        {
+            if(this.dailyTransactionDate.Date != DateTime.Today.Date)
+            {
+                this.dailyTransactionDate = DateTime.Today;
+                this.dailyTransactionTotal = 0;
+            }
         }
     }
 }
