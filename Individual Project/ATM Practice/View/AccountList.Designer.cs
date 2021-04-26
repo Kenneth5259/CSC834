@@ -29,10 +29,10 @@ namespace ATM_Practice
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.WithdrawAccountsTableForm = new System.Windows.Forms.TableLayoutPanel();
             this.AccountListAccountsHeldStaticLabel = new System.Windows.Forms.Label();
-            this.WithdrawMainMenuButton = new System.Windows.Forms.Button();
+            this.AccountListMainMenuButton = new System.Windows.Forms.Button();
             this.AccountListDataGridView = new System.Windows.Forms.DataGridView();
             this.AccountListWelcomeLabel = new System.Windows.Forms.Label();
             this.WithdrawAccountsTableForm.SuspendLayout();
@@ -47,7 +47,7 @@ namespace ATM_Practice
             this.WithdrawAccountsTableForm.ColumnCount = 1;
             this.WithdrawAccountsTableForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.WithdrawAccountsTableForm.Controls.Add(this.AccountListAccountsHeldStaticLabel, 0, 0);
-            this.WithdrawAccountsTableForm.Controls.Add(this.WithdrawMainMenuButton, 0, 2);
+            this.WithdrawAccountsTableForm.Controls.Add(this.AccountListMainMenuButton, 0, 2);
             this.WithdrawAccountsTableForm.Controls.Add(this.AccountListDataGridView, 0, 1);
             this.WithdrawAccountsTableForm.Location = new System.Drawing.Point(32, 89);
             this.WithdrawAccountsTableForm.Name = "WithdrawAccountsTableForm";
@@ -69,20 +69,20 @@ namespace ATM_Practice
             this.AccountListAccountsHeldStaticLabel.TabIndex = 0;
             this.AccountListAccountsHeldStaticLabel.Text = "Accounts Held with ZZZ Bank: ";
             // 
-            // WithdrawMainMenuButton
+            // AccountListMainMenuButton
             // 
-            this.WithdrawMainMenuButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.AccountListMainMenuButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.WithdrawMainMenuButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WithdrawMainMenuButton.Location = new System.Drawing.Point(5, 396);
-            this.WithdrawMainMenuButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.WithdrawMainMenuButton.Name = "WithdrawMainMenuButton";
-            this.WithdrawMainMenuButton.Size = new System.Drawing.Size(808, 118);
-            this.WithdrawMainMenuButton.TabIndex = 5;
-            this.WithdrawMainMenuButton.Text = "Main Menu";
-            this.WithdrawMainMenuButton.UseVisualStyleBackColor = true;
-            this.WithdrawMainMenuButton.Click += new System.EventHandler(this.WithdrawMainMenuButton_Click);
+            this.AccountListMainMenuButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountListMainMenuButton.Location = new System.Drawing.Point(5, 396);
+            this.AccountListMainMenuButton.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.AccountListMainMenuButton.Name = "AccountListMainMenuButton";
+            this.AccountListMainMenuButton.Size = new System.Drawing.Size(808, 118);
+            this.AccountListMainMenuButton.TabIndex = 5;
+            this.AccountListMainMenuButton.Text = "Main Menu";
+            this.AccountListMainMenuButton.UseVisualStyleBackColor = true;
+            this.AccountListMainMenuButton.Click += new System.EventHandler(this.AccountListMainMenuButton_Click);
             // 
             // AccountListDataGridView
             // 
@@ -90,14 +90,14 @@ namespace ATM_Practice
             this.AccountListDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.AccountListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AccountListDataGridView.ColumnHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AccountListDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.InactiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AccountListDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.AccountListDataGridView.Location = new System.Drawing.Point(4, 55);
             this.AccountListDataGridView.Name = "AccountListDataGridView";
             this.AccountListDataGridView.RowHeadersVisible = false;
@@ -139,7 +139,7 @@ namespace ATM_Practice
         #endregion
         private System.Windows.Forms.TableLayoutPanel WithdrawAccountsTableForm;
         private System.Windows.Forms.Label AccountListAccountsHeldStaticLabel;
-        private System.Windows.Forms.Button WithdrawMainMenuButton;
+        private System.Windows.Forms.Button AccountListMainMenuButton;
         private System.Windows.Forms.Label AccountListWelcomeLabel;
         private System.Windows.Forms.DataGridView AccountListDataGridView;
     }
