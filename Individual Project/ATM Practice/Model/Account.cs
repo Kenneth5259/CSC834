@@ -35,8 +35,10 @@ namespace ATM_Practice.Model
         // Account constructor with database connection
         public Account()
         {
-
+            // connection string
             string connStr = "server=157.89.28.130;user=ChangK;database=csc340;port=3306;password=Wallace#409;";
+
+            // connection instance
             this.conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
         }
 
@@ -184,9 +186,14 @@ namespace ATM_Practice.Model
          */
         public void updateDailyTransactionDate()
         {
+            // current date comparison
             if(this.dailyTransactionDate.Date != DateTime.Today.Date)
             {
+
+                // set to current date
                 this.dailyTransactionDate = DateTime.Today;
+
+                // reset daily transaction limit
                 this.dailyTransactionTotal = 0;
             }
         }
