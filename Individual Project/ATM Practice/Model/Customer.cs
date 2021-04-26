@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Reflection;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Text;
 using MySql.Data.MySqlClient;
 
 namespace ATM_Practice.Model
 {
-    class Customer
+    public class Customer
     {
         // private connection attribute
         private MySql.Data.MySqlClient.MySqlConnection conn;
 
         // private ID attribute
-        private int id { get; set; }
+        public int id { get; set; }
 
         // private PIN attribute
-        private int pin { get; set; }
+        public int pin { get; set; }
 
         // public Last Sign On attribute
         public DateTime lastSignOn { get; set; }
@@ -36,7 +37,7 @@ namespace ATM_Practice.Model
         public Customer()
         {
             // declare connection string
-            string connStr = "server=157.89.28.130;user=ChangK;database=test;port=3306;password=Wallace#409;";
+            string connStr = "server=157.89.28.130;user=ChangK;database=csc340;port=3306;password=Wallace#409;";
             
             // create a new connection instance for the object
             this.conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
@@ -59,13 +60,13 @@ namespace ATM_Practice.Model
             try
             {
                 // write line for DB conenct
-                Console.WriteLine("Connecting to MySQL...");
+                Trace.WriteLine("Connecting to MySQL...");
 
                 //open connection
                 conn.Open();
 
                 // structure SQL statement
-                string sql = "SELECT * FROM carrollcustomer where id=@id";
+                string sql = "SELECT * FROM carrollcustomer WHERE id=@id;";
 
                 // declare new command
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
@@ -75,6 +76,8 @@ namespace ATM_Practice.Model
 
                 // create a new reader instance from executing command
                 MySqlDataReader myreader = cmd.ExecuteReader();
+
+                Trace.WriteLine("CMD Executed");
 
                 // read next row of reader
                 if(myreader.Read())

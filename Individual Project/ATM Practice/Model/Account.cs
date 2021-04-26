@@ -5,7 +5,7 @@ using MySql.Data.MySqlClient;
 
 namespace ATM_Practice.Model
 {
-    class Account
+    public class Account
     {
         //private database connection
         private MySql.Data.MySqlClient.MySqlConnection conn;
@@ -83,6 +83,15 @@ namespace ATM_Practice.Model
                 return acc;
 
             }
+            // handle connection exceptions
+            catch (Exception ex)
+            {
+
+                // notify the exception to console
+                Console.WriteLine(ex.ToString());
+            }
+
+            return acc;
         }
 
 

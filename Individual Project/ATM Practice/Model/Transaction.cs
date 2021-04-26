@@ -5,7 +5,7 @@ using MySql.Data.MySqlClient;
 
 namespace ATM_Practice.Model
 {
-    class Transaction
+    public class Transaction
     {
         MySql.Data.MySqlClient.MySqlConnection conn;
         public int accountNum { get; set; }
