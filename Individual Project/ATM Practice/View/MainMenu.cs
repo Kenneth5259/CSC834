@@ -34,6 +34,12 @@ namespace ATM_Practice
             this.Close();
         }
 
+        private void DepositMoneyButton_Click(object sender, EventArgs e)
+        {
+            new AccountList(this, this.customer, "Deposit").Show();
+            this.Hide();
+        }
+
 
         /************* Functional Requirement 1 ****************************/
     }

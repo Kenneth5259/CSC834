@@ -63,8 +63,8 @@ namespace ATM_Practice
             this.AccountDepositFinalizeReturnButton = new System.Windows.Forms.Button();
             this.AccountDepositFinalizeDynamicLabel = new System.Windows.Forms.Label();
             this.AccountDepositCheckPromptTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.AccountDepositCheckPromptReturnButton = new System.Windows.Forms.Button();
             this.AccountDepositCheckPromptStaticLabel = new System.Windows.Forms.Label();
+            this.AccountDepositCheckPromptReturnButton = new System.Windows.Forms.Button();
             this.AdditionalDepositTableLayoutPanel.SuspendLayout();
             this.AccountDepositTypeTableLayoutPanel.SuspendLayout();
             this.AccountDepositAdditionalTableLayoutPanel.SuspendLayout();
@@ -165,6 +165,7 @@ namespace ATM_Practice
             this.AccountDepositTypeCheckButton.TabIndex = 1;
             this.AccountDepositTypeCheckButton.Text = "Check";
             this.AccountDepositTypeCheckButton.UseVisualStyleBackColor = true;
+            this.AccountDepositTypeCheckButton.Click += new System.EventHandler(this.AccountDepositTypeCheckButton_Click);
             // 
             // AccountDepositTypeMainMenuButton
             // 
@@ -176,6 +177,7 @@ namespace ATM_Practice
             this.AccountDepositTypeMainMenuButton.TabIndex = 2;
             this.AccountDepositTypeMainMenuButton.Text = "Main Menu";
             this.AccountDepositTypeMainMenuButton.UseVisualStyleBackColor = true;
+            this.AccountDepositTypeMainMenuButton.Click += new System.EventHandler(this.AccountDepositTypeMainMenuButton_Click);
             // 
             // AccountDepositTypeCashButton
             // 
@@ -257,6 +259,7 @@ namespace ATM_Practice
             this.AccountDepositAmountTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.AccountDepositAmountTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
             this.AccountDepositAmountTableLayoutPanel.TabIndex = 16;
+            this.AccountDepositAmountTableLayoutPanel.Visible = false;
             // 
             // AccountDepositAmountDynamicLabel
             // 
@@ -281,6 +284,7 @@ namespace ATM_Practice
             this.AccountDepositConfirmButton.TabIndex = 1;
             this.AccountDepositConfirmButton.Text = "Confirm";
             this.AccountDepositConfirmButton.UseVisualStyleBackColor = false;
+            this.AccountDepositConfirmButton.Click += new System.EventHandler(this.AccountDepositConfirmButton_Click);
             // 
             // AccountDepositInputsTableLayoutPanel
             // 
@@ -321,6 +325,7 @@ namespace ATM_Practice
             this.AccountDepositInputClearButton.TabIndex = 14;
             this.AccountDepositInputClearButton.Text = "Clear";
             this.AccountDepositInputClearButton.UseVisualStyleBackColor = true;
+            this.AccountDepositInputClearButton.Click += new System.EventHandler(this.AccountDepositInputClearButton_Click);
             // 
             // AccountDepositInputDotButton
             // 
@@ -332,6 +337,7 @@ namespace ATM_Practice
             this.AccountDepositInputDotButton.TabIndex = 13;
             this.AccountDepositInputDotButton.Text = ".";
             this.AccountDepositInputDotButton.UseVisualStyleBackColor = true;
+            this.AccountDepositInputDotButton.Click += new System.EventHandler(this.AccountDepositInputDotButton_Click);
             // 
             // AccountDepositInput3Button
             // 
@@ -343,6 +349,7 @@ namespace ATM_Practice
             this.AccountDepositInput3Button.TabIndex = 12;
             this.AccountDepositInput3Button.Text = "3";
             this.AccountDepositInput3Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput3Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput6Button
             // 
@@ -354,6 +361,7 @@ namespace ATM_Practice
             this.AccountDepositInput6Button.TabIndex = 7;
             this.AccountDepositInput6Button.Text = "6";
             this.AccountDepositInput6Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput6Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput5Button
             // 
@@ -365,6 +373,7 @@ namespace ATM_Practice
             this.AccountDepositInput5Button.TabIndex = 6;
             this.AccountDepositInput5Button.Text = "5";
             this.AccountDepositInput5Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput5Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput4Button
             // 
@@ -376,6 +385,7 @@ namespace ATM_Practice
             this.AccountDepositInput4Button.TabIndex = 5;
             this.AccountDepositInput4Button.Text = "4";
             this.AccountDepositInput4Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput4Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput9Button
             // 
@@ -387,6 +397,7 @@ namespace ATM_Practice
             this.AccountDepositInput9Button.TabIndex = 3;
             this.AccountDepositInput9Button.Text = "9";
             this.AccountDepositInput9Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput9Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput7Button
             // 
@@ -398,6 +409,7 @@ namespace ATM_Practice
             this.AccountDepositInput7Button.TabIndex = 1;
             this.AccountDepositInput7Button.Text = "7";
             this.AccountDepositInput7Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput7Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput0Button
             // 
@@ -409,6 +421,7 @@ namespace ATM_Practice
             this.AccountDepositInput0Button.TabIndex = 0;
             this.AccountDepositInput0Button.Text = "0";
             this.AccountDepositInput0Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput0Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput2Button
             // 
@@ -420,6 +433,7 @@ namespace ATM_Practice
             this.AccountDepositInput2Button.TabIndex = 10;
             this.AccountDepositInput2Button.Text = "2";
             this.AccountDepositInput2Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput2Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput1Button
             // 
@@ -431,6 +445,7 @@ namespace ATM_Practice
             this.AccountDepositInput1Button.TabIndex = 11;
             this.AccountDepositInput1Button.Text = "1";
             this.AccountDepositInput1Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput1Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositInput8Button
             // 
@@ -442,6 +457,7 @@ namespace ATM_Practice
             this.AccountDepositInput8Button.TabIndex = 2;
             this.AccountDepositInput8Button.Text = "8";
             this.AccountDepositInput8Button.UseVisualStyleBackColor = true;
+            this.AccountDepositInput8Button.Click += new System.EventHandler(this.AccountDepositInputButton_Clicked);
             // 
             // AccountDepositFinalizeTableLayoutPanel
             // 
@@ -459,6 +475,7 @@ namespace ATM_Practice
             this.AccountDepositFinalizeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.AccountDepositFinalizeTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
             this.AccountDepositFinalizeTableLayoutPanel.TabIndex = 17;
+            this.AccountDepositFinalizeTableLayoutPanel.Visible = false;
             // 
             // AccountDepositFinalizeDepositButton
             // 
@@ -513,18 +530,7 @@ namespace ATM_Practice
             this.AccountDepositCheckPromptTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.AccountDepositCheckPromptTableLayoutPanel.Size = new System.Drawing.Size(824, 526);
             this.AccountDepositCheckPromptTableLayoutPanel.TabIndex = 18;
-            // 
-            // AccountDepositCheckPromptReturnButton
-            // 
-            this.AccountDepositCheckPromptReturnButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AccountDepositCheckPromptReturnButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AccountDepositCheckPromptReturnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.AccountDepositCheckPromptReturnButton.Location = new System.Drawing.Point(11, 405);
-            this.AccountDepositCheckPromptReturnButton.Name = "AccountDepositCheckPromptReturnButton";
-            this.AccountDepositCheckPromptReturnButton.Size = new System.Drawing.Size(802, 109);
-            this.AccountDepositCheckPromptReturnButton.TabIndex = 1;
-            this.AccountDepositCheckPromptReturnButton.Text = "Return";
-            this.AccountDepositCheckPromptReturnButton.UseVisualStyleBackColor = true;
+            this.AccountDepositCheckPromptTableLayoutPanel.Visible = false;
             // 
             // AccountDepositCheckPromptStaticLabel
             // 
@@ -539,17 +545,30 @@ namespace ATM_Practice
             this.AccountDepositCheckPromptStaticLabel.Text = "Please insert the check(s) into the slot designated by the blinking light on the " +
     "machine.";
             // 
+            // AccountDepositCheckPromptReturnButton
+            // 
+            this.AccountDepositCheckPromptReturnButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountDepositCheckPromptReturnButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountDepositCheckPromptReturnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AccountDepositCheckPromptReturnButton.Location = new System.Drawing.Point(11, 405);
+            this.AccountDepositCheckPromptReturnButton.Name = "AccountDepositCheckPromptReturnButton";
+            this.AccountDepositCheckPromptReturnButton.Size = new System.Drawing.Size(802, 109);
+            this.AccountDepositCheckPromptReturnButton.TabIndex = 1;
+            this.AccountDepositCheckPromptReturnButton.Text = "Return";
+            this.AccountDepositCheckPromptReturnButton.UseVisualStyleBackColor = true;
+            this.AccountDepositCheckPromptReturnButton.Click += new System.EventHandler(this.AccountDepositCheckPromptReturnButton_Click);
+            // 
             // AccountDepositScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
             this.Controls.Add(this.AccountDepositCheckPromptTableLayoutPanel);
-            this.Controls.Add(this.AccountDepositFinalizeTableLayoutPanel);
             this.Controls.Add(this.AccountDepositAmountTableLayoutPanel);
-            this.Controls.Add(this.AccountDepositAdditionalTableLayoutPanel);
-            this.Controls.Add(this.AdditionalDepositTableLayoutPanel);
             this.Controls.Add(this.AccountDepositTypeTableLayoutPanel);
+            this.Controls.Add(this.AdditionalDepositTableLayoutPanel);
+            this.Controls.Add(this.AccountDepositFinalizeTableLayoutPanel);
+            this.Controls.Add(this.AccountDepositAdditionalTableLayoutPanel);
             this.Controls.Add(this.AccountDepositWelcomeLabel);
             this.Name = "AccountDepositScreen";
             this.Text = "AccountDepositScreen";

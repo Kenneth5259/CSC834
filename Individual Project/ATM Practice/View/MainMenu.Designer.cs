@@ -91,6 +91,7 @@ namespace ATM_Practice
             this.DepositMoneyButton.TabIndex = 2;
             this.DepositMoneyButton.Text = "Deposit Money";
             this.DepositMoneyButton.UseVisualStyleBackColor = true;
+            this.DepositMoneyButton.Click += new System.EventHandler(this.DepositMoneyButton_Click);
             // 
             // WithdrawMoneyButton
             // 

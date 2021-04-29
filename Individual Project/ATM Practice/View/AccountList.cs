@@ -128,10 +128,19 @@ namespace ATM_Practice
 
             switch(this.mode)
             {
+
+                // Deposit transaction begins
+                case "Deposit":
+                    new AccountDepositScreen(this, this.customerAccounts[e.RowIndex]).Show();
+                    break;
+
+                // Check Balance will be the default behavior as it is the least intrusive transaction type
+                case "CheckBalance":
                 default:
                     new CheckBalanceScreen(this, this.customerAccounts[e.RowIndex]).Show();
                     break;
             }
+            this.Hide();
         }
 
     }
