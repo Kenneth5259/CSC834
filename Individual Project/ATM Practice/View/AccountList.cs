@@ -68,7 +68,7 @@ namespace ATM_Practice
             activeCustomer = c;
 
             // get the acccounts from the account model using the active customer's id
-            customerAccounts = new Account().getAllAccounts(this.activeCustomer.id);
+            customerAccounts = new Account().retrieveAccounts(this.activeCustomer.id);
 
             // configure the datagridview
             this.configureDataGridView();

@@ -49,7 +49,7 @@ namespace ATM_Practice.Model
          * 
          */
 
-        public Account getAccountById(int accountNum)
+        public Account retrieveAccountInformation(int accountNum)
         {
             Account acc = new Account();
             try
@@ -104,7 +104,7 @@ namespace ATM_Practice.Model
         *  customer throught the 1-m relationship. Will become list 
         *  populated by SQL statement.
         */
-        public List<int> getAllAccounts(int customerId)
+        public List<int> retrieveAccounts(int customerId)
         {
             // declare new customer object for safe return type
             List<int> ids = new List<int>();

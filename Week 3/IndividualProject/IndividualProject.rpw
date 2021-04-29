@@ -9,8 +9,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -29,8 +29,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _name = "ATM";
 				- _id = GUID ad60f113-88e3-422a-9467-40cba5330c39;
 			}
-			- _UpLeft = 251 109 ;
-			- _DownRight = 1167 937 ;
+			- _UpLeft = 0 93 ;
+			- _DownRight = 1361 905 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 15;
 		}
@@ -93,8 +93,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -4;
@@ -114,7 +114,7 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _id = GUID b607917d-c1d6-442b-8097-0bfd21f30d53;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1389 989 ;
+			- _DownRight = 1188 1550 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 7;
 		}
@@ -141,8 +141,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID 7414b356-b0c4-4c6b-bb00-520dc80c8439;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1326 1274 ;
+			- _UpLeft = 0 60 ;
+			- _DownRight = 663 697 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
@@ -169,8 +169,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _name = "ActivityDiagram";
 				- _id = GUID e8de873c-76e0-497d-89d1-a1079bfbf5fb;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1170 833 ;
+			- _UpLeft = 0 176 ;
+			- _DownRight = 1170 1009 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 6;
 		}
@@ -254,7 +254,7 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _id = GUID b36ed8f0-1324-46a7-8c65-df1de266f542;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 796 765 ;
+			- _DownRight = 1061 1020 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
@@ -365,8 +365,8 @@ I-Logix-RPY-Archive version 8.5.2 Modeler * 1159120
 				- _name = "StatechartDiagram";
 				- _id = GUID 4e7ce63d-a27a-46d4-8daf-080df1c04988;
 			}
-			- _UpLeft = -31 0 ;
-			- _DownRight = 634 744 ;
+			- _UpLeft = -31 256 ;
+			- _DownRight = 634 1000 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 4;
 		}
