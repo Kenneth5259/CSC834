@@ -38,7 +38,7 @@ namespace ATM_Practice.Model
                 conn.Open();
 
                 // structure SQL statement, not supplying transactionNum to use MySQL auto increment functionality
-                string sql = "INSERT INTO  carrolltransaction(accountNum, date, transactionType, toAccount, fromAccount) VALUES(@accountNum, @date, @transactionType, @toAccount, @fromAccount)";
+                string sql = "INSERT INTO  carrolltransaction(accountNum, date, transactionType, amount, toAccount, fromAccount) VALUES(@accountNum, @date, @transactionType, @amount, @toAccount, @fromAccount)";
 
                 // declare new command
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
@@ -47,6 +47,7 @@ namespace ATM_Practice.Model
                 cmd.Parameters.AddWithValue("@accountNum", accountNum);
                 cmd.Parameters.AddWithValue("@date", date);
                 cmd.Parameters.AddWithValue("@transactionType", transactionType);
+                cmd.Parameters.AddWithValue("@amount", this.amount);
                 cmd.Parameters.AddWithValue("@toAccount", toAccount);
                 cmd.Parameters.AddWithValue("@fromAccount", fromAccount);
 

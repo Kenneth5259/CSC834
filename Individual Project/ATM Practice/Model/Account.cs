@@ -12,7 +12,7 @@ namespace ATM_Practice.Model
         private MySql.Data.MySqlClient.MySqlConnection conn;
 
         //private account number attribute
-        private int accountNum { get; set; }
+        public int accountNum { get; set; }
 
         // public daily transaction date attribute
         public DateTime dailyTransactionDate { get; set; }
@@ -27,7 +27,7 @@ namespace ATM_Practice.Model
         public double dailyTransactionLimit { get; set; }
 
         // private int customer id
-        private int customerId { get; set; }
+        public int customerId { get; set; }
 
         // public double pending deposit amount
         public double pendingDepositAmount { get; set; }
@@ -195,6 +195,39 @@ namespace ATM_Practice.Model
 
                 // reset daily transaction limit
                 this.dailyTransactionTotal = 0;
+            }
+        }
+
+        public void updatePendingDeposit()
+        {
+            try
+            {
+                // write line for DB conenct
+                Console.WriteLine("Connecting to MySQL...");
+
+                //open connection
+                conn.Open();
+
+                // structure SQL statement
+                string sql = "UPDATE carrollaccount SET pendingDepositAmount=@amount WHERE accountNum=@accountNum";
+
+                // declare new command
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+
+                // add values to the command
+                cmd.Parameters.AddWithValue("@amount", this.pendingDepositAmount);
+                cmd.Parameters.AddWithValue("@accountNum", this.accountNum);
+
+                // execute the non query
+                cmd.ExecuteNonQuery();
+
+                // close the connection
+                conn.Close();
+
+            }
+            catch(Exception ex)
+            {
+                Trace.WriteLine(ex.ToString());
             }
         }
     }
