@@ -19,7 +19,7 @@ namespace ATM_Practice
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenuForm());
+            Application.Run(new LogInScreen());
         }
     }
 }
