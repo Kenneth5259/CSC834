@@ -72,6 +72,7 @@ namespace ATM_Practice
             this.ErrorScreenDynamicErrorButton.TabIndex = 2;
             this.ErrorScreenDynamicErrorButton.Text = "PIN Entry Screen";
             this.ErrorScreenDynamicErrorButton.UseVisualStyleBackColor = false;
+            this.ErrorScreenDynamicErrorButton.Click += new System.EventHandler(this.ErrorScreenDynamicErrorButton_Click);
             // 
             // ErrorScreen
             // 

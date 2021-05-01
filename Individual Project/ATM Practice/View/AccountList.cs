@@ -144,8 +144,8 @@ namespace ATM_Practice
                         // check for the minimum number of accounts
                         if(this.customerAccounts.Count < 2)
                         {
-                            this.Close();
-                            //new ErrorScreen()
+                            this.Hide();
+                            new ErrorScreen(this, 3311).Show();
                         }
 
                         // set a To Account
@@ -169,7 +169,7 @@ namespace ATM_Practice
                         this.toAccount = new Account().retrieveAccountInformation(this.customerAccounts[e.RowIndex]);
 
                         // show the transfer account screen
-                        new AccountTransferForm(this.toAccount, this.fromAccount).Show();
+                        new AccountTransferForm(this, this.toAccount, this.fromAccount).Show();
                     }
                     break;
 

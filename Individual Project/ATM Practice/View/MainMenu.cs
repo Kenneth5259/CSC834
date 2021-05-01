@@ -43,6 +43,7 @@ namespace ATM_Practice
         private void TransferMoneyButton_Click(object sender, EventArgs e)
         {
             new AccountList(this, this.customer, "Transfer").Show();
+            this.Hide();
         }
 
 

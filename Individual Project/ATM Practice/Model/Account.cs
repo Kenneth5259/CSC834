@@ -230,5 +230,9 @@ namespace ATM_Practice.Model
                 Trace.WriteLine(ex.ToString());
             }
         }
+        public Boolean withinDailyLimit(double transactionAmount)
+        {
+            return (this.dailyTransactionLimit >= (this.dailyTransactionTotal + transactionAmount));
+        }
     }
 }

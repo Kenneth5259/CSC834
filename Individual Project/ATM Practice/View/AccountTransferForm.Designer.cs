@@ -78,13 +78,13 @@ namespace ATM_Practice
             this.AccountTransferConfirmationTableLayoutPanel.Controls.Add(this.AccountTransferChangeAmountButton, 0, 1);
             this.AccountTransferConfirmationTableLayoutPanel.Controls.Add(this.AccountTransferAmountDynamicLabel, 0, 0);
             this.AccountTransferConfirmationTableLayoutPanel.Controls.Add(this.AccountTransferFinalizeButto, 0, 2);
-            this.AccountTransferConfirmationTableLayoutPanel.Location = new System.Drawing.Point(29, 98);
+            this.AccountTransferConfirmationTableLayoutPanel.Location = new System.Drawing.Point(29, 82);
             this.AccountTransferConfirmationTableLayoutPanel.Name = "AccountTransferConfirmationTableLayoutPanel";
             this.AccountTransferConfirmationTableLayoutPanel.RowCount = 3;
             this.AccountTransferConfirmationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.AccountTransferConfirmationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.AccountTransferConfirmationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.AccountTransferConfirmationTableLayoutPanel.Size = new System.Drawing.Size(824, 534);
+            this.AccountTransferConfirmationTableLayoutPanel.Size = new System.Drawing.Size(824, 550);
             this.AccountTransferConfirmationTableLayoutPanel.TabIndex = 19;
             this.AccountTransferConfirmationTableLayoutPanel.Visible = false;
             // 
@@ -92,12 +92,13 @@ namespace ATM_Practice
             // 
             this.AccountTransferChangeAmountButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AccountTransferChangeAmountButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AccountTransferChangeAmountButton.Location = new System.Drawing.Point(26, 122);
+            this.AccountTransferChangeAmountButton.Location = new System.Drawing.Point(26, 130);
             this.AccountTransferChangeAmountButton.Name = "AccountTransferChangeAmountButton";
             this.AccountTransferChangeAmountButton.Size = new System.Drawing.Size(772, 180);
             this.AccountTransferChangeAmountButton.TabIndex = 1;
             this.AccountTransferChangeAmountButton.Text = "Change Transfer Amount";
             this.AccountTransferChangeAmountButton.UseVisualStyleBackColor = true;
+            this.AccountTransferChangeAmountButton.Click += new System.EventHandler(this.AccountTransferChangeAmountButton_Click);
             // 
             // AccountTransferAmountDynamicLabel
             // 
@@ -105,7 +106,7 @@ namespace ATM_Practice
             this.AccountTransferAmountDynamicLabel.AutoSize = true;
             this.AccountTransferAmountDynamicLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AccountTransferAmountDynamicLabel.ForeColor = System.Drawing.Color.ForestGreen;
-            this.AccountTransferAmountDynamicLabel.Location = new System.Drawing.Point(424, 30);
+            this.AccountTransferAmountDynamicLabel.Location = new System.Drawing.Point(424, 32);
             this.AccountTransferAmountDynamicLabel.Name = "AccountTransferAmountDynamicLabel";
             this.AccountTransferAmountDynamicLabel.Size = new System.Drawing.Size(397, 45);
             this.AccountTransferAmountDynamicLabel.TabIndex = 11;
@@ -115,12 +116,13 @@ namespace ATM_Practice
             // 
             this.AccountTransferFinalizeButto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AccountTransferFinalizeButto.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AccountTransferFinalizeButto.Location = new System.Drawing.Point(26, 336);
+            this.AccountTransferFinalizeButto.Location = new System.Drawing.Point(26, 350);
             this.AccountTransferFinalizeButto.Name = "AccountTransferFinalizeButto";
             this.AccountTransferFinalizeButto.Size = new System.Drawing.Size(772, 180);
             this.AccountTransferFinalizeButto.TabIndex = 2;
             this.AccountTransferFinalizeButto.Text = "Finalize";
             this.AccountTransferFinalizeButto.UseVisualStyleBackColor = true;
+            this.AccountTransferFinalizeButto.Click += new System.EventHandler(this.AccountTransferFinalizeButto_Click);
             // 
             // AccountTransferWelcomeLabel
             // 
@@ -293,6 +295,7 @@ namespace ATM_Practice
             this.AccountTransferConfirmButton.TabIndex = 1;
             this.AccountTransferConfirmButton.Text = "Confirm";
             this.AccountTransferConfirmButton.UseVisualStyleBackColor = false;
+            this.AccountTransferConfirmButton.Click += new System.EventHandler(this.AccountTransferConfirmButton_Click);
             // 
             // AccountTransferInputButtonsTableLayoutPanels
             // 
@@ -332,6 +335,7 @@ namespace ATM_Practice
             this.AccountTransferInputClearButton.TabIndex = 14;
             this.AccountTransferInputClearButton.Text = "Clear";
             this.AccountTransferInputClearButton.UseVisualStyleBackColor = true;
+            this.AccountTransferInputClearButton.Click += new System.EventHandler(this.TransferInputClearButton_Click);
             // 
             // AccountTransferInputDotButton
             // 
@@ -343,6 +347,7 @@ namespace ATM_Practice
             this.AccountTransferInputDotButton.TabIndex = 13;
             this.AccountTransferInputDotButton.Text = ".";
             this.AccountTransferInputDotButton.UseVisualStyleBackColor = true;
+            this.AccountTransferInputDotButton.Click += new System.EventHandler(this.TransferInputDotButton_Click);
             // 
             // AccountTransferInput3Button
             // 
@@ -354,6 +359,7 @@ namespace ATM_Practice
             this.AccountTransferInput3Button.TabIndex = 12;
             this.AccountTransferInput3Button.Text = "3";
             this.AccountTransferInput3Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput3Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput6Button
             // 
@@ -365,6 +371,7 @@ namespace ATM_Practice
             this.AccountTransferInput6Button.TabIndex = 7;
             this.AccountTransferInput6Button.Text = "6";
             this.AccountTransferInput6Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput6Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput5Button
             // 
@@ -376,6 +383,7 @@ namespace ATM_Practice
             this.AccountTransferInput5Button.TabIndex = 6;
             this.AccountTransferInput5Button.Text = "5";
             this.AccountTransferInput5Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput5Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput4Button
             // 
@@ -387,6 +395,7 @@ namespace ATM_Practice
             this.AccountTransferInput4Button.TabIndex = 5;
             this.AccountTransferInput4Button.Text = "4";
             this.AccountTransferInput4Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput4Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput9Button
             // 
@@ -398,6 +407,7 @@ namespace ATM_Practice
             this.AccountTransferInput9Button.TabIndex = 3;
             this.AccountTransferInput9Button.Text = "9";
             this.AccountTransferInput9Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput9Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput7Button
             // 
@@ -409,6 +419,7 @@ namespace ATM_Practice
             this.AccountTransferInput7Button.TabIndex = 1;
             this.AccountTransferInput7Button.Text = "7";
             this.AccountTransferInput7Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput7Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput2Button
             // 
@@ -420,6 +431,7 @@ namespace ATM_Practice
             this.AccountTransferInput2Button.TabIndex = 10;
             this.AccountTransferInput2Button.Text = "2";
             this.AccountTransferInput2Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput2Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput1Button
             // 
@@ -431,6 +443,7 @@ namespace ATM_Practice
             this.AccountTransferInput1Button.TabIndex = 11;
             this.AccountTransferInput1Button.Text = "1";
             this.AccountTransferInput1Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput1Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput8Button
             // 
@@ -442,6 +455,7 @@ namespace ATM_Practice
             this.AccountTransferInput8Button.TabIndex = 2;
             this.AccountTransferInput8Button.Text = "8";
             this.AccountTransferInput8Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput8Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferInput0Button
             // 
@@ -453,6 +467,7 @@ namespace ATM_Practice
             this.AccountTransferInput0Button.TabIndex = 0;
             this.AccountTransferInput0Button.Text = "0";
             this.AccountTransferInput0Button.UseVisualStyleBackColor = true;
+            this.AccountTransferInput0Button.Click += new System.EventHandler(this.AccountTransferInputButton_Clicked);
             // 
             // AccountTransferLabelsTableLayoutPanel
             // 
@@ -495,10 +510,10 @@ namespace ATM_Practice
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountTransferConfirmationTableLayoutPanel);
             this.Controls.Add(this.AccountTransferInputTableForm);
             this.Controls.Add(this.AccountTransferBalanceErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferWelcomeLabel);
-            this.Controls.Add(this.AccountTransferConfirmationTableLayoutPanel);
             this.Controls.Add(this.AccountTransferLimitErrorTableLayoutPanel);
             this.Name = "AccountTransferForm";
             this.Text = "AccountTransferForm";

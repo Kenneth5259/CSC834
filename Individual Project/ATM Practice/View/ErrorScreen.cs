@@ -12,17 +12,21 @@ namespace ATM_Practice
     {
         private string errorText;
         private string buttonText;
-        public ErrorScreen(int err)
+        private Form parent;
+        private int error;
+        public ErrorScreen(Form parent, int err)
         {
             InitializeComponent();
-            this.switchOnError(err);
+            this.parent = parent;
+            this.error = err;
+            this.switchOnError();
         }
 
         // intakes an error code to set the values based on the requirement error
         // error referenced in requirement 5 as 5.5 will be input as 55, requirement 4 as 3.3.1.1 would be 3311
-        public void switchOnError(int errorCode)
+        public void switchOnError()
         {
-            switch(errorCode)
+            switch(this.error)
             {
                 case 161:
                     this.errorText = "Account has reached $3000 limit or transaction wlll place account over the $3000 limit";
@@ -45,6 +49,33 @@ namespace ATM_Practice
             }
             ErrorScreenDynamicErrorButton.Text = this.buttonText;
             ErrorScreenDynamicErrorLabel.Text = this.errorText;
+        }
+
+        private void ErrorScreenDynamicErrorButton_Click(object sender, EventArgs e)
+        {
+            switch (this.error)
+            {
+                case 161:
+                    
+                    break;
+                case 55:
+                    
+                    break;
+
+                case 3311:
+
+                    // Close the account list
+                    this.parent.Close();
+                    
+                    // close the error screen
+                    this.Close();
+                    break;
+
+                default:
+                    
+                    break;
+            }
+
         }
     }
 }
