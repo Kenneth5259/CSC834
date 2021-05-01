@@ -162,6 +162,7 @@ namespace ATM_Practice
             this.AccountTransferLimitErrorChangeButton.TabIndex = 1;
             this.AccountTransferLimitErrorChangeButton.Text = "Change Transfer Amount";
             this.AccountTransferLimitErrorChangeButton.UseVisualStyleBackColor = true;
+            this.AccountTransferLimitErrorChangeButton.Click += new System.EventHandler(this.AccountTransferLimitErrorChangeButton_Click);
             // 
             // AccountTransferLimitMainMenuButton
             // 
@@ -173,6 +174,7 @@ namespace ATM_Practice
             this.AccountTransferLimitMainMenuButton.TabIndex = 2;
             this.AccountTransferLimitMainMenuButton.Text = "Main Menu";
             this.AccountTransferLimitMainMenuButton.UseVisualStyleBackColor = true;
+            this.AccountTransferLimitMainMenuButton.Click += new System.EventHandler(this.AccountTransferLimitMainMenuButton_Click);
             // 
             // AccountTransferLimitErrorStaticLabel
             // 
@@ -215,6 +217,7 @@ namespace ATM_Practice
             this.AccountTransferBalanceErrorMainMenuButton.TabIndex = 2;
             this.AccountTransferBalanceErrorMainMenuButton.Text = "Main Menu";
             this.AccountTransferBalanceErrorMainMenuButton.UseVisualStyleBackColor = true;
+            this.AccountTransferBalanceErrorMainMenuButton.Click += new System.EventHandler(this.AccountTransferLimitMainMenuButton_Click);
             // 
             // AccountTransferBalanceErrorStaticLabel
             // 
@@ -239,6 +242,7 @@ namespace ATM_Practice
             this.AccountTransferBalanceErrorChangeAmountButton.TabIndex = 1;
             this.AccountTransferBalanceErrorChangeAmountButton.Text = "Change Transfer Amount";
             this.AccountTransferBalanceErrorChangeAmountButton.UseVisualStyleBackColor = true;
+            this.AccountTransferBalanceErrorChangeAmountButton.Click += new System.EventHandler(this.AccountTransferLimitErrorChangeButton_Click);
             // 
             // AccountTransferInputTableForm
             // 
@@ -510,11 +514,11 @@ namespace ATM_Practice
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountTransferBalanceErrorTableLayoutPanel);
+            this.Controls.Add(this.AccountTransferLimitErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferConfirmationTableLayoutPanel);
             this.Controls.Add(this.AccountTransferInputTableForm);
-            this.Controls.Add(this.AccountTransferBalanceErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferWelcomeLabel);
-            this.Controls.Add(this.AccountTransferLimitErrorTableLayoutPanel);
             this.Name = "AccountTransferForm";
             this.Text = "AccountTransferForm";
             this.AccountTransferConfirmationTableLayoutPanel.ResumeLayout(false);

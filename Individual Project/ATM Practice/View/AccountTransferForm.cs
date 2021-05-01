@@ -179,6 +179,8 @@ namespace ATM_Practice
             if(this.fromAccount.balance < transferAmount)
             {
                 // desplace balance amount error
+                this.AccountTransferBalanceErrorTableLayoutPanel.Visible = true;
+                this.AccountTransferInputTableForm.Visible = false;
 
                 // return the method to prevent any more execution
                 return;
@@ -190,6 +192,10 @@ namespace ATM_Practice
             {
                 Trace.WriteLine("Outside Daily Limit");
                 // display daily limit error
+                AccountTransferLimitErrorTableLayoutPanel.Visible = true;
+
+                // hide the input layout
+                AccountTransferInputTableForm.Visible = false;
 
                 // return the method to prevent any more execution
                 return;
@@ -230,5 +236,29 @@ namespace ATM_Practice
             // close the transfer form
             this.Close();
         }
+
+        private void AccountTransferLimitMainMenuButton_Click(object sender, EventArgs e)
+        {
+            // close account list
+            this.parent.Close();
+
+            // close this form
+            this.Close();
+        }
+
+        private void AccountTransferLimitErrorChangeButton_Click(object sender, EventArgs e)
+        {
+            // reset the input form as if clear had been clicked
+            this.TransferInputClearButton_Click(null, null);
+
+            // hide the error table layout panel
+            this.AccountTransferLimitErrorTableLayoutPanel.Visible = false;
+            this.AccountTransferBalanceErrorTableLayoutPanel.Visible = false;
+
+            // show the input form
+            this.AccountTransferInputTableForm.Visible = true;
+        }
+
+        
     }
 }
