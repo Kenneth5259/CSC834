@@ -40,6 +40,11 @@ namespace ATM_Practice
             this.Hide();
         }
 
+        private void TransferMoneyButton_Click(object sender, EventArgs e)
+        {
+            new AccountList(this, this.customer, "Transfer").Show();
+        }
+
 
         /************* Functional Requirement 1 ****************************/
     }

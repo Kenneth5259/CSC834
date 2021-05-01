@@ -293,6 +293,12 @@ namespace ATM_Practice
 
             // show the previous panel
             this.AccountDepositTypeTableLayoutPanel.Visible = true;
+
+            // remove generated amount
+            this.inputAmount = "0";
+
+            // update input label
+            this.updateLabel();
         }
 
         private void AccountDepositTypeCashButton_Click(object sender, EventArgs e)

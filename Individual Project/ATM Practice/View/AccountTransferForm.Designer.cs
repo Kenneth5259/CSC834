@@ -201,6 +201,7 @@ namespace ATM_Practice
             this.AccountTransferBalanceErrorTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.AccountTransferBalanceErrorTableLayoutPanel.Size = new System.Drawing.Size(824, 550);
             this.AccountTransferBalanceErrorTableLayoutPanel.TabIndex = 22;
+            this.AccountTransferBalanceErrorTableLayoutPanel.Visible = false;
             // 
             // AccountTransferBalanceErrorMainMenuButton
             // 
@@ -250,7 +251,6 @@ namespace ATM_Practice
             this.AccountTransferInputTableForm.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.AccountTransferInputTableForm.Size = new System.Drawing.Size(824, 550);
             this.AccountTransferInputTableForm.TabIndex = 23;
-            this.AccountTransferInputTableForm.Paint += new System.Windows.Forms.PaintEventHandler(this.TransferAmountTableForm_Paint);
             // 
             // AccountTransferAllButtonsTableLayoutPanels
             // 
@@ -497,9 +497,9 @@ namespace ATM_Practice
             this.ClientSize = new System.Drawing.Size(885, 644);
             this.Controls.Add(this.AccountTransferInputTableForm);
             this.Controls.Add(this.AccountTransferBalanceErrorTableLayoutPanel);
-            this.Controls.Add(this.AccountTransferLimitErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferWelcomeLabel);
             this.Controls.Add(this.AccountTransferConfirmationTableLayoutPanel);
+            this.Controls.Add(this.AccountTransferLimitErrorTableLayoutPanel);
             this.Name = "AccountTransferForm";
             this.Text = "AccountTransferForm";
             this.AccountTransferConfirmationTableLayoutPanel.ResumeLayout(false);

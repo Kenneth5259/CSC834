@@ -77,6 +77,7 @@ namespace ATM_Practice
             this.TransferMoneyButton.TabIndex = 3;
             this.TransferMoneyButton.Text = "Transfer Money";
             this.TransferMoneyButton.UseVisualStyleBackColor = true;
+            this.TransferMoneyButton.Click += new System.EventHandler(this.TransferMoneyButton_Click);
             // 
             // DepositMoneyButton
             // 

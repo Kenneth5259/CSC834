@@ -49,6 +49,7 @@ namespace ATM_Practice
             
             // configure the datagridview that holds account list
             this.configureDataGridView();
+
         }
 
         // constructor with a customer
@@ -75,6 +76,12 @@ namespace ATM_Practice
 
             // remove default selection
             AccountListDataGridView.ClearSelection();
+
+            // check if its a transfer for appropriate deposit
+            if(this.mode == "Transfer")
+            {
+                AccountListAccountsHeldStaticLabel.Text = "Please select an account to transfer FROM: ";
+            }
 
         }
 
@@ -128,6 +135,43 @@ namespace ATM_Practice
 
             switch(this.mode)
             {
+                // Transfer Transaction Begins
+                case "Transfer":
+
+                    // check if the to account is elected
+                    if (this.fromAccount == null)
+                    {
+                        // check for the minimum number of accounts
+                        if(this.customerAccounts.Count < 2)
+                        {
+                            this.Close();
+                            //new ErrorScreen()
+                        }
+
+                        // set a To Account
+                        this.fromAccount = new Account().retrieveAccountInformation(this.customerAccounts[e.RowIndex]);
+
+                        // remove the account from the list
+                        this.AccountListDataGridView.Rows.RemoveAt(e.RowIndex);
+
+                        // remove the account from the local list
+                        this.customerAccounts.RemoveAt(e.RowIndex);
+
+                        // update the label
+                        this.AccountListAccountsHeldStaticLabel.Text = "Please select an account to transfer TO: ";
+
+
+                        // avoid the Hide statemeent for all other cases
+                        return;
+                    } else
+                    {
+                        // set the to account
+                        this.toAccount = new Account().retrieveAccountInformation(this.customerAccounts[e.RowIndex]);
+
+                        // show the transfer account screen
+                        new AccountTransferForm(this.toAccount, this.fromAccount).Show();
+                    }
+                    break;
 
                 // Deposit transaction begins
                 case "Deposit":
