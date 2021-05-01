@@ -15,9 +15,9 @@ namespace ATM_Practice
     public partial class MainMenuForm : Form
     {
         private Customer customer;
-        public MainMenuForm()
+        public MainMenuForm(Customer customer)
         {
-            this.customer = new Customer().getCustomerById(1);
+            this.customer = customer;
             // initialization of the component
             InitializeComponent();
         }

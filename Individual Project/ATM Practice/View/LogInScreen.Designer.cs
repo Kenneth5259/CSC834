@@ -109,6 +109,7 @@ namespace ATM_Practice
             this.LogInScreenEnterButton.TabIndex = 11;
             this.LogInScreenEnterButton.Text = "Enter";
             this.LogInScreenEnterButton.UseVisualStyleBackColor = false;
+            this.LogInScreenEnterButton.Click += new System.EventHandler(this.LogInScreenEnterButton_Click);
             // 
             // LogInScreen0Button
             // 
@@ -119,6 +120,7 @@ namespace ATM_Practice
             this.LogInScreen0Button.TabIndex = 10;
             this.LogInScreen0Button.Text = "0";
             this.LogInScreen0Button.UseVisualStyleBackColor = true;
+            this.LogInScreen0Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreenClearButton
             // 
@@ -131,6 +133,7 @@ namespace ATM_Practice
             this.LogInScreenClearButton.TabIndex = 9;
             this.LogInScreenClearButton.Text = "Clear";
             this.LogInScreenClearButton.UseVisualStyleBackColor = false;
+            this.LogInScreenClearButton.Click += new System.EventHandler(this.LogInScreenClearButton_Click);
             // 
             // LogInScreen3Button
             // 
@@ -141,6 +144,7 @@ namespace ATM_Practice
             this.LogInScreen3Button.TabIndex = 8;
             this.LogInScreen3Button.Text = "3";
             this.LogInScreen3Button.UseVisualStyleBackColor = true;
+            this.LogInScreen3Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreen2Button
             // 
@@ -151,6 +155,7 @@ namespace ATM_Practice
             this.LogInScreen2Button.TabIndex = 7;
             this.LogInScreen2Button.Text = "2";
             this.LogInScreen2Button.UseVisualStyleBackColor = true;
+            this.LogInScreen2Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreen1Button
             // 
@@ -161,6 +166,7 @@ namespace ATM_Practice
             this.LogInScreen1Button.TabIndex = 6;
             this.LogInScreen1Button.Text = "1";
             this.LogInScreen1Button.UseVisualStyleBackColor = true;
+            this.LogInScreen1Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreen6Button
             // 
@@ -171,6 +177,7 @@ namespace ATM_Practice
             this.LogInScreen6Button.TabIndex = 5;
             this.LogInScreen6Button.Text = "6";
             this.LogInScreen6Button.UseVisualStyleBackColor = true;
+            this.LogInScreen6Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreen5Button
             // 
@@ -181,6 +188,7 @@ namespace ATM_Practice
             this.LogInScreen5Button.TabIndex = 4;
             this.LogInScreen5Button.Text = "5";
             this.LogInScreen5Button.UseVisualStyleBackColor = true;
+            this.LogInScreen5Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreen4Button
             // 
@@ -191,6 +199,7 @@ namespace ATM_Practice
             this.LogInScreen4Button.TabIndex = 3;
             this.LogInScreen4Button.Text = "4";
             this.LogInScreen4Button.UseVisualStyleBackColor = true;
+            this.LogInScreen4Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreen9Button
             // 
@@ -201,6 +210,7 @@ namespace ATM_Practice
             this.LogInScreen9Button.TabIndex = 2;
             this.LogInScreen9Button.Text = "9";
             this.LogInScreen9Button.UseVisualStyleBackColor = true;
+            this.LogInScreen9Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreen8Button
             // 
@@ -211,6 +221,7 @@ namespace ATM_Practice
             this.LogInScreen8Button.TabIndex = 1;
             this.LogInScreen8Button.Text = "8";
             this.LogInScreen8Button.UseVisualStyleBackColor = true;
+            this.LogInScreen8Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LogInScreen7Button
             // 
@@ -221,6 +232,7 @@ namespace ATM_Practice
             this.LogInScreen7Button.TabIndex = 0;
             this.LogInScreen7Button.Text = "7";
             this.LogInScreen7Button.UseVisualStyleBackColor = true;
+            this.LogInScreen7Button.Click += new System.EventHandler(this.LogInScreenNumber_Click);
             // 
             // LoginScreenPinPromptStaticLabel
             // 

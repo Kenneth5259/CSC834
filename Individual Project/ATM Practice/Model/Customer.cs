@@ -125,5 +125,10 @@ namespace ATM_Practice.Model
             // return the object with the assigned parsed attributes
             return c;
         }
+
+        public bool validatePin(string pin)
+        {
+            return (this.pin == Int32.Parse(pin));
+        }
     }
 }
