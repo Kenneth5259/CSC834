@@ -56,7 +56,6 @@ namespace ATM_Practice
             switch (this.error)
             {
                 case 161:
-                    
                     break;
                 case 55:
                     

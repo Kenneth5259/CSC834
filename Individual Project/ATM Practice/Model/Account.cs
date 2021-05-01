@@ -191,7 +191,7 @@ namespace ATM_Practice.Model
             {
 
                 // set to current date
-                this.dailyTransactionDate = DateTime.Today;
+                this.dailyTransactionDate = DateTime.Now;
 
                 // reset daily transaction limit
                 this.dailyTransactionTotal = 0;
@@ -209,7 +209,7 @@ namespace ATM_Practice.Model
                 conn.Open();
 
                 // structure SQL statement
-                string sql = "UPDATE carrollaccount SET pendingDepositAmount=@amount WHERE accountNum=@accountNum";
+                string sql = "UPDATE carrollaccount SET pendingDepositAmount=@amount, dailyTransactionDate=@dailyTransactionDate WHERE accountNum=@accountNum";
 
                 // declare new command
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
@@ -217,6 +217,7 @@ namespace ATM_Practice.Model
                 // add values to the command
                 cmd.Parameters.AddWithValue("@amount", this.pendingDepositAmount);
                 cmd.Parameters.AddWithValue("@accountNum", this.accountNum);
+                cmd.Parameters.AddWithValue("@dailyTransactionDate", this.dailyTransactionDate);
 
                 // execute the non query
                 cmd.ExecuteNonQuery();
@@ -226,6 +227,42 @@ namespace ATM_Practice.Model
 
             }
             catch(Exception ex)
+            {
+                Trace.WriteLine(ex.ToString());
+            }
+        }
+        public void updateAccountInformation()
+        {
+
+            try
+            {
+                // write line for DB conenct
+                Console.WriteLine("Connecting to MySQL...");
+
+                //open connection
+                conn.Open();
+
+                // structure SQL statement
+                string sql = "UPDATE carrollaccount SET balance=@balance, dailyTransactionDate=@dailyTransactionDate, dailyTransactionTotal=@dailyTransactionTotal WHERE accountNum=@accountNum";
+
+                // declare new command
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+
+                // add values to the command
+                Trace.WriteLine("Adding Values");
+                cmd.Parameters.AddWithValue("@balance", this.balance);
+                cmd.Parameters.AddWithValue("@dailyTransactionDate", this.dailyTransactionDate);
+                cmd.Parameters.AddWithValue("@dailyTransactionTotal", this.dailyTransactionTotal);
+                cmd.Parameters.AddWithValue("@accountNum", this.accountNum);
+
+                // execute the non query
+                cmd.ExecuteNonQuery();
+
+                // close the connection
+                conn.Close();
+
+            }
+            catch (Exception ex)
             {
                 Trace.WriteLine(ex.ToString());
             }

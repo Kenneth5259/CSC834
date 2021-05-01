@@ -514,9 +514,9 @@ namespace ATM_Practice
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 644);
+            this.Controls.Add(this.AccountTransferConfirmationTableLayoutPanel);
             this.Controls.Add(this.AccountTransferBalanceErrorTableLayoutPanel);
             this.Controls.Add(this.AccountTransferLimitErrorTableLayoutPanel);
-            this.Controls.Add(this.AccountTransferConfirmationTableLayoutPanel);
             this.Controls.Add(this.AccountTransferInputTableForm);
             this.Controls.Add(this.AccountTransferWelcomeLabel);
             this.Name = "AccountTransferForm";

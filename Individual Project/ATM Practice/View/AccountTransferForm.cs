@@ -47,6 +47,9 @@ namespace ATM_Practice
 
             // update the input label
             this.updateLabel();
+
+            // validate date and limit before proceeding
+            this.validateSelectedAccounts();
         }
 
         private void AccountDepositTypeMainMenuButton_Click(object sender, EventArgs e)
@@ -205,6 +208,7 @@ namespace ATM_Practice
             // make the appropriate tablelayoutpanel visible
             AccountTransferConfirmationTableLayoutPanel.Visible = true;
             AccountTransferInputTableForm.Visible = false;
+            AccountTransferAmountDynamicLabel.Text = $"${this.inputAmount}";
 
 
 
@@ -224,12 +228,34 @@ namespace ATM_Practice
 
         private void AccountTransferFinalizeButto_Click(object sender, EventArgs e)
         {
+            double amount = Double.Parse(inputAmount);
             // fill in code to update to account
+            this.toAccount.balance += amount;
+            this.toAccount.dailyTransactionTotal += amount;
+
+            // save updated info to DB
+            this.toAccount.updateAccountInformation();
 
             // fill in code to update from account
+            this.fromAccount.balance -= amount;
+            this.fromAccount.dailyTransactionTotal += amount;
 
-            // fill in code to create transaction
+            // save updated info to DB
+            this.fromAccount.updateAccountInformation();
 
+            // create a new transaction
+            Transaction transfer = new Transaction();
+
+            // assign each property to the transfer (omit transferNum for auto increment)
+            transfer.accountNum = this.fromAccount.accountNum;
+            transfer.amount = amount;
+            transfer.date = DateTime.Now;
+            transfer.fromAccount = this.fromAccount.accountNum;
+            transfer.toAccount = this.toAccount.accountNum;
+            transfer.transactionType = "Transfer";
+
+            // save transfer to DB
+            transfer.createTransaction();
             // close the account list
             this.parent.Close();
 
@@ -257,6 +283,28 @@ namespace ATM_Practice
 
             // show the input form
             this.AccountTransferInputTableForm.Visible = true;
+        }
+
+        private void validateSelectedAccounts()
+        {
+            // check daily transaction date
+            this.toAccount.updateDailyTransactionDate();
+            this.fromAccount.updateDailyTransactionDate();
+
+            // display error if either account is already at their daily limit
+            if(!(this.toAccount.withinDailyLimit(0) && this.fromAccount.withinDailyLimit(0)))
+            {
+
+                // make the error visible
+                this.AccountTransferBalanceErrorTableLayoutPanel.Visible = true;
+
+                // change label to fit the custom error
+                this.AccountTransferBalanceErrorStaticLabel.Text = "One of the selected accounts is already at a daily transaction limit. Return to main menu to continue";
+
+                // hide the other button
+                this.AccountTransferBalanceErrorChangeAmountButton.Visible = false;
+            }
+
         }
 
         
