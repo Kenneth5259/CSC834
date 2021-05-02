@@ -191,7 +191,7 @@ namespace ATM_Practice.Model
                 // reset the pin count
                 this.failedPinCount = 0;
 
-                // 
+                // update date of last signon
                 this.lastSignOn = DateTime.Now;
             }
 
