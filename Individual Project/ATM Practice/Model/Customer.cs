@@ -126,6 +126,43 @@ namespace ATM_Practice.Model
             return c;
         }
 
+        public void updateCustomerInformation()
+        {
+            try
+            {
+                // write line for DB conenct
+                Console.WriteLine("Connecting to MySQL...");
+
+                //open connection
+                conn.Open();
+
+                // structure SQL statement
+                string sql = "UPDATE carrollcustomer SET lastSignOn=@lastSignOn, lastSignOff=@lastSignOff, failedPinCount=@failedPinCount, dateOfLastFailedPin=@dateOfLastFailedPin WHERE id=@id";
+                
+                // declare new command
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+
+                // add values to the command
+                Trace.WriteLine("Adding Values");
+                cmd.Parameters.AddWithValue("@lastSignOn", this.lastSignOn); 
+                cmd.Parameters.AddWithValue("@lastSignOff", this.lastSignOff);
+                cmd.Parameters.AddWithValue("@failedPinCount", this.failedPinCount);
+                cmd.Parameters.AddWithValue("@dateOfLastFailedPin", this.dateOfLastFailedPin);
+                cmd.Parameters.AddWithValue("@id", this.id);
+
+                // execute the non query
+                cmd.ExecuteNonQuery();
+
+                // close the connection
+                conn.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine(ex.ToString());
+            }
+        }
+
         public bool validatePin(string pin)
         {
             // check that the pin count has been reset if another day
@@ -153,6 +190,9 @@ namespace ATM_Practice.Model
 
                 // reset the pin count
                 this.failedPinCount = 0;
+
+                // 
+                this.lastSignOn = DateTime.Now;
             }
 
             // return the status

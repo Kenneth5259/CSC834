@@ -175,5 +175,21 @@ namespace ATM_Practice
             // update the pin label
             this.updatePinLabel();
         }
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // make sure there is no crash if closed before pin entry
+            if(this.customer != null)
+            {
+                // set the last sign off time
+                this.customer.lastSignOff = DateTime.Now;
+
+                // save the customer's new info to the database
+                this.customer.updateCustomerInformation();
+            }
+            
+
+            
+
+        }
     }
 }

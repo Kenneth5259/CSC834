@@ -306,6 +306,7 @@ namespace ATM_Practice
             this.LogInButtonsTableLayoutPanel.ResumeLayout(false);
             this.LoginScreenInsertCardTableLayoutPanel.ResumeLayout(false);
             this.LoginScreenInsertCardTableLayoutPanel.PerformLayout();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
