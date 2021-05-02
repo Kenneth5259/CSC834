@@ -161,6 +161,7 @@ namespace ATM_Practice
             this.Name = "MainMenuForm";
             this.Text = "Form1";
             this.MainMenuFormTable.ResumeLayout(false);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenu_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

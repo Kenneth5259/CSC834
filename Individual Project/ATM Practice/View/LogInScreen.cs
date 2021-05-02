@@ -100,7 +100,7 @@ namespace ATM_Practice
                 // if valid open the main menu
                 Trace.WriteLine("Pin is valid");
 
-                new MainMenuForm(this.customer).Show();
+                new MainMenuForm(this, this.customer).Show();
                 this.Hide();
             } else
             {

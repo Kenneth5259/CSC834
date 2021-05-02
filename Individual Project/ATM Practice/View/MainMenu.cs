@@ -15,9 +15,15 @@ namespace ATM_Practice
     public partial class MainMenuForm : Form
     {
         private Customer customer;
-        public MainMenuForm(Customer customer)
+        private Form parent;
+        public MainMenuForm(Form parent, Customer customer)
         {
+            // store the parent form
+            this.parent = parent;
+
+            // store the customer
             this.customer = customer;
+
             // initialization of the component
             InitializeComponent();
         }
@@ -44,6 +50,11 @@ namespace ATM_Practice
         {
             new AccountList(this, this.customer, "Transfer").Show();
             this.Hide();
+        }
+
+        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.parent.Close();
         }
 
 
