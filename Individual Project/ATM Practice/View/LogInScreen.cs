@@ -14,7 +14,11 @@ namespace ATM_Practice
     {
         // customer Id
         private int customerId;
+
+        // local store for the customer
         private Customer customer;
+
+        // lcoal store for the user input
         private string userInput;
 
         public LogInScreen()
@@ -56,13 +60,22 @@ namespace ATM_Practice
             LoginScreenPinEntryDynamicLabel.Text = this.mask();
         }
 
+        // basic method to return an * for each digit entered
         private string mask()
         {
+
+            // empty string
             string s = "";
+
+            // loop over the lenght of the current input
             for(int i = 0; i < userInput.Length; i++)
             {
+
+                // add *
                 s += "*";
             }
+
+            // return the string
             return s;
         }
 
@@ -106,6 +119,25 @@ namespace ATM_Practice
             {
                 // display incorrect pin error message
                 Trace.WriteLine("Pin is invalid");
+
+                // check if the failed pin count is within the limit
+                if(this.customer.failedPinCount < 3)
+                {
+
+                    // display error and prompt for additional input
+                    new ErrorScreen(this, 55).Show();
+
+                    // hide the login screen until error is closed
+                    this.Hide();
+
+                    // reset the input screen
+                    this.LogInScreenClearButton_Click(null, null);
+
+                } else
+                {
+                    // display the account locked 
+                    this.Close();
+                }
             }
         }
 
@@ -139,6 +171,8 @@ namespace ATM_Practice
                 LogInScreen9Button.Enabled = false;
                 LogInScreen0Button.Enabled = false;
             }
+
+            // update the pin label
             this.updatePinLabel();
         }
     }

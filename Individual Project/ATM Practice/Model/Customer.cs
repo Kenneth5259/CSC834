@@ -128,7 +128,35 @@ namespace ATM_Practice.Model
 
         public bool validatePin(string pin)
         {
-            return (this.pin == Int32.Parse(pin));
+            // check that the pin count has been reset if another day
+            if(this.dateOfLastFailedPin.Date != DateTime.Now.Date)
+            {
+
+                // reset the pin count if its a new day
+                this.failedPinCount = 0;
+            }
+
+            // run the check
+            bool pinAccurate = (this.pin == Int32.Parse(pin));
+
+            // if the pin was incorrect
+            if(!pinAccurate)
+            {
+                // increment failed pin count
+                this.failedPinCount += 1;
+
+                // make sure the date is recorded
+                this.dateOfLastFailedPin = DateTime.Now;
+
+            } else
+            {
+
+                // reset the pin count
+                this.failedPinCount = 0;
+            }
+
+            // return the status
+            return pinAccurate;
         }
     }
 }

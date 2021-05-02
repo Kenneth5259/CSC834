@@ -58,7 +58,12 @@ namespace ATM_Practice
                 case 161:
                     break;
                 case 55:
-                    
+
+                    // show the login screen
+                    this.parent.Show();
+
+                    // close the error
+                    this.Close();
                     break;
 
                 case 3311:
