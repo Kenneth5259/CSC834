@@ -135,6 +135,31 @@ namespace ATM_Practice
 
             switch(this.mode)
             {
+                // Widthdraw Transaction Begins
+                case "Withdraw":
+
+                    // pull in the account from id
+                    Account acc = new Account().retrieveAccountInformation(this.customerAccounts[e.RowIndex]);
+                    
+                    // update daily transaction date
+                    acc.updateDailyTransactionDate();
+
+                    // check if limit is reached already
+                    if(acc.withinDailyLimit(0))
+                    {
+
+                        // display withdraw input screen
+                        new AccountWithdrawScreen(this, acc).Show();
+                        this.Hide();
+                    
+                    } else
+                    {
+                        // display daily limit error screen
+                        new ErrorScreen(this, 161).Show();
+                        this.Hide();
+                    }
+                    break;
+
                 // Transfer Transaction Begins
                 case "Transfer":
 

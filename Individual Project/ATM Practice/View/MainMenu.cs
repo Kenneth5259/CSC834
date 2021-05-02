@@ -57,7 +57,10 @@ namespace ATM_Practice
             this.parent.Close();
         }
 
-
-        /************* Functional Requirement 1 ****************************/
+        private void WithdrawMoneyButton_Click(object sender, EventArgs e)
+        {
+            new AccountList(this, this.customer, "Withdraw").Show();
+            this.Hide();
+        }
     }
 }

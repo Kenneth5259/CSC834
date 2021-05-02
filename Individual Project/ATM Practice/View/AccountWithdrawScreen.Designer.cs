@@ -34,7 +34,6 @@ namespace ATM_Practice
             this.AccountWithdrawConfirmButton = new System.Windows.Forms.Button();
             this.AccountWithdrawInputButtonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.AccountWithdrawInputClearButton = new System.Windows.Forms.Button();
-            this.AccountWithdrawInputDotButton = new System.Windows.Forms.Button();
             this.AccountWithdrawInput3Button = new System.Windows.Forms.Button();
             this.AccountWithdrawInput6Button = new System.Windows.Forms.Button();
             this.AccountWithdrawInput5Button = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput2Button = new System.Windows.Forms.Button();
             this.AccountWithdrawInput1Button = new System.Windows.Forms.Button();
             this.AccountWithdrawInput8Button = new System.Windows.Forms.Button();
+            this.AccountWithdrawInputDotButton = new System.Windows.Forms.Button();
             this.AccountWithdrawWelcomeLabel = new System.Windows.Forms.Label();
             this.AccountWidthdrawAmountEntryTableLayoutPanel.SuspendLayout();
             this.AccountWithdrawInputButtonsTableLayoutPanel.SuspendLayout();
@@ -91,6 +91,7 @@ namespace ATM_Practice
             this.AccountWithdrawConfirmButton.TabIndex = 1;
             this.AccountWithdrawConfirmButton.Text = "Confirm";
             this.AccountWithdrawConfirmButton.UseVisualStyleBackColor = false;
+            this.AccountWithdrawConfirmButton.Click += new System.EventHandler(this.AccountWithdrawConfirmButton_Click);
             // 
             // AccountWithdrawInputButtonsTableLayoutPanel
             // 
@@ -99,7 +100,6 @@ namespace ATM_Practice
             this.AccountWithdrawInputButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.AccountWithdrawInputButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInputClearButton, 2, 3);
-            this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInputDotButton, 1, 3);
             this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInput3Button, 2, 2);
             this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInput6Button, 2, 1);
             this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInput5Button, 1, 1);
@@ -110,6 +110,7 @@ namespace ATM_Practice
             this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInput2Button, 1, 2);
             this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInput1Button, 0, 2);
             this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInput8Button, 1, 0);
+            this.AccountWithdrawInputButtonsTableLayoutPanel.Controls.Add(this.AccountWithdrawInputDotButton, 1, 3);
             this.AccountWithdrawInputButtonsTableLayoutPanel.Location = new System.Drawing.Point(3, 55);
             this.AccountWithdrawInputButtonsTableLayoutPanel.Name = "AccountWithdrawInputButtonsTableLayoutPanel";
             this.AccountWithdrawInputButtonsTableLayoutPanel.RowCount = 4;
@@ -131,17 +132,7 @@ namespace ATM_Practice
             this.AccountWithdrawInputClearButton.TabIndex = 14;
             this.AccountWithdrawInputClearButton.Text = "Clear";
             this.AccountWithdrawInputClearButton.UseVisualStyleBackColor = true;
-            // 
-            // AccountWithdrawInputDotButton
-            // 
-            this.AccountWithdrawInputDotButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AccountWithdrawInputDotButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AccountWithdrawInputDotButton.Location = new System.Drawing.Point(275, 276);
-            this.AccountWithdrawInputDotButton.Name = "AccountWithdrawInputDotButton";
-            this.AccountWithdrawInputDotButton.Size = new System.Drawing.Size(266, 79);
-            this.AccountWithdrawInputDotButton.TabIndex = 13;
-            this.AccountWithdrawInputDotButton.Text = ".";
-            this.AccountWithdrawInputDotButton.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInputClearButton.Click += new System.EventHandler(this.AccountWithdrawInputClearButton_Click);
             // 
             // AccountWithdrawInput3Button
             // 
@@ -153,6 +144,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput3Button.TabIndex = 12;
             this.AccountWithdrawInput3Button.Text = "3";
             this.AccountWithdrawInput3Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput3Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput6Button
             // 
@@ -164,6 +156,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput6Button.TabIndex = 7;
             this.AccountWithdrawInput6Button.Text = "6";
             this.AccountWithdrawInput6Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput6Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput5Button
             // 
@@ -175,6 +168,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput5Button.TabIndex = 6;
             this.AccountWithdrawInput5Button.Text = "5";
             this.AccountWithdrawInput5Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput5Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput4Button
             // 
@@ -186,6 +180,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput4Button.TabIndex = 5;
             this.AccountWithdrawInput4Button.Text = "4";
             this.AccountWithdrawInput4Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput4Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput9Button
             // 
@@ -197,6 +192,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput9Button.TabIndex = 3;
             this.AccountWithdrawInput9Button.Text = "9";
             this.AccountWithdrawInput9Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput9Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput7Button
             // 
@@ -208,6 +204,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput7Button.TabIndex = 1;
             this.AccountWithdrawInput7Button.Text = "7";
             this.AccountWithdrawInput7Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput7Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput0Button
             // 
@@ -219,6 +216,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput0Button.TabIndex = 0;
             this.AccountWithdrawInput0Button.Text = "0";
             this.AccountWithdrawInput0Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput0Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput2Button
             // 
@@ -230,6 +228,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput2Button.TabIndex = 10;
             this.AccountWithdrawInput2Button.Text = "2";
             this.AccountWithdrawInput2Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput2Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput1Button
             // 
@@ -241,6 +240,7 @@ namespace ATM_Practice
             this.AccountWithdrawInput1Button.TabIndex = 11;
             this.AccountWithdrawInput1Button.Text = "1";
             this.AccountWithdrawInput1Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput1Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
             // 
             // AccountWithdrawInput8Button
             // 
@@ -252,6 +252,19 @@ namespace ATM_Practice
             this.AccountWithdrawInput8Button.TabIndex = 2;
             this.AccountWithdrawInput8Button.Text = "8";
             this.AccountWithdrawInput8Button.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInput8Button.Click += new System.EventHandler(this.AccountWithdrawInputButton_Clicked);
+            // 
+            // AccountWithdrawInputDotButton
+            // 
+            this.AccountWithdrawInputDotButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountWithdrawInputDotButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AccountWithdrawInputDotButton.Location = new System.Drawing.Point(275, 276);
+            this.AccountWithdrawInputDotButton.Name = "AccountWithdrawInputDotButton";
+            this.AccountWithdrawInputDotButton.Size = new System.Drawing.Size(266, 79);
+            this.AccountWithdrawInputDotButton.TabIndex = 13;
+            this.AccountWithdrawInputDotButton.Text = ".";
+            this.AccountWithdrawInputDotButton.UseVisualStyleBackColor = true;
+            this.AccountWithdrawInputDotButton.Click += new System.EventHandler(this.AccountWithdrawInputDotButton_Click);
             // 
             // AccountWithdrawWelcomeLabel
             // 

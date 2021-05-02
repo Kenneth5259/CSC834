@@ -28,6 +28,15 @@ namespace ATM_Practice
         {
             switch(this.error)
             {
+                case 1101:
+                    this.errorText = "The requested amount is greateer than the total balance of the account. Please select a smaller amount or another account";
+                    this.buttonText = "Return";
+                    break;
+                case 1111:
+
+                    this.errorText = "The requested amount is greater than what is available in the machine. Please request a smaller amount or contact the bank for further assistance.";
+                    this.buttonText = "Return";
+                    break;
                 case 161:
                     this.errorText = "Account has reached $3000 limit or transaction wlll place account over the $3000 limit";
                     this.buttonText = "Return";

@@ -107,6 +107,7 @@ namespace ATM_Practice
             this.WithdrawMoneyButton.TabIndex = 1;
             this.WithdrawMoneyButton.Text = "Withdraw Money";
             this.WithdrawMoneyButton.UseVisualStyleBackColor = true;
+            this.WithdrawMoneyButton.Click += new System.EventHandler(this.WithdrawMoneyButton_Click);
             // 
             // CheckBalanceButton
             // 
@@ -160,8 +161,8 @@ namespace ATM_Practice
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "MainMenuForm";
             this.Text = "Form1";
-            this.MainMenuFormTable.ResumeLayout(false);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenu_FormClosing);
+            this.MainMenuFormTable.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
